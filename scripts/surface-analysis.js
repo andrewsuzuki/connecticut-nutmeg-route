@@ -90,6 +90,7 @@ function getRawSegmentsFromBrouterWeb() {
     for (var i = 1; i < rows.length; i++) {
         const el = rows[i].children;
         list.push({
+            Elevation: parseFloat(el[0].innerText),
             Distance: parseFloat(el[1].innerText),
             WayTags: el[7].innerText
         });
@@ -99,6 +100,7 @@ function getRawSegmentsFromBrouterWeb() {
 
 function parseSegments(data) {
     return data.map(seg => ({
+        elevation: seg.Elevation,
         distance: seg.Distance,
         tags: Object.fromEntries(seg.WayTags.split(' ').map(kvString => {
             const [k, v] = kvString.split('=')
@@ -265,6 +267,9 @@ function run(segments) {
         const { highway } = tags;
         return highway === 'cycleway';
     }), totalDistanceMeters);
+
+    const disusedOrAbandoned = sumSegmentDistances(segments.filter(({ tags }) => tags.disused === 'yes' || tags.abandoned === 'yes'));
+    console.log('Total disused or abandoned:', distanceAndPercentString(disusedOrAbandoned, totalDistanceMeters, 'route'));
 }
 
 // Run in node.js from file
