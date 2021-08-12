@@ -119,12 +119,6 @@ function parseSegments(data) {
     });
 }
 
-// From file
-// const segments = parseSegments(require('./route-segments.json'));
-// const segments = parseSegments(require('../../Downloads/csvjson (5).json'));
-// From brouter-web
-const segments = parseSegments(getRawSegmentsFromBrouterWeb());
-
 function hasSmoothnessOrTracktypeButNoSurface(tags) {
     const { surface, smoothness, tracktype } = tags;
     return !surface && ((smoothness && goodBadSmoothnessValues.includes(smoothness)) || (tracktype && goodBadTracktypeValues.includes(tracktype)));
@@ -168,27 +162,18 @@ function isLikelyPaved(tags) {
 }
 
 // Group segments by unpaved/paved/indeterminate
+function groupByUnpavedPaved(segments) {
+    return segments.reduce((acc, segment) => {
+        const { tags, original } = segment
 
-const unpavedSegments = [];
-const pavedSegments = [];
-const indeterminateSegments = [];
+        if (hasSmoothnessOrTracktypeButNoSurface(tags)) {
+            console.warn('Segment has smoothness or tracktype, but missing surface', original);
+        }
 
-segments.forEach(function(segment) {
-    const { distance, tags, original } = segment
-    const { highway, surface, tracktype, smoothness } = tags;
-
-    if (hasSmoothnessOrTracktypeButNoSurface(tags)) {
-        console.warn('Segment has smoothness or tracktype, but missing surface', original);
-    }
-
-    if (isLikelyUnpaved(tags)) {
-        unpavedSegments.push(segment)
-    } else if (isLikelyPaved(tags)) {
-        pavedSegments.push(segment)
-    } else {
-        indeterminateSegments.push(segment)
-    }
-});
+        const type = isLikelyUnpaved(tags) ? 'unpaved' : isLikelyPaved(tags) ? 'paved' : 'indeterminate';
+        return { ...acc, [type]: [...acc[type], segment] };
+    }, { unpaved: [], paved: [], indeterminate: [] });
+}
 
 // Print results
 
@@ -206,8 +191,6 @@ function sumSegmentDistances(segs) {
     return segs.reduce((acc, { distance }) => acc + distance, 0);
 }
 
-const totalDistanceMeters = sumSegmentDistances(segments);
-
 const METERS_IN_A_MILE = 1609.344;
 
 const intelligentRound = x => {
@@ -219,7 +202,7 @@ const distanceString = distanceMeters => `${intelligentRound(distanceMeters / ME
 const percentString = (distanceMeters, of, ofName) => `${intelligentRound(100 * distanceMeters / of)}% of ${ofName}`;
 const distanceAndPercentString = (distanceMeters, of, ofName) => `${distanceString(distanceMeters)} (${percentString(distanceMeters, of, ofName)})`;
 
-function printDistancesByKey(segs, key, of, ofName) {
+function printDistancesByKey(segs, key, of, ofName, totalDistanceMeters) {
     console.group(`Breakdown ${key}=`);
     const dbk = sumDistancesByKey(segs, key);
     const sorted = Object.entries(dbk).sort((a, b) => a[1] - b[1]).reverse();
@@ -229,42 +212,84 @@ function printDistancesByKey(segs, key, of, ofName) {
     console.groupEnd();
 }
 
-const pr = (label, segs) => {
+function printSegmentSummary(label, segs, totalDistanceMeters) {
     const distanceMeters = sumSegmentDistances(segs);
     console.group(label);
     console.log(distanceAndPercentString(distanceMeters, totalDistanceMeters, 'route'));
-    printDistancesByKey(segs, 'highway', distanceMeters, label);
-    printDistancesByKey(segs, 'surface', distanceMeters, label);
-    printDistancesByKey(segs, 'bicycle', distanceMeters, label);
+    printDistancesByKey(segs, 'highway', distanceMeters, label, totalDistanceMeters);
+    printDistancesByKey(segs, 'surface', distanceMeters, label, totalDistanceMeters);
+    printDistancesByKey(segs, 'bicycle', distanceMeters, label, totalDistanceMeters);
     console.groupEnd();
 }
 
-if (ASSUME_PATH_LIKE_IS_UNPAVED) {
-    console.log('Note: path-like (path, footway, etc) segments without the surface= tag are ASSUMED UNPAVED');
+function printTitle(text) {
+    console.log(`%c${text}`, 'color: fuchsia; font-size: 2em; text-transform: uppercase;');
+}
+
+function run(segments) {
+    // Notices
+    if (ASSUME_PATH_LIKE_IS_UNPAVED) {
+        console.log('Note: Path-like (path, footway, etc) segments without the surface= tag are ASSUMED UNPAVED');
+    } else {
+        console.log('Note: Path-like (path, footway, etc) segments without the surface= tag are CONSIDERED INDETERMINATE');
+    }
+
+    if (COLLAPSE_MAJOR_HIGHWAY_TYPES) {
+        console.log(`Note: Collapsed major paved highway types into 'major'`);
+    }
+
+    console.log('Note: Surfaces found in this route:', segments.reduce((acc, { tags: { surface } }) => surface ? acc.add(surface) : acc, new Set()))
+
+    // Get total distance
+    const totalDistanceMeters = sumSegmentDistances(segments);
+
+    // Group
+    const { unpaved, paved, indeterminate } = groupByUnpavedPaved(segments);
+
+    // Print
+    printTitle('All');
+    printSegmentSummary('All', segments, totalDistanceMeters);
+
+    printTitle('By unpaved/paved/indeterminate (sums to 100%)');
+    printSegmentSummary('Likely unpaved', unpaved, totalDistanceMeters);
+    printSegmentSummary('Likely paved', paved, totalDistanceMeters);
+    printSegmentSummary('Indeterminate', indeterminate, totalDistanceMeters);
+
+    printTitle('Specific cases');
+    printSegmentSummary('Path-like but unknown surface=', segments.filter(({ tags }) => isPathLikeWithoutSurface(tags) && !isTaggedSidewalk(tags)), totalDistanceMeters);
+    printSegmentSummary('Path-like, but unknown bicycle=', segments.filter(({ tags }) => {
+        const { highway, bicycle } = tags;
+        return likelyPathLikeHighwayValues.includes(highway) && !bicycle;
+    }), totalDistanceMeters);
+    printSegmentSummary('Cycleway', segments.filter(({ tags }) => {
+        const { highway } = tags;
+        return highway === 'cycleway';
+    }), totalDistanceMeters);
+}
+
+// Run in node.js from file
+function runf() {
+    const fs = require('fs');
+
+    const filename = process.argv[2];
+
+    if (!filename) {
+        throw new Error('Missing filename');
+    }
+
+    const data = JSON.parse(fs.readFileSync(filename, 'utf8'));
+    const segments = parseSegments(data);
+    run(segments);
+}
+
+// Run in browser console (brouter-web)
+function runw() {
+    const segments = parseSegments(getRawSegmentsFromBrouterWeb());
+    run(segments);
+}
+
+if (this.window === this) {
+    runw();
 } else {
-    console.log('Note: Path-like (path, footway, etc) segments without the surface= tag are CONSIDERED INDETERMINATE');
+    runf();
 }
-if (COLLAPSE_MAJOR_HIGHWAY_TYPES) {
-    console.log(`Note: collapsed major paved highway types into 'major'`);
-}
-
-console.log('%cAll', 'color: fuchsia; font-size: 2em; text-transform: uppercase;');
-pr('All', segments);
-
-console.log('%cBy unpaved/paved/indeterminate (sums to 100%)', 'color: fuchsia; font-size: 2em; text-transform: uppercase;');
-pr('Likely unpaved', unpavedSegments);
-pr('Likely paved', pavedSegments);
-pr('Indeterminate', indeterminateSegments);
-
-console.log('%cSpecific cases', 'color: fuchsia; font-size: 2em; text-transform: uppercase;');
-pr('Path-like but unknown surface=', segments.filter(({ tags }) => isPathLikeWithoutSurface(tags) && !isTaggedSidewalk(tags)));
-pr('Path-like, but unknown bicycle=', segments.filter(({ tags }) => {
-    const { highway, bicycle } = tags;
-    return likelyPathLikeHighwayValues.includes(highway) && !bicycle;
-}));
-pr('Cycleway', segments.filter(({ tags }) => {
-    const { highway } = tags;
-    return highway === 'cycleway';
-}));
-
-console.log('all surface types found:', segments.reduce((acc, { tags: { surface } }) => surface? acc.add(surface) : acc, new Set()))

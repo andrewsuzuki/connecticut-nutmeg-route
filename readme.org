@@ -18,9 +18,9 @@ The ideal bike for the route is probably a mountain bike with XC tires, but a >4
 
 * Process
 
-Divide the route into segments, then route/plan each segment individually.
+Divide the route into sections, then route/plan each section individually.
 
-To maximize the amount of dirt, examine a lot of the route manually using satellite images and street view. Add surface and smoothness data to relevant roads on OSM, then have a look at the big picture using the Overpass API. To minimize zig-zagging , use BRouter with a custom dirt-finding profile to smoothly connect dirt segments.
+To maximize the amount of dirt, examine a lot of the route manually using satellite images and street view. Add surface and smoothness data to relevant roads on OSM, then have a look at the big picture using the Overpass API. To minimize zig-zagging , use BRouter with a custom dirt-finding profile to smoothly connect dirt sections.
 
 * Potential Stops
 
@@ -81,6 +81,12 @@ To maximize the amount of dirt, examine a lot of the route manually using satell
 - More Strava tracks south of Roaring Brook Preserve, close to 82, and disused trails connecting the two (started mapping it)
 - Central CT near MA border...any dirt?
 - After first draft, finer alignment/surface info of the entire route
+- Add CT backpacking shelters to OSM
+  - DONE Pachaug
+  - Natchaug
+  - Nipmuck/Bigelow
+  - Mohawk trail (wickwire rd)? Kinda far from the route, but could be useful
+  - Tunxis/Nepaug (kinda far from the route, but could be useful)
 
 * Overpass API
 
@@ -139,21 +145,35 @@ http://brouter.de/brouter-web/#map=11/41.4157/-72.8314/standard,HikeBike.HillSha
 Alternative (to NW corner) as of 2021-08-06, using the custom profile:
 http://brouter.de/brouter-web/#map=10/41.6631/-73.0501/standard,HikeBike.HillShading,route-quality&lonlats=-72.925808,41.307326;-72.958403,41.335141;-72.965012,41.365923;-72.963896,41.370497;-72.957824,41.377583;-72.953253,41.417212;-73.277435,41.480032;-73.281555,41.498132;-73.281898,41.500539;-73.319836,41.564344;-73.338032,41.587399;-73.355112,41.614608;-73.437939,41.612617;-73.478107,41.666885;-73.487206,41.677114;-73.493042,41.706882;-73.495107,41.770832;-73.480355,41.80126;-73.470039,41.829409;-73.445148,41.998274;-73.468151,42.042909;-73.478622,42.148383;-73.422489,42.136927;-73.39468,42.126232;-73.390045,42.099231;-73.401203,42.070562;-73.369274,42.06916;-73.352623,42.066228;-73.346272,42.038819
 
-* Stages
+* Sections
 
-Staring in New Haven, going clockwise:
-1. Macedonia Brook State Park (~70mi)
-2. American Legion State Forest (~50mi)
-3. Bigelow Hollow State Park / Yale-Myers Forest (~65mi)
-4. Pachaug State Forest (~50mi)
-5. Gillette Castle (~60mi)
-6. New Haven (~55mi)
+Staring in New Haven (41.30733,-72.92582), going clockwise:
+1. Macedonia Brook State Park (~70mi) (41.76623,-73.49493)
+2. American Legion State Forest (~50mi) (41.93509,-73.00388)
+3. Nipmuck State Forest / Bigelow Hollow State Park (~65mi) (42.00922,-72.11551)
+4. Pachaug State Forest (~50mi) ()
+5. Gillette Castle (~60mi) (or ~80mi if eliminating Pachaug State Forest) (41.42235,-72.42873)
+6. New Haven (~55mi) (41.30724,-72.92558)
+
+Each section:
+- Waypoints (list of coordinates for BRouter/whatever)
+- BRouter profile used
+- CSV export
+- GPX export
 
 * Trail Maps
 
 List of CT state parks and forests allowing mountain biking:
 https://portal.ct.gov/NCLI/Outdoor-Activities/Mountain-Biking
 
+CT backpack camping areas/shelters (free / no reservation):
+List: https://portal.ct.gov/DEEP/State-Parks/Camping/Backpack-Camping---CT-State-Parks-and-Forests
+Map: https://portal.ct.gov/-/media/DEEP/stateparks/maps/backpacking/BackpackCampingIndexpdf.pdf
+
 * Surface/terrain Analysis
 
-Wrote a short script in JS to take the individual routing segments from BRouter (csv export, or directly on BRouter Web) and spit out a more useful breakdown of surface and terrain. It yields paved/unpaved distance and percentages, as well as more detailed breakdown of the specific surface (if available), percent bike path, etc.
+Wrote a short script in JS to take the individual routing sections from BRouter (csv export, or directly on BRouter Web) and spit out a more useful breakdown of surface and terrain. It yields paved/unpaved distance and percentages, as well as more detailed breakdown of the specific surface (if available), percent bike path, etc.
+
+* Camping
+
+Provide a list/map/POIs of nearby campgrounds and backpacking campsites/shelters.
