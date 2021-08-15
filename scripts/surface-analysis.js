@@ -234,27 +234,29 @@ function sumSegmentDistances(segments) {
   return segments.reduce((acc, { distance }) => acc + distance, 0);
 }
 
-// const METERS_IN_A_MILE = 1609.344;
+const METERS_IN_A_MILE = 1609.344;
 
-// const intelligentRound = (x) => {
-//   const digits = x < 0.001 ? 4 : x < 0.01 ? 3 : x < 0.1 ? 2 : x < 3 ? 1 : 0;
-//   const multiplier = Math.pow(10, digits);
-//   return Math.round(multiplier * x) / multiplier;
-// };
-// const distanceString = (distanceMeters) =>
-//   `${intelligentRound(distanceMeters / METERS_IN_A_MILE)}mi`;
-// const percentString = (distanceMeters, of, ofName) =>
-//   `${intelligentRound((100 * distanceMeters) / of)}% of ${ofName}`;
+const intelligentRound = (x) => {
+  const digits = x < 0.001 ? 4 : x < 0.01 ? 3 : x < 0.1 ? 2 : x < 3 ? 1 : 0;
+  const multiplier = Math.pow(10, digits + 1);
+  return Math.round(multiplier * x) / multiplier;
+};
 
 function mapValues(obj, f) {
   return Object.fromEntries(Object.entries(obj).map(([k, v]) => [k, f(v)]));
 }
 
+function keyedDistancesToSortedMaps(obj, mapKey) {
+  return Object.entries(obj)
+    .sort((a, b) => b[1].distance - a[1].distance)
+    .map(([key, subObj]) => ({ [mapKey]: key, ...subObj }));
+}
+
 function distanceAndPercents(segments, of = {}) {
-  const distance = sumSegmentDistances(segments);
+  const distanceMeters = sumSegmentDistances(segments);
   return {
-    distance,
-    ...mapValues(of, (total) => distance / total),
+    distance: intelligentRound(distanceMeters / METERS_IN_A_MILE),
+    ...mapValues(of, (total) => intelligentRound(distanceMeters / total)),
   };
 }
 
@@ -270,7 +272,9 @@ function summary(segments) {
   const totalDistanceMeters = sumSegmentDistances(segments);
 
   return {
-    distance: totalDistanceMeters,
+    distanceUnit: "mile", // info
+
+    distance: intelligentRound(totalDistanceMeters / METERS_IN_A_MILE),
 
     unpavedPavedIndeterminate: mapValues(
       groupByUnpavedPaved(segments),
@@ -290,38 +294,40 @@ function summary(segments) {
       { percentOfRoute: totalDistanceMeters }
     ),
 
-    byHighway: mapValues(
-      groupByTag(segments, "highway"),
-      (highwaySegments) => ({
+    byHighway: keyedDistancesToSortedMaps(
+      mapValues(groupByTag(segments, "highway"), (highwaySegments) => ({
         ...distanceAndPercents(highwaySegments, {
           percentOfRoute: totalDistanceMeters,
         }),
-        bySurface: mapValues(
-          groupByTag(highwaySegments, "surface"),
-          (surfaceSegments) =>
+        bySurface: keyedDistancesToSortedMaps(
+          mapValues(groupByTag(highwaySegments, "surface"), (surfaceSegments) =>
             distanceAndPercents(surfaceSegments, {
               percentOfHighway: sumSegmentDistances(highwaySegments),
               percentOfRoute: totalDistanceMeters,
             })
+          ),
+          "surface"
         ),
-      })
+      })),
+      "highway"
     ),
 
-    bySurface: mapValues(
-      groupByTag(segments, "surface"),
-      (surfaceSegments) => ({
+    bySurface: keyedDistancesToSortedMaps(
+      mapValues(groupByTag(segments, "surface"), (surfaceSegments) => ({
         ...distanceAndPercents(surfaceSegments, {
           percentOfRoute: totalDistanceMeters,
         }),
-        byHighway: mapValues(
-          groupByTag(surfaceSegments, "highway"),
-          (highwaySegments) =>
+        byHighway: keyedDistancesToSortedMaps(
+          mapValues(groupByTag(surfaceSegments, "highway"), (highwaySegments) =>
             distanceAndPercents(highwaySegments, {
               percentOfSurface: sumSegmentDistances(surfaceSegments),
               percentOfRoute: totalDistanceMeters,
             })
+          ),
+          "highway"
         ),
-      })
+      })),
+      "surface"
     ),
   };
 }
