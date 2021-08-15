@@ -1,0 +1,11 @@
+#+TITLE: Section 2
+
+Macedonia Brook State Park to American Legion State Forest
+
+* Waypoints
+
+-73.494933,41.766234;-73.485915,41.785585;-73.383865,41.900678;-73.370132,41.891165;-73.368072,41.879405;-73.363813,41.871566;-73.251343,41.947618;-73.186626,42.014039;-73.00387,41.935087
+
+* BRouter Profile
+
+nutmeg-brouter-profile-2

@@ -146,7 +146,7 @@ http://brouter.de/brouter-web/#map=10/41.6631/-73.0501/standard,HikeBike.HillSha
 
 Staring in New Haven (41.30733,-72.92582), going clockwise:
 1. Macedonia Brook State Park (~75mi) (41.76623,-73.49493)
-2. American Legion State Forest (~50mi) (41.93509,-73.00388)
+2. American Legion State Forest (~59mi) (41.93509,-73.00388)
 3. Nipmuck State Forest / Bigelow Hollow State Park (~65mi) (42.00922,-72.11551)
 4. Pachaug State Forest (~50mi) (41.69138,-71.79847)
 5. Gillette Castle (~60mi) (or ~80mi if eliminating Pachaug State Forest) (41.42235,-72.42873)
@@ -163,10 +163,6 @@ Each section:
 List of CT state parks and forests allowing mountain biking:
 https://portal.ct.gov/NCLI/Outdoor-Activities/Mountain-Biking
 
-CT backpack camping areas/shelters (free / no reservation):
-List: https://portal.ct.gov/DEEP/State-Parks/Camping/Backpack-Camping---CT-State-Parks-and-Forests
-Map: https://portal.ct.gov/-/media/DEEP/stateparks/maps/backpacking/BackpackCampingIndexpdf.pdf
-
 * Surface/terrain Analysis
 
 Wrote a short script in JS to take the individual routing sections from BRouter (csv export, or directly on BRouter Web) and spit out a more useful breakdown of surface and terrain. It yields paved/unpaved distance and percentages, as well as more detailed breakdown of the specific surface (if available), percent bike path, etc.
@@ -174,6 +170,13 @@ Wrote a short script in JS to take the individual routing sections from BRouter 
 * Camping
 
 Provide a list/map/POIs of nearby campgrounds and backpacking campsites/shelters.
+
+CT backpack camping areas/shelters (free / no reservation):
+List: https://portal.ct.gov/DEEP/State-Parks/Camping/Backpack-Camping---CT-State-Parks-and-Forests
+Map: https://portal.ct.gov/-/media/DEEP/stateparks/maps/backpacking/BackpackCampingIndexpdf.pdf
+
+Other:
+- Cockaponset State Forest has lean-tos (around Pattaconk Reservoir)
 
 * Misc Notes
 

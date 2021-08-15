@@ -15,7 +15,6 @@ function getDirectories(source) {
 }
 
 function getSectionNames() {
-  // TODO don't include -alt sections
   return getDirectories(pathToSections).sort();
 }
 
@@ -27,7 +26,9 @@ function verifySectionIntegrity(sectionName) {
 }
 
 function run() {
-  const sectionNames = getSectionNames();
+  const sectionNames = getSectionNames().filter(
+    (sectionName) => sectionName.match(/^section\-\d+$/) // don't include '-alt' sections
+  );
 
   if (sectionNames.length < 1) {
     throw new Error("No sections found");
