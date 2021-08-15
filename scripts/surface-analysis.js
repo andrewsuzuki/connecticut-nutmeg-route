@@ -105,8 +105,8 @@ function getRawSegmentsFromBrouterWeb() {
   for (var i = 1; i < rows.length; i++) {
     const el = rows[i].children;
     list.push({
-      Elevation: parseFloat(el[0].innerText),
-      Distance: parseFloat(el[1].innerText),
+      Elevation: el[0].innerText,
+      Distance: el[1].innerText,
       WayTags: el[7].innerText,
     });
   }
@@ -116,8 +116,8 @@ function getRawSegmentsFromBrouterWeb() {
 function parseSegments(data) {
   return data
     .map((segment) => ({
-      elevation: segment.Elevation,
-      distance: segment.Distance,
+      elevation: parseInt(segment.Elevation, 10),
+      distance: parseInt(segment.Distance, 10),
       tags: Object.fromEntries(
         segment.WayTags.split(" ").map((kvString) => {
           const [k, v] = kvString.split("=");
@@ -334,8 +334,8 @@ function summary(segments) {
 exports.summary = summary;
 
 // Run in node.js from file
-function runf() {
-  const fs = require("fs");
+async function runf() {
+  const csv = require("csvtojson");
 
   const filename = process.argv[2];
 
@@ -343,16 +343,15 @@ function runf() {
     throw new Error("Missing filename");
   }
 
-  const data = JSON.parse(fs.readFileSync(filename, "utf8"));
+  const data = await csv({ delimiter: "\t" }).fromFile(filename);
+
   const segments = parseSegments(data);
-  // run(segments);
   console.dir(summary(segments), { depth: null });
 }
 
 // Run in browser console (brouter-web)
 function runw() {
   const segments = parseSegments(getRawSegmentsFromBrouterWeb());
-  // run(segments);
   console.dir(summary(segments), { depth: null });
 }
 
