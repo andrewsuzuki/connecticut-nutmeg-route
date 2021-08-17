@@ -1,0 +1,11 @@
+#+TITLE: Section 3
+
+American Legion State Forest to Nipmuck State Forest
+
+* Waypoints
+
+TODO
+
+* BRouter Profile
+
+nutmeg-brouter-profile-2

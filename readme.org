@@ -40,6 +40,7 @@ To maximize the amount of dirt, examine a lot of the route manually using satell
 - Enders State Forest / McLean Game Regure
 - Connecticut River
 - Tobacco/corn fields (Windsor, Somers)
+- Scantic River State Park (Enfield, Somers, East Windsor)
 - Shenipsit State Forest / Soapstone Mountain (Somers)
 - Bigelow Hollow / Nipmuck / Yale-Myers State Forest (Union, Ashford)
 - Natchaug State Forest (Eastford/Hampton)?
@@ -52,6 +53,7 @@ To maximize the amount of dirt, examine a lot of the route manually using satell
 - Shugrue Farm Reserve
 - "Route 11"
   - Slightly out of the way near the center of Salem but too cool
+  - Legal?
 - Devil's Hopyard
   - All trails are foot traffic only (despite appearing on the CT mountain biking page?), but there's a gravel road through it E-W
 - Miller Farm Nature Preserve / Sheepskin Hollow Preserve
@@ -80,6 +82,7 @@ To maximize the amount of dirt, examine a lot of the route manually using satell
   + After first draft, finer alignment/surface info of the entire route
   + Add CT backpacking shelters to OSM
     + DONE Pachaug
+    + DONE Cockaponset (Pattaconk Reservoir)
     + Natchaug
     + Nipmuck/Bigelow
     + Mohawk trail (wickwire rd)? Kinda far from the route, but could be useful
@@ -147,7 +150,7 @@ http://brouter.de/brouter-web/#map=10/41.6631/-73.0501/standard,HikeBike.HillSha
 Staring in New Haven (41.30733,-72.92582), going clockwise:
 1. Macedonia Brook State Park (~75mi) (41.76623,-73.49493)
 2. American Legion State Forest (~59mi) (41.93509,-73.00388)
-3. Nipmuck State Forest / Bigelow Hollow State Park (~65mi) (42.00922,-72.11551)
+3. Nipmuck State Forest / Bigelow Hollow State Park (~90mi) (42.00922,-72.11551)
 4. Pachaug State Forest (~50mi) (41.69138,-71.79847)
 5. Gillette Castle (~60mi) (or ~80mi if eliminating Pachaug State Forest) (41.42235,-72.42873)
 6. New Haven (~55mi) (41.30724,-72.92558)
