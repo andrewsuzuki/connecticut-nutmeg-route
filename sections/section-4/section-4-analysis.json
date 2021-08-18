@@ -230,7 +230,7 @@
     },
     {
       "highway": "major",
-      "distance": 1.83,
+      "distance": 1.82,
       "percentOfRoute": 0.024,
       "bySurface": [
         {
@@ -249,38 +249,26 @@
     },
     {
       "highway": "footway",
-      "distance": 0.076,
-      "percentOfRoute": 0.00099,
+      "distance": 0.069,
+      "percentOfRoute": 0.00089,
       "bySurface": [
         {
           "surface": "wood",
           "distance": 0.039,
-          "percentOfHighway": 0.5,
+          "percentOfHighway": 0.56,
           "percentOfRoute": 0.0005
         },
         {
           "surface": "NONE",
           "distance": 0.02,
-          "percentOfHighway": 0.26,
+          "percentOfHighway": 0.29,
           "percentOfRoute": 0.00026
         },
         {
           "surface": "paving_stones",
           "distance": 0.011,
-          "percentOfHighway": 0.14,
+          "percentOfHighway": 0.15,
           "percentOfRoute": 0.00014
-        },
-        {
-          "surface": "asphalt",
-          "distance": 0.005,
-          "percentOfHighway": 0.065,
-          "percentOfRoute": 0.00006
-        },
-        {
-          "surface": "unknown",
-          "distance": 0.0025,
-          "percentOfHighway": 0.033,
-          "percentOfRoute": 0.00003
         }
       ]
     }
@@ -363,12 +351,6 @@
           "distance": 0.015,
           "percentOfSurface": 0.00067,
           "percentOfRoute": 0.00019
-        },
-        {
-          "highway": "footway",
-          "distance": 0.005,
-          "percentOfSurface": 0.00022,
-          "percentOfRoute": 0.00006
         }
       ]
     },
@@ -429,7 +411,7 @@
         {
           "highway": "residential",
           "distance": 0.32,
-          "percentOfSurface": 0.041,
+          "percentOfSurface": 0.042,
           "percentOfRoute": 0.0041
         },
         {
@@ -551,19 +533,6 @@
           "distance": 0.011,
           "percentOfSurface": 1,
           "percentOfRoute": 0.00014
-        }
-      ]
-    },
-    {
-      "surface": "unknown",
-      "distance": 0.0025,
-      "percentOfRoute": 0.00003,
-      "byHighway": [
-        {
-          "highway": "footway",
-          "distance": 0.0025,
-          "percentOfSurface": 1,
-          "percentOfRoute": 0.00003
         }
       ]
     }
