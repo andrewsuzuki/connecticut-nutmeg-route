@@ -42,7 +42,7 @@ const likelyUnpavedRoadHighwayValues = [
 
 const likelyPathLikeHighwayValues = [
   "path",
-  "footway",
+  "footway", // TODO maybe not...sidewalks don't count (since they often aren't tagged as such)
   "bridleway",
   "steps",
   "pedestrian", // a bit less path-like, but close enough
@@ -137,10 +137,12 @@ function parseSegments(data) {
     }))
     .filter((segment) => {
       if (!segment.tags.highway) {
-        console.warn(
-          "found segment without highway= tag (removed segment):",
-          segment
-        );
+        if (segment.tags.route !== "ferry") {
+          console.warn(
+            "found segment without highway= tag (removed segment):",
+            segment
+          );
+        }
         return false;
       }
       return true;

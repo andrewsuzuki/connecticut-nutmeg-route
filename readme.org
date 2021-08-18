@@ -6,9 +6,11 @@ Name TBD
 
 *WORK IN PROGRESS*, this document is going to serve as a scratchpad for a bit.
 
-Distance: ~300-400mi
+Distance: ~360mi
 
-Should be at least 50% unpaved by distance, >50% by time.
+Climbing: ~21,500ft
+
+Should be ~50% unpaved by distance, >50% by time.
 
 Of the paved roads, always try to stay off major roads (state highways, etc) if possible, even if it adds distance or climbing.
 
@@ -151,9 +153,8 @@ Staring in New Haven (41.30733,-72.92582), going clockwise:
 1. Macedonia Brook State Park (~75mi) (41.76623,-73.49493)
 2. American Legion State Forest (~59mi) (41.93509,-73.00388)
 3. Nipmuck State Forest / Bigelow Hollow State Park (~90mi) (42.00922,-72.11551)
-4. Pachaug State Forest (~50mi) (41.69138,-71.79847)
-5. Gillette Castle (~60mi) (or ~77mi if eliminating Pachaug State Forest) (41.42235,-72.42873)
-6. New Haven (~55mi) (41.30724,-72.92558)
+4. Gillette Castle (~77mi) (41.42235,-72.42873)
+5. New Haven (~59mi) (41.30724,-72.92558)
 
 Each section:
 - Waypoints (list of coordinates for BRouter/whatever)
