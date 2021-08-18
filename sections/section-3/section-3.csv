@@ -12,322 +12,296 @@ Longitude	Latitude	Elevation	Distance	CostPerKm	ElevCost	TurnCost	NodeCost	Initi
 -72980622	41877794	132	11	1100	0	17	0	0	highway=footway footway=crossing	highway=crossing crossing=unknown	5866	133653
 -72980694	41877735	132	9	1100	0	0	0	0	highway=footway footway=crossing		5868	134077
 -72981493	41876995	133	109	1100	0	4	0	0	highway=footway footway=sidewalk		5893	138620
--72978362	41821250	187	7135	5000	1412	571	0	0	reversedirection=yes highway=residential		11343	321039
--72975108	41820563	173	348	1200	0	18	0	0	highway=path		11379	327495
--72971460	41800964	248	3238	1000	655	328	0	0	highway=track		12159	467984
--72971883	41798288	225	352	1200	18	7	0	0	highway=path		12189	473233
--72969023	41790686	248	965	1000	69	30	0	0	highway=track		12376	506973
--72964160	41792518	207	514	1000	102	94	0	0	reversedirection=yes highway=track		12417	513418
--72963221	41790323	217	292	7000	0	127	0	0	reversedirection=yes highway=service surface=unpaved access=private		12634	519398
--72963184	41790387	217	8	8000	0	281	0	0	reversedirection=yes highway=service surface=paved access=private	barrier=gate	12640	519520
--72933687	41795276	166	2772	8000	0	207	0	0	reversedirection=yes highway=service surface=paved access=private	barrier=gate	14523	534547
--72933294	41795258	167	33	8000	0	1	0	0	reversedirection=yes highway=service surface=paved access=private		14548	535060
--72933197	41795198	166	11	8000	0	48	0	0	highway=service access=private	barrier=gate	14555	535143
--72933073	41795141	165	13	8000	0	2	0	0	highway=service access=private		14564	535143
--72931395	41794858	153	173	2000	0	105	0	0	highway=service		14579	537790
--72928072	41808753	119	1707	5000	94	374	0	0	reversedirection=yes highway=residential		15768	550622
--72928159	41809027	115	32	5000	0	3	0	0	highway=residential		15787	550622
--72926169	41809336	92	170	5000	100	257	0	0	reversedirection=yes highway=residential	highway=crossing crossing=unmarked	15932	550622
--72926002	41809362	91	15	5000	0	0	0	0	reversedirection=yes highway=residential		15941	550622
--72926231	41809867	90	60	30500	0	280	0	0	highway=secondary	highway=crossing crossing=unknown	15980	550622
--72926130	41809883	90	9	1100	0	11	0	0	highway=footway footway=crossing		15981	550772
--72924094	41810740	88	201	1100	0	5	0	0	highway=footway footway=sidewalk	highway=crossing	16001	554449
--72923863	41810822	89	22	1100	0	0	0	0	highway=footway footway=sidewalk	highway=crossing	16005	555127
--72923631	41810886	89	23	1100	0	1	0	0	highway=footway footway=sidewalk		16009	555859
--72923626	41810874	89	2	1300	0	144	0	0	reversedirection=yes highway=cycleway surface=concrete foot=designated bicycle=designated route_bicycle_rcn=yes		16010	555923
--72923545	41810925	90	10	1100	0	14	0	0	highway=footway footway=crossing	highway=crossing crossing=unknown	16011	556247
--72923489	41811031	90	16	1100	0	6	0	0	highway=footway footway=crossing	highway=crossing crossing=unknown	16014	556761
--72923521	41811100	89	9	1100	0	0	0	0	highway=footway footway=crossing		16016	557025
--72922605	41811925	91	127	1300	0	118	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	highway=crossing crossing=unknown	16036	560755
--72922039	41812391	92	73	1300	0	14	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	highway=crossing crossing=unknown	16045	562274
--72919701	41813891	93	282	1300	0	246	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16085	569516
--72919710	41813898	93	2	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		16085	569566
--72920065	41814761	91	104	1000	0	44	0	0	highway=cycleway surface=wood foot=designated bicycle=designated route_bicycle_rcn=yes		16098	571844
--72921060	41816135	90	176	1300	0	8	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		16119	575684
--72921097	41816205	90	9	1000	0	0	0	0	highway=cycleway surface=wood foot=designated bicycle=designated route_bicycle_rcn=yes		16121	575886
--72922057	41818648	88	292	1300	0	32	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		16156	582281
--72922347	41819960	92	153	5000	0	35	0	0	reversedirection=yes highway=residential route_bicycle_rcn=yes		16264	583375
--72922126	41819966	93	19	1300	0	139	0	0	highway=cycleway foot=designated bicycle=designated route_bicycle_rcn=yes		16268	584030
--72922047	41820015	94	9	1300	0	52	0	0	highway=cycleway foot=designated bicycle=designated cycleway=crossing route_bicycle_rcn=yes	highway=crossing crossing=unknown	16270	584377
--72921989	41820050	95	7	1300	0	0	0	0	highway=cycleway foot=designated bicycle=designated cycleway=crossing route_bicycle_rcn=yes		16272	584681
--72921885	41820056	96	13	1300	0	114	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16275	585284
--72921603	41819798	96	38	1300	0	2	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16284	586846
--72921543	41819747	96	8	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16285	587144
--72913656	41820790	107	758	1300	0	140	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		16422	611746
--72913599	41820798	107	6	1300	0	47	0	0	reversedirection=yes highway=cycleway route_bicycle_rcn=yes	barrier=bollard	16423	611896
--72913421	41820855	107	17	1300	0	0	0	0	reversedirection=yes highway=cycleway route_bicycle_rcn=yes		16425	612313
--72911783	41821351	105	149	1300	0	15	0	0	reversedirection=yes highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		16446	615996
--72908712	41821622	108	260	1300	0	9	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16485	622994
--72902409	41822050	109	529	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16560	636588
--72902136	41822075	109	25	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16564	637232
--72896403	41822483	107	482	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16631	649350
--72895383	41822551	104	87	1300	0	1	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16640	650951
--72888450	41823555	103	604	1300	0	14	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		16717	664778
--72888437	41823608	104	6	1300	0	37	0	0	highway=cycleway foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	16717	664914
--72887766	41823812	105	86	1300	0	557	0	0	highway=cycleway foot=designated bicycle=designated route_bicycle_rcn=yes		16729	666960
--72887344	41823878	105	37	1100	0	2	0	0	reversedirection=yes highway=footway footway=crossing		16734	667951
--72887203	41823906	105	13	1100	0	0	0	0	reversedirection=yes highway=footway footway=sidewalk		16736	668293
--72887267	41824098	106	23	1100	0	10	0	0	reversedirection=yes highway=footway footway=crossing		16740	668956
--72887183	41824159	106	12	1100	0	6	0	0	reversedirection=yes highway=footway footway=sidewalk		16742	669306
--72887150	41824175	106	4	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing	16742	669421
--72887111	41824194	106	4	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		16743	669535
--72886936	41824301	106	20	1100	0	0	0	0	reversedirection=yes highway=footway foot=designated bicycle=designated footway=sidewalk		16746	670119
--72886474	41825152	108	111	1300	0	153	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated		16766	673734
--72886442	41825192	108	6	1300	0	0	0	0	highway=cycleway foot=designated bicycle=designated	highway=crossing crossing=unknown	16767	673900
--72885872	41826094	108	116	1300	0	46	0	0	highway=cycleway foot=designated bicycle=designated		16785	677030
--72884647	41827478	104	187	5000	0	46	0	0	highway=residential route_bicycle_rcn=yes		16912	677030
--72887717	41831327	142	602	1200	206	11	0	0	reversedirection=yes highway=path		17122	714848
--72887530	41832442	150	185	1200	32	15	0	0	highway=path		17164	722435
--72884026	41835443	145	558	1200	0	33	0	0	reversedirection=yes highway=path		17243	736755
--72883071	41838193	148	367	1200	0	12	0	0	highway=path		17307	748255
--72882849	41838496	149	42	1200	0	4	0	0	reversedirection=yes highway=path		17314	749548
--72878539	41835482	125	513	5000	0	317	0	0	reversedirection=yes highway=residential		17645	749548
--72872518	41837606	102	583	5000	91	72	0	0	highway=residential route_bicycle_rcn=yes		18064	756332
--72869504	41841394	96	520	5000	11	56	0	0	reversedirection=yes highway=residential route_bicycle_rcn=yes	highway=stop	18417	757578
--72867768	41845123	100	441	5000	0	30	0	0	reversedirection=yes highway=residential route_bicycle_rcn=yes	highway=stop direction=backward	18743	764400
--72867642	41845416	100	35	5000	0	0	0	0	reversedirection=yes highway=residential route_bicycle_rcn=yes		18768	764582
--72867595	41849662	105	479	5000	0	12	0	0	reversedirection=yes highway=residential surface=asphalt route_bicycle_rcn=yes		19120	771225
--72859226	41853752	99	858	1000	0	271	0	0	highway=cycleway surface=unpaved route_bicycle_rcn=yes		19231	791172
--72854447	41853507	91	449	1200	0	15	0	0	highway=path		19283	800455
--72850856	41857122	92	630	1000	0	144	0	0	reversedirection=yes highway=track surface=dirt bicycle=yes		19371	816446
--72849788	41857730	87	119	1000	0	22	0	0	highway=track surface=earth		19386	818978
--72846456	41858240	82	326	1200	0	1	0	0	highway=path surface=earth		19422	825477
--72846402	41858215	83	6	1200	0	0	0	0	highway=path		19422	825607
--72838020	41859999	92	904	1200	0	12	0	0	highway=path surface=earth		19578	853658
--72837852	41860008	92	14	5000	0	291	0	0	reversedirection=yes highway=residential		19588	853658
--72840012	41862634	76	369	10500	0	367	0	0	highway=tertiary		19818	853658
--72839829	41862711	76	19	1000	0	366	0	0	reversedirection=yes highway=service surface=unpaved foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=gate	19819	853976
--72838349	41863282	79	139	1000	0	0	0	0	reversedirection=yes highway=service surface=unpaved foot=designated bicycle=designated route_bicycle_rcn=yes		19839	857610
--72819820	41869618	71	1712	1000	0	1	0	0	reversedirection=yes highway=track surface=unpaved foot=designated bicycle=designated route_bicycle_rcn=yes		20068	898694
--72819708	41869861	70	30	1200	0	6	0	0	reversedirection=yes highway=path	highway=crossing	20071	899295
--72819707	41869934	69	9	1200	0	0	0	0	reversedirection=yes highway=path		20072	899476
--72819541	41869922	69	14	1100	0	11	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk	highway=crossing	20074	899742
--72812923	41870097	63	558	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk	highway=crossing crossing=unknown	20139	911527
--72811049	41870499	67	164	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk	highway=crossing	20172	917423
--72808273	41870785	67	237	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk	highway=crossing	20205	923462
--72803907	41870856	61	392	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk		20253	932111
--72803818	41870803	60	10	1100	0	9	0	0	highway=footway foot=yes bicycle=yes footway=crossing	highway=crossing	20254	932319
--72803693	41870716	59	15	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=crossing		20256	932597
--72801828	41870004	54	183	1300	0	233	0	0	reversedirection=yes highway=cycleway surface=paved access=yes foot=yes bicycle=yes route_bicycle_rcn=yes		20274	935867
--72800539	41869688	47	114	10500	0	117	0	0	highway=tertiary maxspeed=40		20343	935867
--72800088	41869040	46	89	5500	0	358	0	0	highway=unclassified oneway=no	highway=turning_circle	20401	935867
--72799921	41868895	46	22	5500	0	0	0	0	highway=unclassified oneway=no	barrier=bollard	20416	935867
--72799416	41868434	47	67	1100	0	0	0	0	highway=pedestrian access=designated foot=yes bicycle=yes oneway=no	barrier=bollard	20424	937421
--72799312	41868337	47	14	1100	0	0	0	0	highway=footway		20426	937776
--72798024	41868665	50	115	6000	0	205	0	0	reversedirection=yes highway=residential maxspeed=40 lanes=unknown oneway=no		20512	939912
--72791089	41869976	62	637	5000	8	43	0	0	reversedirection=yes highway=residential oneway=no		20989	951174
--72791444	41868648	64	153	5000	0	491	0	0	highway=residential		21110	956185
--72791303	41868553	67	16	1200	29	4	0	0	highway=path	barrier=gate	21116	957124
--72786298	41865544	107	598	1200	339	6	0	0	highway=path		21365	1002039
--72786234	41865518	106	7	8400	0	7	0	0	highway=steps		21370	1002078
--72782478	41866029	116	457	1200	0	17	0	0	highway=path		21448	1016177
--72781414	41869818	116	435	1200	41	15	0	0	reversedirection=yes highway=path surface=grass		21541	1032813
--72778555	41872235	129	387	1200	17	19	0	0	reversedirection=yes highway=path		21619	1046890
--72775449	41878157	109	727	1200	0	4	0	0	highway=path		21704	1062125
--72773429	41879924	91	281	1000	0	436	0	0	reversedirection=yes highway=service surface=unpaved foot=yes bicycle=yes		21727	1066339
--72770107	41887522	140	989	1000	319	39	0	0	reversedirection=yes highway=track foot=yes bicycle=yes		22020	1119085
--72769669	41889147	149	218	1000	54	14	0	0	highway=footway surface=unpaved sac_scale=hiking trail_visibility=excellent		22076	1129095
--72769847	41890312	155	151	1200	37	13	0	0	reversedirection=yes highway=path		22119	1136832
--72769569	41892234	140	253	1200	0	39	0	0	highway=path		22148	1142116
--72768888	41893320	136	148	1000	0	40	0	0	reversedirection=yes highway=track foot=yes bicycle=yes		22160	1144346
--72768638	41893510	134	35	1200	0	9	0	0	highway=path		22164	1144894
--72767195	41896378	135	376	1000	0	24	0	0	highway=footway surface=unpaved sac_scale=hiking trail_visibility=excellent		22210	1153317
--72766261	41898181	139	225	1000	0	7	0	0	highway=track surface=gravel foot=yes bicycle=yes		22242	1159071
--72765477	41900172	142	252	1200	0	7	0	0	highway=path foot=yes bicycle=yes		22280	1165947
--72765486	41900380	142	25	1200	0	3	0	0	reversedirection=yes highway=path		22284	1166664
--72763183	41905139	91	829	1200	138	41	0	0	highway=path foot=yes bicycle=yes		22377	1182762
--72763206	41905271	90	15	5000	0	168	0	0	reversedirection=yes highway=residential		22387	1182762
--72763336	41905359	92	15	2000	0	59	0	0	reversedirection=yes highway=service bicycle=yes		22388	1182968
--72763476	41905462	91	17	1000	0	0	0	0	reversedirection=yes highway=track tracktype=grade1 bicycle=yes		22389	1183215
--72763127	41906161	78	89	1000	34	17	0	0	reversedirection=yes highway=track		22395	1184248
--72764555	41906081	79	130	1200	2	7	0	0	reversedirection=yes highway=path		22408	1186448
--72765483	41907415	68	167	5000	0	115	0	0	reversedirection=yes highway=residential	highway=crossing	22519	1186448
--72765424	41907430	68	6	1100	0	11	0	0	reversedirection=yes highway=footway footway=sidewalk		22520	1186568
--72765454	41907475	68	6	1100	0	11	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	22521	1186688
--72765490	41907530	68	7	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		22521	1186830
--72766802	41909502	66	246	1100	0	0	0	0	highway=footway footway=sidewalk		22550	1192018
--72766843	41909551	66	7	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	22551	1192185
--72766872	41909585	66	5	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		22552	1192305
--72766883	41909596	66	2	1100	0	0	0	0	highway=footway footway=sidewalk		22552	1192353
--72766843	41909631	66	6	1100	0	7	0	0	reversedirection=yes highway=footway footway=sidewalk		22553	1192497
--72766767	41909677	66	9	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	22554	1192707
--72766693	41909720	66	8	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		22555	1192888
--72763100	41910550	60	323	1100	0	17	0	0	reversedirection=yes highway=footway surface=concrete footway=sidewalk		22592	1199465
--72763046	41910589	59	7	1100	0	3	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	22592	1199594
--72762986	41910633	59	7	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		22593	1199721
--72762380	41909975	56	89	1100	0	11	0	0	highway=footway footway=sidewalk		22601	1201234
--72762394	41912811	50	346	1100	0	3	0	0	reversedirection=yes highway=footway surface=concrete footway=sidewalk		22637	1207593
--72762207	41912870	51	18	1100	0	9	0	0	reversedirection=yes highway=footway surface=asphalt footway=crossing		22640	1208216
--72757252	41911304	77	627	1100	129	33	0	0	highway=footway		22801	1237121
--72757015	41911206	82	26	1000	42	4	0	0	highway=footway surface=earth		22813	1239380
--72755561	41910673	108	150	1200	236	8	0	0	reversedirection=yes highway=path		22934	1261062
--72752167	41919887	122	1179	1000	123	52	0	0	highway=footway surface=earth		23194	1307972
--72751523	41920292	120	80	1200	0	3	0	0	reversedirection=yes highway=path surface=unpaved bicycle=yes trail_visibility=good		23204	1309692
--72750953	41920950	112	98	1200	0	5	0	0	reversedirection=yes highway=path surface=earth		23211	1311023
--72750491	41921982	102	156	1000	2	8	0	0	highway=footway surface=earth		23224	1313230
--72750339	41921851	101	20	30500	0	150	0	0	highway=secondary		23236	1313230
--72741075	41946017	97	3276	1100	605	158	0	0	highway=footway		23854	1422736
--72740159	41946958	96	131	10500	0	3	100	0	reversedirection=yes highway=tertiary	highway=traffic_signals traffic_signals:direction=both	23935	1422736
--72729412	41943666	56	988	1100	94	18	0	0	reversedirection=yes highway=footway surface=asphalt foot=yes bicycle=yes footway=sidewalk		24042	1441887
--72729915	41942048	60	189	5000	0	276	0	0	highway=residential		24184	1445696
--72727461	41941667	57	224	5000	0	79	0	0	reversedirection=yes highway=residential		24341	1446520
--72727519	41941599	57	9	30500	0	285	0	0	highway=primary		24348	1446523
--72727124	41941580	57	33	5000	0	370	0	0	highway=residential		24370	1446523
--72725565	41940985	56	148	5000	0	19	0	0	highway=residential maxspeed=50		24473	1446604
--72725202	41940754	57	41	5000	0	2	0	0	reversedirection=yes highway=residential maxspeed=50		24503	1446830
--72721835	41939519	54	325	5000	0	16	0	0	reversedirection=yes highway=residential		24731	1449452
--72720083	41939157	56	152	5000	0	0	0	0	reversedirection=yes highway=residential maxspeed=50		24844	1451826
--72718813	41937896	55	200	2000	0	367	0	0	highway=service		24869	1456447
--72718417	41938246	54	51	10500	0	241	0	0	highway=tertiary		24904	1456447
--72718069	41938423	53	38	10500	0	83	100	0	highway=tertiary oneway=yes	highway=traffic_signals traffic_signals:direction=both	24930	1456447
--72704182	41935946	49	1213	10500	0	173	0	0	highway=tertiary		25784	1464780
--72699085	41940349	53	716	10500	0	284	0	0	highway=tertiary lanes=2		26314	1476172
--72686287	41945996	50	1550	10500	0	23	0	0	reversedirection=yes highway=tertiary lanes=2	highway=crossing crossing=yes	27404	1486014
--72670816	41946298	46	3642	10500	0	260	0	0	reversedirection=yes highway=tertiary lanes=2		29976	1507612
--72670418	41946174	47	36	10500	0	0	100	0	highway=tertiary	highway=traffic_signals	30003	1508202
--72661723	41944506	48	763	5500	0	8	0	0	highway=unclassified	railway=level_crossing	30553	1515111
--72661190	41944246	47	54	5500	0	1	0	0	highway=unclassified	barrier=gate	30591	1515226
--72660831	41944141	47	33	8000	0	5	0	0	highway=service access=private		30614	1515266
--72660859	41944049	47	11	8000	0	222	0	0	reversedirection=yes highway=service access=private	railway=level_crossing	30622	1515288
--72662419	41939845	52	489	8000	0	31	0	0	reversedirection=yes highway=service access=private	barrier=gate	30981	1522059
--72662498	41939579	53	31	8000	0	0	0	0	reversedirection=yes highway=service access=private	barrier=gate	31004	1522591
--72662619	41939168	53	47	8000	0	0	0	0	reversedirection=yes highway=service access=private		31040	1523562
--72661582	41939071	54	87	10500	0	273	0	0	reversedirection=yes highway=tertiary		31105	1525165
--72662537	41935837	55	370	5000	0	248	0	0	highway=residential		31372	1528984
--72659500	41935772	52	253	5000	0	314	0	0	highway=residential surface=asphalt	highway=stop	31547	1529895
--72656617	41935673	52	246	5000	0	39	0	0	highway=residential surface=asphalt		31722	1531427
--72656286	41935641	52	29	2000	0	77	0	0	reversedirection=yes highway=service surface=asphalt		31726	1532159
--72655783	41935357	51	54	1000	0	2	0	0	highway=footway surface=grass		31734	1533465
--72654331	41934987	48	155	1100	0	9	0	0	highway=footway surface=asphalt		31752	1536690
--72650765	41935517	49	317	1100	0	8	0	0	highway=footway	highway=crossing	31795	1544489
--72646709	41934402	48	399	1100	0	1	0	0	highway=footway		31847	1553941
--72646709	41934355	48	6	5000	0	249	0	0	reversedirection=yes highway=residential		31852	1554035
--72645797	41932901	46	226	5000	0	515	0	0	reversedirection=yes highway=residential surface=asphalt	highway=turning_circle	32014	1555828
--72640097	41932970	34	479	1000	0	4	0	0	reversedirection=yes highway=footway surface=unpaved foot=yes bicycle=yes		32061	1564402
--72639588	41932992	34	44	2000	0	1	0	0	reversedirection=yes highway=service surface=asphalt		32068	1565614
--72632964	41932426	28	601	5000	0	523	0	0	reversedirection=yes highway=residential		32488	1568664
--72633045	41930716	30	192	5000	0	251	100	0	reversedirection=yes highway=residential surface=asphalt	highway=traffic_signals	32625	1569920
--72628273	41930608	19	401	12600	0	259	0	0	reversedirection=yes highway=tertiary maxspeed=80		32891	1570111
--72628275	41930560	19	6	2000	0	256	0	0	highway=service surface=asphalt	highway=crossing	32892	1570212
--72628293	41929669	19	100	2000	0	4	0	0	highway=service surface=asphalt	highway=crossing crossing=unknown	32902	1572111
--72628297	41929604	19	8	2000	0	0	0	0	highway=service surface=asphalt		32903	1572278
--72628357	41929616	19	2	5000	0	303	0	0	highway=residential		32904	1572278
--72627519	41929291	16	81	5000	0	19	0	0	reversedirection=yes highway=residential	highway=crossing crossing=unknown	32956	1572278
--72627402	41929283	15	10	5000	0	0	100	0	reversedirection=yes highway=residential	highway=traffic_signals traffic_signals:direction=both	32962	1572278
--72627240	41929279	14	14	30500	0	0	0	0	highway=secondary	railway=level_crossing	32971	1572278
--72626817	41929276	12	36	30500	0	0	100	0	highway=secondary	highway=traffic_signals traffic_signals:direction=both	32993	1572278
--72626809	41929371	12	11	5500	0	234	0	0	highway=unclassified surface=asphalt route_bicycle_lcn=yes		33000	1572278
--72626749	41931827	12	279	2000	0	137	0	0	reversedirection=yes highway=service surface=asphalt		33034	1578306
--72626713	41932515	12	77	2000	0	0	0	0	highway=service route_bicycle_lcn=yes		33044	1580147
--72618864	41956903	16	3243	1300	0	101	0	0	reversedirection=yes highway=cycleway surface=asphalt route_bicycle_lcn=yes		33525	1666793
--72618715	41957172	15	33	1300	0	0	0	0	reversedirection=yes highway=cycleway route_bicycle_lcn=yes		33530	1667555
--72605421	41986623	13	3639	1300	0	258	0	0	reversedirection=yes highway=cycleway surface=asphalt route_bicycle_lcn=yes		34034	1758277
--72605509	41986645	14	8	1300	0	2	0	0	reversedirection=yes highway=cycleway route_bicycle_lcn=yes		34035	1758601
--72607097	41989163	26	489	1300	13	312	0	0	reversedirection=yes highway=cycleway surface=asphalt route_bicycle_lcn=yes		34143	1777977
--72605657	41989370	20	124	1200	0	14	0	0	highway=path surface=asphalt foot=designated bicycle=designated		34162	1781439
--72600869	41990339	25	412	1200	0	0	0	0	highway=path surface=concrete foot=designated bicycle=designated		34221	1791937
--72597997	41991291	42	269	1200	31	1	0	0	highway=path surface=asphalt foot=designated bicycle=designated		34300	1806263
--72597971	41991176	42	13	1100	0	5	0	0	highway=footway surface=concrete foot=yes footway=sidewalk	highway=crossing crossing=unknown	34303	1806826
--72597733	41989699	40	168	1100	0	0	0	0	highway=footway surface=concrete foot=yes footway=sidewalk	highway=crossing crossing=unknown	34330	1811720
--72597669	41988597	41	124	1100	0	0	0	0	highway=footway surface=concrete foot=yes footway=sidewalk	highway=crossing crossing=unknown	34349	1815061
--72597662	41987575	41	114	1100	0	0	0	0	highway=footway surface=concrete foot=yes footway=sidewalk	highway=crossing crossing=unknown	34365	1818000
--72597804	41986748	40	94	1100	0	0	0	0	highway=footway surface=concrete foot=yes footway=sidewalk		34377	1820152
--72597715	41986755	40	8	1100	0	12	0	0	highway=footway surface=concrete	highway=crossing crossing=unknown	34378	1820345
--72597879	41985933	38	94	10500	0	311	0	0	highway=tertiary surface=asphalt		34439	1820370
--72598758	41981454	30	507	10500	0	0	0	0	highway=tertiary		34779	1820370
--72592419	41980841	61	534	5000	83	253	0	0	reversedirection=yes highway=residential		35218	1842409
--72592029	41976498	52	495	30500	0	238	100	0	reversedirection=yes highway=primary surface=asphalt lanes=2	highway=traffic_signals traffic_signals:direction=both	35543	1842875
--72592344	41973307	48	358	30500	0	0	0	0	reversedirection=yes highway=primary surface=asphalt lanes=2		35778	1842875
--72592530	41971959	46	152	30500	0	0	100	0	reversedirection=yes highway=primary lanes=2	highway=traffic_signals traffic_signals:direction=both	35883	1842882
--72576746	41961420	39	1802	10500	0	249	0	0	highway=tertiary		37144	1849547
--72576654	41961489	39	11	2000	0	248	0	0	reversedirection=yes highway=service	highway=crossing	37145	1849780
--72576341	41961261	39	37	1100	0	10	0	0	reversedirection=yes highway=footway footway=sidewalk	highway=crossing	37150	1850567
--72575206	41960452	40	131	1100	0	0	0	0	reversedirection=yes highway=footway footway=sidewalk	highway=crossing	37167	1853707
--72575017	41960319	40	22	1100	0	0	0	0	reversedirection=yes highway=footway footway=sidewalk	highway=crossing	37170	1854283
--72570999	41957944	42	430	1100	0	0	0	0	reversedirection=yes highway=footway footway=sidewalk		37237	1866396
--72570949	41957852	41	12	1100	0	3	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	37239	1866644
--72570914	41957788	41	8	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		37240	1866807
--72567615	41955877	40	366	1100	0	8	0	0	highway=footway footway=sidewalk	highway=crossing	37286	1875081
--72565998	41955042	41	164	1100	0	0	0	0	highway=footway footway=sidewalk	highway=crossing	37309	1879293
--72563825	41953970	40	223	1100	0	11	0	0	highway=footway footway=sidewalk		37338	1884563
--72563744	41953983	40	7	1100	0	3	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	37339	1884745
--72563658	41953999	40	8	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		37341	1884953
--72563026	41953518	39	80	1100	0	8	0	0	highway=footway footway=sidewalk		37351	1886833
--72559506	41953340	36	304	1300	0	3	0	0	highway=cycleway surface=asphalt foot=yes	highway=crossing	37390	1893777
--72557836	41953485	36	141	1300	0	1	0	0	highway=cycleway surface=asphalt foot=yes	highway=crossing	37406	1896787
--72554816	41954881	16	300	1300	0	1	0	0	highway=cycleway surface=asphalt foot=yes		37430	1901089
--72554376	41955112	17	45	1300	0	0	0	0	highway=cycleway surface=concrete foot=yes		37436	1902117
--72548288	41957134	40	563	1300	86	3	0	0	highway=cycleway surface=asphalt foot=yes	highway=crossing crossing=unknown	37595	1930686
--72545106	41958124	35	292	1300	0	4	0	0	highway=cycleway surface=asphalt foot=yes	highway=crossing	37626	1936389
--72540601	41958220	40	377	1300	0	0	0	0	highway=cycleway surface=asphalt foot=yes		37688	1947478
--72520857	41977256	61	3002	5000	5	150	0	0	reversedirection=yes highway=residential maxspeed=50		39895	1991398
--72516802	41979364	58	413	5000	0	0	0	0	reversedirection=yes highway=residential	railway=level_crossing	40185	1994624
--72516387	41979491	57	38	5000	0	8	0	0	reversedirection=yes highway=residential		40211	1994624
--72516392	41979304	59	21	30500	0	318	0	0	reversedirection=yes highway=secondary		40226	1994752
--72508409	41980015	59	691	5000	0	208	0	0	highway=residential surface=asphalt maxspeed=40		40721	2002464
--72508424	41980195	58	23	1000	0	60	0	0	highway=track surface=unpaved		40723	2002856
--72501597	41977988	53	722	1200	0	37	0	0	reversedirection=yes highway=path surface=earth	ford=yes	40815	2019298
--72500136	41978400	53	142	1200	0	7	0	0	reversedirection=yes highway=path surface=earth		40832	2022444
--72500117	41978442	53	5	1200	0	0	0	0	highway=path		40833	2022566
--72496687	41980689	57	672	1200	0	45	0	0	reversedirection=yes highway=path surface=earth	ford=yes	40930	2040028
--72494434	41980602	58	217	1200	0	12	0	0	reversedirection=yes highway=path surface=earth	ford=yes	40965	2046388
--72494331	41980739	57	18	1200	0	0	0	0	reversedirection=yes highway=path surface=earth	ford=yes	40968	2046816
--72488512	41982128	57	603	1200	0	39	0	0	reversedirection=yes highway=path surface=earth		41048	2061323
--72488231	41982122	57	24	2000	0	3	0	0	reversedirection=yes highway=service		41052	2062084
--72488263	41980805	63	149	1100	0	10	0	0	reversedirection=yes highway=footway footway=sidewalk		41084	2067830
--72488231	41980806	63	3	5000	0	307	0	0	highway=residential surface=asphalt		41087	2067923
--72488120	41980969	62	21	10500	0	127	0	0	highway=tertiary		41103	2068388
--72485385	41977247	61	477	10500	0	369	0	0	reversedirection=yes highway=tertiary		41444	2072714
--72442310	41963060	104	4202	5000	43	230	0	0	highway=residential		44549	2148948
--72440640	41965574	106	317	36600	0	215	0	0	reversedirection=yes highway=primary maxspeed=70		44791	2156280
--72432980	41955615	210	1506	5000	769	421	0	0	highway=residential surface=asphalt		46146	2250963
--72432322	41955283	216	66	1000	52	0	0	0	highway=track tracktype=grade2 surface=unpaved mtb:scale=0	highway=turning_circle	46183	2257645
--72432175	41955217	217	15	1000	10	0	0	0	highway=track tracktype=grade2 surface=unpaved mtb:scale=0	barrier=gate	46190	2258846
--72428337	41953070	243	453	1000	188	12	0	0	highway=track tracktype=grade2 surface=unpaved mtb:scale=0		46361	2289764
--72428132	41953191	243	22	1000	0	68	0	0	reversedirection=yes highway=track tracktype=grade2 surface=unpaved	barrier=gate	46366	2290588
--72413718	41957857	316	1804	1000	390	74	0	0	reversedirection=yes highway=track tracktype=grade2 surface=unpaved		46837	2375372
--72413578	41958227	319	45	2000	12	259	0	0	reversedirection=yes highway=service surface=asphalt foot=yes bicycle=yes		46852	2378084
--72412940	41958498	319	70	1200	0	13	0	0	highway=path surface=earth		46861	2379673
--72413061	41959298	319	116	1200	0	15	0	0	reversedirection=yes highway=path surface=earth		46874	2382018
--72408550	41961636	240	763	6200	508	33	0	0	reversedirection=yes highway=path bicycle=no		47483	2386551
--72408361	41961562	239	18	2000	0	0	0	0	reversedirection=yes highway=service		47486	2386997
--72408211	41961698	239	21	2000	0	216	0	0	highway=service surface=asphalt foot=yes bicycle=yes		47488	2387491
--72408104	41961802	238	15	1000	0	0	0	0	highway=track tracktype=grade2 surface=gravel foot=yes bicycle=yes	barrier=gate	47490	2387803
--72406018	41962688	234	225	1000	0	20	0	0	highway=track tracktype=grade2 surface=gravel foot=yes bicycle=yes		47514	2392052
--72402256	41973908	233	2173	1000	2	115	0	0	highway=track tracktype=grade1 surface=gravel foot=yes bicycle=yes		47837	2450212
--72399945	41979476	229	700	1000	0	20	0	0	highway=track tracktype=grade2 surface=gravel foot=yes bicycle=yes		47937	2468260
--72401241	41979558	226	108	30500	0	394	0	0	reversedirection=yes highway=primary		48006	2468260
--72398979	41981882	242	341	5000	14	354	0	0	highway=residential		48283	2481323
--72396620	41986248	245	551	1000	22	37	0	0	highway=track surface=gravel		48381	2498962
--72396471	41986498	246	33	1200	0	3	0	0	highway=path		48385	2499713
--72395050	41989924	240	413	1000	0	35	0	0	highway=track surface=gravel		48434	2508541
--72384763	41992470	214	957	1000	0	36	0	0	highway=track		48533	2526475
--72379585	41990872	198	472	5000	0	11	0	0	highway=residential		48837	2526475
--72315250	41994742	188	7049	5000	1109	989	0	0	highway=residential surface=asphalt		54061	2669362
--72290200	41985689	181	2487	5000	396	446	0	0	reversedirection=yes highway=residential surface=asphalt		55930	2724526
--72290157	41985241	181	50	3000	0	0	0	0	reversedirection=yes highway=construction surface=asphalt		55936	2725678
--72290054	41984697	182	62	5000	0	2	0	0	reversedirection=yes highway=residential surface=asphalt		55982	2726410
--72289713	41984595	183	40	30500	0	254	0	0	highway=secondary		56012	2727213
--72274503	41977079	251	1626	5000	404	331	0	0	reversedirection=yes highway=residential surface=asphalt		57371	2799071
--72257931	41970170	234	1701	1000	0	355	0	0	reversedirection=yes highway=residential surface=compacted		57587	2837934
--72240524	41976034	263	1705	1000	80	64	0	0	reversedirection=yes highway=track surface=unpaved		57913	2896714
--72239721	41983764	253	974	1000	57	147	0	0	highway=residential surface=compacted		58060	2922785
--72238586	41984668	254	147	5000	0	111	0	0	highway=residential surface=asphalt		58173	2926393
--72223944	41995182	311	1733	1000	146	363	0	0	highway=residential surface=unpaved		58566	2997251
--72215232	41998566	295	839	1000	27	106	0	0	reversedirection=yes highway=residential surface=compacted	highway=turning_circle	58687	3019021
--72199507	41999187	318	1616	5000	108	297	0	0	reversedirection=yes highway=residential surface=asphalt		59894	3055468
--72178670	42008173	312	2120	1000	112	72	0	0	reversedirection=yes highway=track		60234	3116533
--72165778	42008601	309	1210	1000	14	13	0	0	highway=track surface=unpaved		60411	3148503
--72165724	42008840	310	27	1000	0	34	0	0	highway=track		60415	3149241
--72161264	42015928	312	902	1000	0	32	0	0	reversedirection=yes highway=track		60544	3172409
--72149042	42026473	229	1860	1000	95	217	0	0	highway=track		60725	3204732
--72145319	42024957	226	392	5000	0	403	0	0	reversedirection=yes highway=residential		60988	3205063
--72141873	42023918	219	388	30500	0	278	0	0	highway=secondary		61251	3205063
--72138233	42027459	216	509	5000	0	319	0	0	reversedirection=yes highway=residential surface=asphalt		61606	3206193
--72125917	42029849	228	1181	5000	31	168	0	0	highway=residential surface=asphalt		62485	3228023
--72124640	42030498	237	133	1000	0	25	0	0	highway=residential surface=unpaved		62508	3232097
--72123953	42030735	237	63	1000	0	0	0	0	reversedirection=yes highway=track		62516	3233668
--72123782	42030707	237	15	1000	0	9	0	0	highway=track surface=unpaved		62519	3234073
--72116055	42011185	226	2379	1000	238	32	0	0	reversedirection=yes highway=track mtb:scale=2 smoothness=very_horrible		62940	3308715
--72115858	42009456	224	197	1000	0	1	0	0	reversedirection=yes highway=track mtb:scale=2		62957	3311856
--72115509	42009227	225	39	1000	0	5	0	0	reversedirection=yes highway=track		62963	3312878
+-72976690	41828043	172	6353	5000	1412	556	0	0	reversedirection=yes highway=residential		10755	305948
+-72973108	41824243	181	522	30500	0	105	0	0	highway=primary lanes=2		11127	314488
+-72972716	41824329	179	37	1000	0	48	0	0	highway=track tracktype=grade1 surface=unpaved	barrier=gate	11133	315448
+-72971082	41824339	183	139	1000	0	0	0	0	highway=track tracktype=grade1 surface=unpaved		11151	318731
+-72965104	41826061	209	906	1000	129	92	0	0	reversedirection=yes highway=track tracktype=grade1 surface=unpaved route=unknown		11358	355998
+-72962245	41828595	200	443	1000	0	76	0	0	highway=track tracktype=grade1 surface=unpaved		11414	366126
+-72955830	41845241	126	2133	1000	242	117	0	0	highway=track tracktype=grade1 surface=unpaved route=unknown		11646	407316
+-72953795	41843273	119	288	1000	0	97	0	0	reversedirection=yes highway=track tracktype=grade1		11674	412489
+-72953633	41843288	118	14	1000	0	10	0	0	highway=track tracktype=grade1	barrier=gate	11676	412727
+-72953514	41843301	116	11	1000	0	3	0	0	highway=track tracktype=grade1		11677	412904
+-72935250	41835934	94	1835	1000	0	15	0	0	reversedirection=yes highway=track tracktype=grade1		11908	454545
+-72930792	41832788	97	536	5500	0	176	0	0	reversedirection=yes highway=unclassified		12299	461495
+-72926423	41810100	91	2932	5000	342	855	0	0	reversedirection=yes highway=residential	highway=crossing crossing=unknown	14481	519661
+-72926275	41809972	90	19	5000	0	0	0	0	reversedirection=yes highway=residential	highway=stop	14493	519661
+-72926201	41810001	90	8	30500	2	193	0	0	reversedirection=yes highway=secondary	highway=crossing crossing=unknown	14498	519661
+-72923651	41810969	89	244	30500	0	0	0	0	reversedirection=yes highway=secondary	highway=crossing crossing=unknown	14659	520480
+-72923569	41811000	89	9	30500	0	0	100	0	reversedirection=yes highway=secondary	highway=traffic_signals traffic_signals:direction=both	14665	520480
+-72923489	41811031	90	9	30500	0	0	0	0	reversedirection=yes highway=secondary	highway=crossing crossing=unknown	14671	520480
+-72923521	41811100	89	9	1100	0	8	0	0	highway=footway footway=crossing		14672	520640
+-72922605	41811925	91	127	1300	0	118	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	highway=crossing crossing=unknown	14687	523426
+-72922039	41812391	92	73	1300	0	14	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	highway=crossing crossing=unknown	14695	524945
+-72919701	41813891	93	282	1300	0	246	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	14736	532187
+-72919710	41813898	93	2	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		14736	532237
+-72920065	41814761	91	104	1000	0	44	0	0	highway=cycleway surface=wood foot=designated bicycle=designated route_bicycle_rcn=yes		14749	534515
+-72921060	41816135	90	176	1300	0	8	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		14770	538354
+-72921097	41816205	90	9	1000	0	0	0	0	highway=cycleway surface=wood foot=designated bicycle=designated route_bicycle_rcn=yes		14771	538557
+-72922057	41818648	88	292	1300	0	32	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		14807	544952
+-72922347	41819960	92	153	5000	0	35	0	0	reversedirection=yes highway=residential route_bicycle_rcn=yes		14915	546046
+-72922126	41819966	93	19	1300	0	139	0	0	highway=cycleway foot=designated bicycle=designated route_bicycle_rcn=yes		14919	546701
+-72922047	41820015	94	9	1300	0	52	0	0	highway=cycleway foot=designated bicycle=designated cycleway=crossing route_bicycle_rcn=yes	highway=crossing crossing=unknown	14921	547047
+-72921989	41820050	95	7	1300	0	0	0	0	highway=cycleway foot=designated bicycle=designated cycleway=crossing route_bicycle_rcn=yes		14922	547352
+-72921885	41820056	96	13	1300	0	114	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	14926	547955
+-72921603	41819798	96	38	1300	0	2	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	14934	549517
+-72921543	41819747	96	8	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	14936	549815
+-72913656	41820790	107	758	1300	0	140	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		15073	574417
+-72913599	41820798	107	6	1300	0	47	0	0	reversedirection=yes highway=cycleway route_bicycle_rcn=yes	barrier=bollard	15073	574567
+-72913421	41820855	107	17	1300	0	0	0	0	reversedirection=yes highway=cycleway route_bicycle_rcn=yes		15076	574984
+-72911783	41821351	105	149	1300	0	15	0	0	reversedirection=yes highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		15096	578667
+-72908712	41821622	108	260	1300	0	9	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	15135	585665
+-72902409	41822050	109	529	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	15211	599259
+-72902136	41822075	109	25	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	15214	599902
+-72896403	41822483	107	482	1300	0	0	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	15282	612021
+-72895383	41822551	104	87	1300	0	1	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	15290	613622
+-72888450	41823555	103	604	1300	0	14	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated route_bicycle_rcn=yes		15367	627449
+-72888437	41823608	104	6	1300	0	37	0	0	highway=cycleway foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=bollard	15368	627585
+-72887766	41823812	105	86	1300	0	557	0	0	highway=cycleway foot=designated bicycle=designated route_bicycle_rcn=yes		15379	629631
+-72887344	41823878	105	37	1100	0	2	0	0	reversedirection=yes highway=footway footway=crossing		15385	630622
+-72887203	41823906	105	13	1100	0	0	0	0	reversedirection=yes highway=footway footway=sidewalk		15387	630964
+-72887267	41824098	106	23	1100	0	10	0	0	reversedirection=yes highway=footway footway=crossing		15390	631626
+-72887183	41824159	106	12	1100	0	6	0	0	reversedirection=yes highway=footway footway=sidewalk		15392	631976
+-72887150	41824175	106	4	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing	15393	632092
+-72887111	41824194	106	4	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		15394	632206
+-72886936	41824301	106	20	1100	0	0	0	0	reversedirection=yes highway=footway foot=designated bicycle=designated footway=sidewalk		15397	632789
+-72886474	41825152	108	111	1300	0	153	0	0	highway=cycleway surface=asphalt foot=designated bicycle=designated		15417	636405
+-72886442	41825192	108	6	1300	0	0	0	0	highway=cycleway foot=designated bicycle=designated	highway=crossing crossing=unknown	15418	636571
+-72885872	41826094	108	116	1300	0	46	0	0	highway=cycleway foot=designated bicycle=designated		15435	639701
+-72884647	41827478	104	187	5000	0	46	0	0	highway=residential route_bicycle_rcn=yes		15562	639701
+-72887717	41831327	142	602	1200	206	11	0	0	reversedirection=yes highway=path		15772	677518
+-72887530	41832442	150	185	1200	32	15	0	0	highway=path		15814	685106
+-72884026	41835443	145	558	1200	0	33	0	0	reversedirection=yes highway=path		15894	699426
+-72883071	41838193	148	367	1200	0	12	0	0	highway=path		15958	710925
+-72882849	41838496	149	42	1200	0	4	0	0	reversedirection=yes highway=path		15965	712219
+-72878539	41835482	125	513	5000	0	317	0	0	reversedirection=yes highway=residential		16295	712219
+-72872518	41837606	102	583	5000	91	72	0	0	highway=residential route_bicycle_rcn=yes		16714	719002
+-72869504	41841394	96	520	5000	11	56	0	0	reversedirection=yes highway=residential route_bicycle_rcn=yes	highway=stop	17068	720249
+-72867768	41845123	100	441	5000	0	30	0	0	reversedirection=yes highway=residential route_bicycle_rcn=yes	highway=stop direction=backward	17394	727071
+-72867642	41845416	100	35	5000	0	0	0	0	reversedirection=yes highway=residential route_bicycle_rcn=yes		17418	727253
+-72867595	41849662	105	479	5000	0	12	0	0	reversedirection=yes highway=residential surface=asphalt route_bicycle_rcn=yes		17771	733895
+-72859226	41853752	99	858	1000	0	271	0	0	highway=cycleway surface=unpaved route_bicycle_rcn=yes		17882	753843
+-72854447	41853507	91	449	1200	0	15	0	0	highway=path		17933	763125
+-72850856	41857122	92	630	1000	0	144	0	0	reversedirection=yes highway=track surface=dirt bicycle=yes		18022	779116
+-72849788	41857730	87	119	1000	0	22	0	0	highway=track surface=earth		18036	781649
+-72846456	41858240	82	326	1200	0	1	0	0	highway=path surface=earth		18072	788148
+-72846402	41858215	83	6	1200	0	0	0	0	highway=path		18073	788278
+-72838020	41859999	92	904	1200	0	12	0	0	highway=path surface=earth		18229	816328
+-72837852	41860008	92	14	5000	0	291	0	0	reversedirection=yes highway=residential		18238	816328
+-72840012	41862634	76	369	10500	0	367	0	0	highway=tertiary		18468	816328
+-72839829	41862711	76	19	1000	0	366	0	0	reversedirection=yes highway=service surface=unpaved foot=designated bicycle=designated route_bicycle_rcn=yes	barrier=gate	18470	816647
+-72838349	41863282	79	139	1000	0	0	0	0	reversedirection=yes highway=service surface=unpaved foot=designated bicycle=designated route_bicycle_rcn=yes		18490	820280
+-72819820	41869618	71	1712	1000	0	1	0	0	reversedirection=yes highway=track surface=unpaved foot=designated bicycle=designated route_bicycle_rcn=yes		18718	861364
+-72819708	41869861	70	30	1200	0	6	0	0	reversedirection=yes highway=path	highway=crossing	18722	861965
+-72819707	41869934	69	9	1200	0	0	0	0	reversedirection=yes highway=path		18723	862147
+-72819541	41869922	69	14	1100	0	11	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk	highway=crossing	18724	862413
+-72812923	41870097	63	558	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk	highway=crossing crossing=unknown	18790	874197
+-72811049	41870499	67	164	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk	highway=crossing	18822	880094
+-72808273	41870785	67	237	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk	highway=crossing	18856	886132
+-72803907	41870856	61	392	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=sidewalk		18904	894782
+-72803818	41870803	60	10	1100	0	9	0	0	highway=footway foot=yes bicycle=yes footway=crossing	highway=crossing	18905	894990
+-72803693	41870716	59	15	1100	0	0	0	0	highway=footway foot=yes bicycle=yes footway=crossing		18907	895268
+-72801828	41870004	54	183	1300	0	233	0	0	reversedirection=yes highway=cycleway surface=paved access=yes foot=yes bicycle=yes route_bicycle_rcn=yes		18925	898537
+-72800539	41869688	47	114	10500	0	117	0	0	highway=tertiary maxspeed=40		18994	898537
+-72800088	41869040	46	89	5500	0	358	0	0	highway=unclassified oneway=no	highway=turning_circle	19051	898537
+-72799921	41868895	46	22	5500	0	0	0	0	highway=unclassified oneway=no	barrier=bollard	19066	898537
+-72799416	41868434	47	67	1100	0	0	0	0	highway=pedestrian access=designated foot=yes bicycle=yes oneway=no	barrier=bollard	19075	900092
+-72799312	41868337	47	14	1100	0	0	0	0	highway=footway		19077	900446
+-72798024	41868665	50	115	6000	0	205	0	0	reversedirection=yes highway=residential maxspeed=40 lanes=unknown oneway=no		19163	902582
+-72791089	41869976	62	637	5000	8	43	0	0	reversedirection=yes highway=residential oneway=no		19640	913845
+-72791444	41868648	64	153	5000	0	491	0	0	highway=residential		19761	918856
+-72791303	41868553	67	16	1200	29	4	0	0	highway=path	barrier=gate	19766	919794
+-72786298	41865544	107	598	1200	339	6	0	0	highway=path		20016	964709
+-72786234	41865518	106	7	8400	0	7	0	0	highway=steps		20021	964749
+-72782478	41866029	116	457	1200	0	17	0	0	highway=path		20099	978847
+-72781414	41869818	116	435	1200	41	15	0	0	reversedirection=yes highway=path surface=grass		20191	995483
+-72778555	41872235	129	387	1200	17	19	0	0	reversedirection=yes highway=path		20270	1009561
+-72775449	41878157	109	727	1200	0	4	0	0	highway=path		20354	1024796
+-72773429	41879924	91	281	1000	0	436	0	0	reversedirection=yes highway=service surface=unpaved foot=yes bicycle=yes		20378	1029010
+-72770107	41887522	140	989	1000	319	39	0	0	reversedirection=yes highway=track foot=yes bicycle=yes		20671	1081756
+-72769669	41889147	149	218	1000	54	14	0	0	highway=footway surface=unpaved sac_scale=hiking trail_visibility=excellent		20726	1091766
+-72769847	41890312	155	151	1200	37	13	0	0	reversedirection=yes highway=path		20769	1099503
+-72769569	41892234	140	253	1200	0	39	0	0	highway=path		20799	1104787
+-72768888	41893320	136	148	1000	0	40	0	0	reversedirection=yes highway=track foot=yes bicycle=yes		20811	1107017
+-72768638	41893510	134	35	1200	0	9	0	0	highway=path		20814	1107564
+-72767195	41896378	135	376	1000	0	24	0	0	highway=footway surface=unpaved sac_scale=hiking trail_visibility=excellent		20861	1115988
+-72766261	41898181	139	225	1000	0	7	0	0	highway=track surface=gravel foot=yes bicycle=yes		20893	1121742
+-72765477	41900172	142	252	1200	0	7	0	0	highway=path foot=yes bicycle=yes		20931	1128618
+-72765486	41900380	142	25	1200	0	3	0	0	reversedirection=yes highway=path		20935	1129335
+-72763183	41905139	91	829	1200	138	41	0	0	highway=path foot=yes bicycle=yes		21027	1145433
+-72763206	41905271	90	15	5000	0	168	0	0	reversedirection=yes highway=residential		21038	1145433
+-72763336	41905359	92	15	2000	0	59	0	0	reversedirection=yes highway=service bicycle=yes		21039	1145639
+-72763476	41905462	91	17	1000	0	0	0	0	reversedirection=yes highway=track tracktype=grade1 bicycle=yes		21040	1145886
+-72763127	41906161	78	89	1000	34	17	0	0	reversedirection=yes highway=track		21046	1146919
+-72764555	41906081	79	130	1200	2	7	0	0	reversedirection=yes highway=path		21058	1149119
+-72765483	41907415	68	167	5000	0	115	0	0	reversedirection=yes highway=residential	highway=crossing	21170	1149119
+-72765424	41907430	68	6	1100	0	11	0	0	reversedirection=yes highway=footway footway=sidewalk		21171	1149238
+-72765454	41907475	68	6	1100	0	11	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	21171	1149359
+-72765490	41907530	68	7	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		21172	1149501
+-72766802	41909502	66	246	1100	0	0	0	0	highway=footway footway=sidewalk		21201	1154689
+-72766843	41909551	66	7	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	21202	1154856
+-72766872	41909585	66	5	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		21202	1154976
+-72766883	41909596	66	2	1100	0	0	0	0	highway=footway footway=sidewalk		21203	1155024
+-72766843	41909631	66	6	1100	0	7	0	0	reversedirection=yes highway=footway footway=sidewalk		21203	1155168
+-72766767	41909677	66	9	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	21205	1155378
+-72766693	41909720	66	8	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		21206	1155559
+-72763100	41910550	60	323	1100	0	17	0	0	reversedirection=yes highway=footway surface=concrete footway=sidewalk		21242	1162135
+-72763046	41910589	59	7	1100	0	3	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	21243	1162264
+-72762986	41910633	59	7	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		21244	1162392
+-72762380	41909975	56	89	1100	0	11	0	0	highway=footway footway=sidewalk		21252	1163904
+-72762394	41912811	50	346	1100	0	3	0	0	reversedirection=yes highway=footway surface=concrete footway=sidewalk		21287	1170263
+-72762207	41912870	51	18	1100	0	9	0	0	reversedirection=yes highway=footway surface=asphalt footway=crossing		21291	1170887
+-72757252	41911304	77	627	1100	129	33	0	0	highway=footway		21451	1199791
+-72757015	41911206	82	26	1000	42	4	0	0	highway=footway surface=earth		21464	1202050
+-72755561	41910673	108	150	1200	236	8	0	0	reversedirection=yes highway=path		21584	1223732
+-72752167	41919887	122	1179	1000	123	52	0	0	highway=footway surface=earth		21845	1270642
+-72751523	41920292	120	80	1200	0	3	0	0	reversedirection=yes highway=path surface=unpaved bicycle=yes trail_visibility=good		21854	1272363
+-72750953	41920950	112	98	1200	0	5	0	0	reversedirection=yes highway=path surface=earth		21862	1273693
+-72750491	41921982	102	156	1000	2	8	0	0	highway=footway surface=earth		21874	1275900
+-72750339	41921851	101	20	30500	0	150	0	0	highway=secondary		21886	1275900
+-72741075	41946017	97	3276	1100	605	158	0	0	highway=footway		22505	1385407
+-72740159	41946958	96	131	10500	0	3	100	0	reversedirection=yes highway=tertiary	highway=traffic_signals traffic_signals:direction=both	22586	1385407
+-72729412	41943666	56	988	1100	94	18	0	0	reversedirection=yes highway=footway surface=asphalt foot=yes bicycle=yes footway=sidewalk		22692	1404558
+-72729915	41942048	60	189	5000	0	276	0	0	highway=residential		22835	1408367
+-72727461	41941667	57	224	5000	0	79	0	0	reversedirection=yes highway=residential		22992	1409191
+-72727519	41941599	57	9	30500	0	285	0	0	highway=primary		22998	1409194
+-72727124	41941580	57	33	5000	0	370	0	0	highway=residential		23021	1409194
+-72725565	41940985	56	148	5000	0	19	0	0	highway=residential maxspeed=50		23124	1409275
+-72725202	41940754	57	41	5000	0	2	0	0	reversedirection=yes highway=residential maxspeed=50		23153	1409500
+-72721835	41939519	54	325	5000	0	16	0	0	reversedirection=yes highway=residential		23382	1412122
+-72720083	41939157	56	152	5000	0	0	0	0	reversedirection=yes highway=residential maxspeed=50		23494	1414496
+-72718813	41937896	55	200	2000	0	367	0	0	highway=service		23520	1419118
+-72718417	41938246	54	51	10500	0	241	0	0	highway=tertiary		23555	1419118
+-72718069	41938423	53	38	10500	0	83	100	0	highway=tertiary oneway=yes	highway=traffic_signals traffic_signals:direction=both	23581	1419118
+-72704182	41935946	49	1213	10500	0	173	0	0	highway=tertiary		24435	1427451
+-72699085	41940349	53	716	10500	0	284	0	0	highway=tertiary lanes=2		24964	1438843
+-72686287	41945996	50	1550	10500	0	23	0	0	reversedirection=yes highway=tertiary lanes=2	highway=crossing crossing=yes	26054	1448685
+-72670816	41946298	46	3642	10500	0	260	0	0	reversedirection=yes highway=tertiary lanes=2		28627	1470283
+-72672395	41943575	47	361	5500	0	251	0	0	highway=unclassified		28888	1473858
+-72672938	41941892	46	232	5500	0	56	0	0	highway=unclassified oneway=yes		29052	1474867
+-72672876	41941195	47	79	5500	0	0	0	0	reversedirection=yes highway=unclassified	railway=level_crossing	29110	1476093
+-72672778	41939908	51	145	5500	0	0	0	0	reversedirection=yes highway=unclassified	highway=stop	29221	1479728
+-72670965	41939831	50	152	5500	0	213	100	0	reversedirection=yes highway=unclassified	highway=traffic_signals	29325	1479728
+-72661582	41939071	54	792	10500	0	0	0	0	reversedirection=yes highway=tertiary		29891	1485653
+-72662537	41935837	55	370	5000	0	248	0	0	highway=residential		30156	1489211
+-72659500	41935772	52	253	5000	0	314	0	0	highway=residential surface=asphalt	highway=stop	30325	1489837
+-72659718	41934832	52	109	5000	0	302	0	0	reversedirection=yes highway=residential		30402	1490430
+-72645797	41932901	46	1417	5000	0	649	0	0	reversedirection=yes highway=residential surface=asphalt	highway=turning_circle	31374	1494935
+-72640097	41932970	34	479	1000	0	4	0	0	reversedirection=yes highway=footway surface=unpaved foot=yes bicycle=yes		31421	1503505
+-72639588	41932992	34	44	2000	0	1	0	0	reversedirection=yes highway=service surface=asphalt		31428	1504718
+-72632964	41932426	28	601	5000	0	523	0	0	reversedirection=yes highway=residential		31848	1507767
+-72633045	41930716	30	192	5000	0	251	100	0	reversedirection=yes highway=residential surface=asphalt	highway=traffic_signals	31985	1509023
+-72633047	41930670	29	6	5000	0	0	0	0	reversedirection=yes highway=residential surface=asphalt	highway=crossing crossing=unknown	31989	1509072
+-72633080	41929729	28	105	5000	0	0	0	0	reversedirection=yes highway=residential surface=asphalt		32062	1509072
+-72627519	41929291	16	484	5000	0	270	0	0	reversedirection=yes highway=residential	highway=crossing crossing=unknown	32379	1509513
+-72627402	41929283	15	10	5000	0	0	100	0	reversedirection=yes highway=residential	highway=traffic_signals traffic_signals:direction=both	32385	1509513
+-72627240	41929279	14	14	30500	0	0	0	0	highway=secondary	railway=level_crossing	32394	1509513
+-72626817	41929276	12	36	30500	0	0	100	0	highway=secondary	highway=traffic_signals traffic_signals:direction=both	32417	1509513
+-72626809	41929371	12	11	5500	0	234	0	0	highway=unclassified surface=asphalt route_bicycle_lcn=yes		32424	1509513
+-72626749	41931827	12	279	2000	0	137	0	0	reversedirection=yes highway=service surface=asphalt		32457	1515542
+-72626713	41932515	12	77	2000	0	0	0	0	highway=service route_bicycle_lcn=yes		32467	1517383
+-72618864	41956903	16	3243	1300	0	101	0	0	reversedirection=yes highway=cycleway surface=asphalt route_bicycle_lcn=yes		32949	1604029
+-72618715	41957172	15	33	1300	0	0	0	0	reversedirection=yes highway=cycleway route_bicycle_lcn=yes		32953	1604791
+-72605421	41986623	13	3639	1300	0	258	0	0	reversedirection=yes highway=cycleway surface=asphalt route_bicycle_lcn=yes		33457	1695512
+-72605509	41986645	14	8	1300	0	2	0	0	reversedirection=yes highway=cycleway route_bicycle_lcn=yes		33459	1695836
+-72607097	41989163	26	489	1300	13	312	0	0	reversedirection=yes highway=cycleway surface=asphalt route_bicycle_lcn=yes		33566	1715213
+-72605657	41989370	20	124	1200	0	14	0	0	highway=path surface=asphalt foot=designated bicycle=designated		33585	1718675
+-72600869	41990339	25	412	1200	0	0	0	0	highway=path surface=concrete foot=designated bicycle=designated		33644	1729173
+-72597997	41991291	42	269	1200	31	1	0	0	highway=path surface=asphalt foot=designated bicycle=designated		33723	1743498
+-72597971	41991176	42	13	1100	0	5	0	0	highway=footway surface=concrete foot=yes footway=sidewalk	highway=crossing crossing=unknown	33726	1744062
+-72597733	41989699	40	168	1100	0	0	0	0	highway=footway surface=concrete foot=yes footway=sidewalk	highway=crossing crossing=unknown	33754	1748956
+-72597669	41988597	41	124	1100	0	0	0	0	highway=footway surface=concrete foot=yes footway=sidewalk	highway=crossing crossing=unknown	33772	1752297
+-72597662	41987575	41	114	1100	0	0	0	0	highway=footway surface=concrete foot=yes footway=sidewalk	highway=crossing crossing=unknown	33789	1755236
+-72597804	41986748	40	94	1100	0	0	0	0	highway=footway surface=concrete foot=yes footway=sidewalk		33801	1757388
+-72597715	41986755	40	8	1100	0	12	0	0	highway=footway surface=concrete	highway=crossing crossing=unknown	33802	1757581
+-72597879	41985933	38	94	10500	0	311	0	0	highway=tertiary surface=asphalt		33862	1757606
+-72598758	41981454	30	507	10500	0	0	0	0	highway=tertiary		34203	1757606
+-72592419	41980841	61	534	5000	83	253	0	0	reversedirection=yes highway=residential		34641	1779645
+-72592029	41976498	52	495	30500	0	238	100	0	reversedirection=yes highway=primary surface=asphalt lanes=2	highway=traffic_signals traffic_signals:direction=both	34967	1780111
+-72592344	41973307	48	358	30500	0	0	0	0	reversedirection=yes highway=primary surface=asphalt lanes=2		35201	1780111
+-72592530	41971959	46	152	30500	0	0	100	0	reversedirection=yes highway=primary lanes=2	highway=traffic_signals traffic_signals:direction=both	35306	1780118
+-72576746	41961420	39	1802	10500	0	249	0	0	highway=tertiary		36567	1786783
+-72576654	41961489	39	11	2000	0	248	0	0	reversedirection=yes highway=service	highway=crossing	36568	1787016
+-72576341	41961261	39	37	1100	0	10	0	0	reversedirection=yes highway=footway footway=sidewalk	highway=crossing	36573	1787803
+-72575206	41960452	40	131	1100	0	0	0	0	reversedirection=yes highway=footway footway=sidewalk	highway=crossing	36590	1790943
+-72575017	41960319	40	22	1100	0	0	0	0	reversedirection=yes highway=footway footway=sidewalk	highway=crossing	36593	1791518
+-72570999	41957944	42	430	1100	0	0	0	0	reversedirection=yes highway=footway footway=sidewalk		36661	1803632
+-72570949	41957852	41	12	1100	0	3	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	36662	1803879
+-72570914	41957788	41	8	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		36663	1804042
+-72567615	41955877	40	366	1100	0	8	0	0	highway=footway footway=sidewalk	highway=crossing	36709	1812316
+-72565998	41955042	41	164	1100	0	0	0	0	highway=footway footway=sidewalk	highway=crossing	36732	1816529
+-72563825	41953970	40	223	1100	0	11	0	0	highway=footway footway=sidewalk		36762	1821799
+-72563744	41953983	40	7	1100	0	3	0	0	reversedirection=yes highway=footway footway=crossing	highway=crossing crossing=unknown	36763	1821981
+-72563658	41953999	40	8	1100	0	0	0	0	reversedirection=yes highway=footway footway=crossing		36764	1822188
+-72563026	41953518	39	80	1100	0	8	0	0	highway=footway footway=sidewalk		36774	1824068
+-72559506	41953340	36	304	1300	0	3	0	0	highway=cycleway surface=asphalt foot=yes	highway=crossing	36813	1831013
+-72557836	41953485	36	141	1300	0	1	0	0	highway=cycleway surface=asphalt foot=yes	highway=crossing	36830	1834023
+-72554816	41954881	16	300	1300	0	1	0	0	highway=cycleway surface=asphalt foot=yes		36853	1838325
+-72554376	41955112	17	45	1300	0	0	0	0	highway=cycleway surface=concrete foot=yes		36859	1839353
+-72548288	41957134	40	563	1300	86	3	0	0	highway=cycleway surface=asphalt foot=yes	highway=crossing crossing=unknown	37018	1867922
+-72545106	41958124	35	292	1300	0	4	0	0	highway=cycleway surface=asphalt foot=yes	highway=crossing	37050	1873624
+-72540601	41958220	40	377	1300	0	0	0	0	highway=cycleway surface=asphalt foot=yes		37111	1884714
+-72520857	41977256	61	3002	5000	5	150	0	0	reversedirection=yes highway=residential maxspeed=50		39318	1928634
+-72516802	41979364	58	413	5000	0	0	0	0	reversedirection=yes highway=residential	railway=level_crossing	39609	1931860
+-72516387	41979491	57	38	5000	0	8	0	0	reversedirection=yes highway=residential		39634	1931860
+-72516392	41979304	59	21	30500	0	318	0	0	reversedirection=yes highway=secondary		39649	1931988
+-72502519	41977488	55	1296	5000	0	238	0	0	highway=residential surface=asphalt maxspeed=40		40565	1943311
+-72497041	41978716	58	479	1000	0	0	0	0	highway=track surface=unpaved		40626	1954337
+-72492832	41979734	61	369	1000	0	4	0	0	highway=residential surface=compacted		40682	1964312
+-72488231	41980806	63	404	5000	0	8	0	0	highway=residential surface=asphalt		40975	1968660
+-72488120	41980969	62	21	10500	0	127	0	0	highway=tertiary		40990	1968796
+-72485385	41977247	61	477	10500	0	369	0	0	reversedirection=yes highway=tertiary		41327	1971790
+-72442310	41963060	104	4203	5000	43	230	0	0	highway=residential		44437	2048012
+-72440640	41965574	106	317	36600	0	215	0	0	reversedirection=yes highway=primary maxspeed=70		44679	2055344
+-72432980	41955615	210	1506	5000	769	421	0	0	highway=residential surface=asphalt		46034	2150027
+-72432322	41955283	216	66	1000	52	0	0	0	highway=track tracktype=grade2 surface=unpaved mtb:scale=0	highway=turning_circle	46071	2156709
+-72432175	41955217	217	15	1000	10	0	0	0	highway=track tracktype=grade2 surface=unpaved mtb:scale=0	barrier=gate	46077	2157910
+-72428337	41953070	243	453	1000	188	12	0	0	highway=track tracktype=grade2 surface=unpaved mtb:scale=0		46249	2188828
+-72428132	41953191	243	22	1000	0	68	0	0	reversedirection=yes highway=track tracktype=grade2 surface=unpaved	barrier=gate	46254	2189652
+-72413718	41957857	316	1804	1000	390	74	0	0	reversedirection=yes highway=track tracktype=grade2 surface=unpaved		46725	2274436
+-72413578	41958227	319	45	2000	12	259	0	0	reversedirection=yes highway=service surface=asphalt foot=yes bicycle=yes		46740	2277148
+-72413233	41958289	320	32	1200	0	9	0	0	highway=path surface=earth		46744	2277897
+-72412813	41957990	313	51	1200	0	12	0	0	reversedirection=yes highway=path surface=earth	direction=unknown	46749	2278723
+-72413370	41957351	313	94	1200	0	21	0	0	reversedirection=yes highway=path surface=earth		46758	2280443
+-72411204	41957728	273	220	1200	208	16	0	0	highway=path surface=earth		46773	2281938
+-72408713	41961157	240	449	2000	109	300	0	0	highway=service surface=asphalt foot=yes bicycle=yes	barrier=gate	46806	2286338
+-72408211	41961698	239	77	2000	0	5	0	0	highway=service surface=asphalt foot=yes bicycle=yes		46814	2287727
+-72408104	41961802	238	15	1000	0	0	0	0	highway=track tracktype=grade2 surface=gravel foot=yes bicycle=yes	barrier=gate	46815	2287989
+-72406018	41962688	234	225	1000	0	20	0	0	highway=track tracktype=grade2 surface=gravel foot=yes bicycle=yes		46838	2292008
+-72402256	41973908	233	2173	1000	2	115	0	0	highway=track tracktype=grade1 surface=gravel foot=yes bicycle=yes		47160	2350082
+-72399945	41979476	229	700	1000	0	20	0	0	highway=track tracktype=grade2 surface=gravel foot=yes bicycle=yes		47260	2368131
+-72401241	41979558	226	108	30500	0	394	0	0	reversedirection=yes highway=primary		47329	2368131
+-72398979	41981882	242	341	5000	14	354	0	0	highway=residential		47606	2381193
+-72396620	41986248	245	551	1000	22	37	0	0	highway=track surface=gravel		47704	2398832
+-72396471	41986498	246	33	1200	0	3	0	0	highway=path		47708	2399583
+-72395050	41989924	240	413	1000	0	35	0	0	highway=track surface=gravel		47757	2408412
+-72384763	41992470	214	957	1000	0	36	0	0	highway=track		47857	2426345
+-72379585	41990872	198	472	5000	0	11	0	0	highway=residential		48161	2426345
+-72315250	41994742	188	7049	5000	1109	989	0	0	highway=residential surface=asphalt		53384	2569233
+-72290200	41985689	181	2487	5000	396	446	0	0	reversedirection=yes highway=residential surface=asphalt		55253	2624397
+-72290157	41985241	181	50	3000	0	0	0	0	reversedirection=yes highway=construction surface=asphalt		55260	2625549
+-72290054	41984697	182	62	5000	0	2	0	0	reversedirection=yes highway=residential surface=asphalt		55305	2626280
+-72289713	41984595	183	40	30500	0	254	0	0	highway=secondary		55335	2627083
+-72274503	41977079	251	1626	5000	404	331	0	0	reversedirection=yes highway=residential surface=asphalt		56694	2698942
+-72257931	41970170	234	1701	1000	0	355	0	0	reversedirection=yes highway=residential surface=compacted		56910	2737804
+-72240524	41976034	263	1705	1000	80	64	0	0	reversedirection=yes highway=track surface=unpaved		57237	2796584
+-72239721	41983764	253	974	1000	57	147	0	0	highway=residential surface=compacted		57383	2822656
+-72238586	41984668	254	147	5000	0	111	0	0	highway=residential surface=asphalt		57496	2826263
+-72223944	41995182	311	1733	1000	146	363	0	0	highway=residential surface=unpaved		57890	2897121
+-72215232	41998566	295	839	1000	27	106	0	0	reversedirection=yes highway=residential surface=compacted	highway=turning_circle	58011	2918892
+-72199507	41999187	318	1616	5000	108	297	0	0	reversedirection=yes highway=residential surface=asphalt		59218	2955339
+-72178670	42008173	312	2120	1000	112	72	0	0	reversedirection=yes highway=track		59557	3016403
+-72165778	42008601	309	1210	1000	14	13	0	0	highway=track surface=unpaved		59735	3048374
+-72165724	42008840	310	27	1000	0	34	0	0	highway=track		59739	3049111
+-72161264	42015928	312	902	1000	0	32	0	0	reversedirection=yes highway=track		59867	3072280
+-72149042	42026473	229	1860	1000	95	217	0	0	highway=track		60048	3104603
+-72145319	42024957	226	392	5000	0	403	0	0	reversedirection=yes highway=residential		60311	3104933
+-72141873	42023918	219	388	30500	0	278	0	0	highway=secondary		60574	3104933
+-72138233	42027459	216	509	5000	0	319	0	0	reversedirection=yes highway=residential surface=asphalt		60929	3106064
+-72125917	42029849	228	1181	5000	31	168	0	0	highway=residential surface=asphalt		61808	3127893
+-72124640	42030498	237	133	1000	0	25	0	0	highway=residential surface=unpaved		61831	3131967
+-72123953	42030735	237	63	1000	0	0	0	0	reversedirection=yes highway=track		61840	3133539
+-72123782	42030707	237	15	1000	0	9	0	0	highway=track surface=unpaved		61842	3133943
+-72116055	42011185	226	2379	1000	238	32	0	0	reversedirection=yes highway=track mtb:scale=2 smoothness=very_horrible		62263	3208585
+-72115858	42009456	224	197	1000	0	1	0	0	reversedirection=yes highway=track mtb:scale=2		62281	3211727
+-72115509	42009227	225	39	1000	0	5	0	0	reversedirection=yes highway=track		62287	3212748
