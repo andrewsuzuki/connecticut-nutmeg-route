@@ -152,7 +152,7 @@ Staring in New Haven (41.30733,-72.92582), going clockwise:
 2. American Legion State Forest (~59mi) (41.93509,-73.00388)
 3. Nipmuck State Forest / Bigelow Hollow State Park (~90mi) (42.00922,-72.11551)
 4. Pachaug State Forest (~50mi) (41.69138,-71.79847)
-5. Gillette Castle (~60mi) (or ~80mi if eliminating Pachaug State Forest) (41.42235,-72.42873)
+5. Gillette Castle (~60mi) (or ~77mi if eliminating Pachaug State Forest) (41.42235,-72.42873)
 6. New Haven (~55mi) (41.30724,-72.92558)
 
 Each section:
