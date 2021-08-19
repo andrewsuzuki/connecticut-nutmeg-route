@@ -71,6 +71,8 @@ To maximize the amount of dirt, examine a lot of the route manually using satell
 
 * TODO TODO
 
+- Profile #4; penalize one-way residential/unclassified/service/major roads +20
+- Convert sections 1/2/3 to use profile #3, then remove other profiles
 - Consider going into Rhode Island.
   - Lots of good gravel right on the border (Arcadia Management Area, etc).
   - Would also make going to Voluntown/Pachaug easy / worth the paved roads to get there
@@ -80,6 +82,7 @@ To maximize the amount of dirt, examine a lot of the route manually using satell
   + More Strava tracks in Yale Forest near Ashford
   + More Strava tracks (unblazed but ok) in Cockaponset (Chester/Lyme)
   + More Strava tracks south of Roaring Brook Preserve, close to 82, and disused trails connecting the two (started mapping it)
+  + More Strava tracks near Roxbury center along river (in/around Roxbury Land Trust, Inc. (River Road) parcel)
   + Central CT near MA border...any dirt?
   + After first draft, finer alignment/surface info of the entire route
   + Add CT backpacking shelters to OSM
