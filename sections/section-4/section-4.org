@@ -9,3 +9,11 @@ Nipmuck State Forest to Gillette Castle State Park
 * BRouter Profile
 
 nutmeg-brouter-profile-3
+
+* TODO TODO
+
+- After OSM update (already happened) (might've already done some of these, check):
+  - terrible track just west of Pisgah Hill (Natchaug Forest)
+  - Natchaug orange trail power line trail off of Fayette Wright rd instead of continuing on rd (a bit south of the above)
+  - instead of turning from morey to marcy (bottom, almost at airline), route onto twisting track (orange trail), leading eventually to nutmeg lane, then airline
+  - Consider routing onto the twisting trail right above that too ^

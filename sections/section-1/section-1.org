@@ -16,4 +16,5 @@ nutmeg-brouter-profile-4
 - After OSM update on 2021-08-20:
   - wait for Blake st exit from footway (from parking lot adjacent), and also entrance to footway (at city)
   - route onto rough track (then, compacted road) near center of Roxbury — Rocky Mountain Road…cuts off angled notch
+  - right before New Milford, route on Lillis Road (compacted) and Outlook Rd instead of second hill rd
   - download again for surface info
