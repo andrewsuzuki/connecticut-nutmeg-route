@@ -3,8 +3,11 @@
 
 const { readdir, readFile, writeFile } = require("fs/promises");
 const xml2js = require("xml2js");
-const csv = require("csvtojson");
-const { summary, parseSegments } = require("./surface-analysis");
+const {
+  summary,
+  parseSegments,
+  geojsonSegmentMessageRowsToJson,
+} = require("./surface-analysis");
 
 const pathToSections = __dirname + "/../sections";
 
@@ -20,7 +23,7 @@ async function getSectionNames() {
 
 async function verifySectionIntegrity(sectionName) {
   const dirNames = await readdir(pathToSections + "/" + sectionName);
-  return ["gpx", "csv", "org"].every((ext) =>
+  return ["geojson", "org"].every((ext) =>
     dirNames.includes(`${sectionName}.${ext}`)
   );
 }
@@ -43,14 +46,22 @@ async function run() {
 
   // Read all sections
   const sections = await Promise.all(
-    sectionNames.map(async (sectionName) => ({
-      name: sectionName,
-      segments: parseSegments(
-        await csv({ delimiter: "\t" }).fromFile(
-          `${pathToSections}/${sectionName}/${sectionName}.csv`
+    sectionNames.map(async (sectionName) => {
+      const gj = JSON.parse(
+        await readFile(
+          `${pathToSections}/${sectionName}/${sectionName}.geojson`
         )
-      ),
-    }))
+      );
+      const feature = gj.features[0];
+      return {
+        name: sectionName,
+        segments: parseSegments(
+          geojsonSegmentMessageRowsToJson(feature.properties.messages)
+        ),
+        points: feature.geometry.coordinates,
+        filteredAscend: parseInt(feature.properties["filtered ascend"], 10),
+      };
+    })
   );
 
   // Write individual section analyses
@@ -75,21 +86,23 @@ async function run() {
   );
   console.log("Wrote route section analysis");
 
-  // Combine gpx
+  // Combine point and make route.gpx from skeleton
   const parser = new xml2js.Parser();
   const builder = new xml2js.Builder();
-  const parsedGpxSections = await Promise.all(
-    sectionNames.map((sectionName) =>
-      readFile(`${pathToSections}/${sectionName}/${sectionName}.gpx`).then(
-        parser.parseStringPromise
-      )
-    )
+  const gpxObj = await readFile(`${__dirname}/../route-skeleton.gpx`).then(
+    parser.parseStringPromise
   );
-  const allTrackpoints = parsedGpxSections.reduce((acc, section) => {
-    return [...acc, ...section.gpx.trk[0].trkseg[0].trkpt];
+  const allPoints = sections.reduce((acc, section) => {
+    return [...acc, ...section.points];
   }, []);
-  const gpxObj = parsedGpxSections[0];
-  gpxObj.gpx.trk[0].trkseg[0].trkpt = allTrackpoints;
+  gpxObj.gpx.trk[0].trkseg = [
+    {
+      trkpt: allPoints.map((point) => ({
+        $: { lon: `${point[0]}`, lat: `${point[1]}` },
+        ele: [`${point[2]}`],
+      })),
+    },
+  ];
   gpxObj.gpx.trk[0].name[0] = `CT Nutmeg Bikepacking Route ${
     new Date().toISOString().split("T")[0]
   }`;

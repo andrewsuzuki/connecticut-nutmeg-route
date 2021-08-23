@@ -74,6 +74,7 @@ To maximize the amount of dirt, examine a lot of the route manually using satell
 - Consider abandoning American Legion State Forest since adds a few paved miles, if there's an alternate route that adds move dirt but still hits up the general area.
   - Could also be good to reduce the length of section 3 / add to section 2.
   - Replace the stop with a campsite along Tunxis trail? or elsewhere?
+- Consider leaving the Air line trail for a bit around Willimantic since it's paved in that section. Could route through Mansfield Hollow, which has some wide smooth trails, or any dirt roads in the area
 - Convert sections 2/3/4 to use profile #4, then remove other profiles
 - Consider going into Rhode Island.
   - Lots of good gravel right on the border (Arcadia Management Area, etc).
@@ -136,6 +137,11 @@ way["highway"="track"]({{bbox}}); // likely to be dirt, so include all tracks
 out body;
 >;
 out skel qt;
+#+END_SRC
+
+Quick version for wizard:
+#+BEGIN_SRC
+type:way and bicycle!=no and access!=no and access!=private and ((highway=track and surface!=asphalt and surface!=paved) or ((highway=residential or highway=unclassified or highway=service or highway=cycleway) and surface!=asphalt and surface!=paved and surface=*))
 #+END_SRC
 
 * BRouter

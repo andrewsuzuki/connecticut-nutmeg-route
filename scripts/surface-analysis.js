@@ -335,9 +335,18 @@ function summary(segments) {
 }
 exports.summary = summary;
 
-// Run in node.js from file
+function geojsonSegmentMessageRowsToJson(messages) {
+  const [headers, ...rows] = messages;
+
+  return rows.map((row) =>
+    row.reduce((obj, value, i) => ({ ...obj, [headers[i]]: value }), {})
+  );
+}
+exports.geojsonSegmentMessageRowsToJson = geojsonSegmentMessageRowsToJson;
+
+// Run in node.js from file with file argument (geojson)
 async function runf() {
-  const csv = require("csvtojson");
+  const { readFile } = require("fs/promises");
 
   const filename = process.argv[2];
 
@@ -345,9 +354,11 @@ async function runf() {
     throw new Error("Missing filename");
   }
 
-  const data = await csv({ delimiter: "\t" }).fromFile(filename);
+  const gj = JSON.parse(await readFile(filename));
 
-  const segments = parseSegments(data);
+  const segments = parseSegments(
+    geojsonSegmentMessageRowsToJson(gj.features[0].properties.messages)
+  );
   console.dir(summary(segments), { depth: null });
 }
 
