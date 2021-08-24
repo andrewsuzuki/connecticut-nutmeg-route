@@ -237,6 +237,7 @@ function sumSegmentDistances(segments) {
 }
 
 const METERS_IN_A_MILE = 1609.344;
+const FEET_IN_A_METER = 3.28084;
 
 const intelligentRound = (x) => {
   const digits = x < 0.001 ? 4 : x < 0.01 ? 3 : x < 0.1 ? 2 : x < 3 ? 1 : 0;
@@ -269,14 +270,28 @@ function groupByTag(segments, tag) {
   }, {});
 }
 
-function summary(segments) {
+function summary(segments, filteredAscendMeters = null) {
   // Get total distance
   const totalDistanceMeters = sumSegmentDistances(segments);
+
+  const totalDistanceMiles = totalDistanceMeters / METERS_IN_A_MILE;
+
+  const filteredAscendFeet = filteredAscendMeters * FEET_IN_A_METER;
 
   return {
     distanceUnit: "mile", // info
 
-    distance: intelligentRound(totalDistanceMeters / METERS_IN_A_MILE),
+    distance: intelligentRound(totalDistanceMiles),
+
+    ...(typeof filteredAscendMeters === "number"
+      ? {
+          filteredAscendUnit: "feet",
+          filteredAscend: intelligentRound(filteredAscendFeet),
+          filteredAscendPerUnitDistance: intelligentRound(
+            filteredAscendFeet / totalDistanceMiles
+          ),
+        }
+      : {}),
 
     unpavedPavedIndeterminate: mapValues(
       groupByUnpavedPaved(segments),

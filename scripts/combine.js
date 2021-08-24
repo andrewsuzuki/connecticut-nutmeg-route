@@ -66,10 +66,10 @@ async function run() {
 
   // Write individual section analyses
   await Promise.all(
-    sections.map(({ name, segments }) => {
+    sections.map(({ name, segments, filteredAscend }) => {
       writeFile(
         `${pathToSections}/${name}/${name}-analysis.json`,
-        JSON.stringify(summary(segments), null, 2)
+        JSON.stringify(summary(segments, filteredAscend), null, 2)
       );
     })
   );
@@ -82,7 +82,14 @@ async function run() {
   );
   await writeFile(
     `${__dirname}/../route-analysis.json`,
-    JSON.stringify(summary(allSegments), null, 2)
+    JSON.stringify(
+      summary(
+        allSegments,
+        sections.reduce((acc, section) => acc + section.filteredAscend, 0)
+      ),
+      null,
+      2
+    )
   );
   console.log("Wrote route section analysis");
 

@@ -1,6 +1,9 @@
 {
   "distanceUnit": "mile",
   "distance": 358.2,
+  "filteredAscendUnit": "feet",
+  "filteredAscend": 21505.9,
+  "filteredAscendPerUnitDistance": 60,
   "unpavedPavedIndeterminate": {
     "unpaved": {
       "distance": 180.7,
