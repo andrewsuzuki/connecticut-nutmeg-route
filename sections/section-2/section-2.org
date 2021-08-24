@@ -9,8 +9,3 @@ Macedonia Brook State Park to American Legion State Forest
 * BRouter Profile
 
 nutmeg-brouter-profile-4
-
-* TODO TODO
-
-- After OSM update 2021-08-24:
-  - Check around Ellen Battell Estate (Norfolk)

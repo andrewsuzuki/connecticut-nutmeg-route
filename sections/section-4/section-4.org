@@ -12,8 +12,7 @@ nutmeg-brouter-profile-4
 
 * TODO TODO
 
-- After OSM update (already happened) (might've already done some of these, check):
-  - terrible track just west of Pisgah Hill (Natchaug Forest)
-  - Natchaug orange trail power line trail off of Fayette Wright rd instead of continuing on rd (a bit south of the above)
-  - instead of turning from morey to marcy (bottom, almost at airline), route onto twisting track (orange trail), leading eventually to nutmeg lane, then airline
-  - Consider routing onto the twisting trail right above that too ^
+- Ground truth
+  - Around Pisgah Hill / Sherman Hill (SE of Eastford, north of RT 44). There are two possible unpaved tracks, and one paved road, that can be taken going south. The westernmost seems to be the most rugged (not on heatmap), and goes through a Wyndham Land Trust property...perhaps contact them asking if it's legal/passable. The other unpaved track (eastern) seems to go through Natchaug, which is good, but then at the very end it seems to reach RT 44 via a private rest stop (Frog Rock)? And the paved road is, well, paved. So, decide on the best road here.
+  - A bit later, when leaving Fayette Wright Rd on the Orange trail, decide on the best way through that section (until Silvermine Horse Camp). Consider turning onto Pilfershire Rd first.
+  - Between Kingsbury Rd and Morey Rd, consider rounding onto the less-travelled track and winding singetrack instead of the unnamed unpaved service road, if it's gentle enough. Would cut out the pavement on Morey Rd.
