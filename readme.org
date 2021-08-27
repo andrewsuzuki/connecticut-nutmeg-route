@@ -73,7 +73,10 @@ To maximize the amount of dirt, examine a lot of the route manually using satell
 
 - Consider abandoning American Legion State Forest since adds a few paved miles, if there's an alternate route that adds move dirt but still hits up the general area.
   - Could also be good to reduce the length of section 3 / add to section 2.
-  - Replace the stop with a campsite along Tunxis trail? or elsewhere?
+  - Replace the stop with a campsite along Tipping Rock trail? or elsewhere?
+  - ~Norfolk to Canton
+  - Not bad, it's 24.5mi from center of Norfolk to Satan's Kingdom Rd, with 45% unpaved
+  - In comparison, going through American Legion / Colebrook is 27.6mi, mostly paved (perhaps 5% unpaved?)
 - OSM
   + More Strava tracks / access restrictions in Pachaug State Forest (look at fairly comprehensive official map)
   + More Strava tracks in Yale Forest near Ashford
@@ -175,6 +178,10 @@ Each section:
 
 List of CT state parks and forests allowing mountain biking:
 https://portal.ct.gov/NCLI/Outdoor-Activities/Mountain-Biking
+
+"Trails and service, logging and other roads are open to non-motorized, multiple use activities (foot travel, mountain biking, equestrian) unless posted closed."
+
+"Connecticut Blue-Blazed Hiking Trails and the National Park Service Appalachian Trail are limited to hiking except where they overlap a multiple use trail."
 
 * Surface/terrain Analysis
 

@@ -1,20 +1,20 @@
 {
   "distanceUnit": "mile",
-  "distance": 358.2,
-  "filteredAscendUnit": "feet",
-  "filteredAscend": 21505.9,
-  "filteredAscendPerUnitDistance": 60,
+  "distance": 358.4,
+  "filteredAscendUnit": "foot",
+  "filteredAscend": 21548.6,
+  "filteredAscendPerUnitDistance": 60.1,
   "unpavedPavedIndeterminate": {
     "unpaved": {
-      "distance": 180.7,
+      "distance": 180.6,
       "percentOfRoute": 0.5
     },
     "paved": {
-      "distance": 156.8,
+      "distance": 156.9,
       "percentOfRoute": 0.44
     },
     "indeterminate": {
-      "distance": 20.7,
+      "distance": 20.9,
       "percentOfRoute": 0.058
     }
   },
@@ -26,10 +26,14 @@
     "distance": 0,
     "percentOfRoute": 0
   },
+  "wrongWay": {
+    "distance": 0.0075,
+    "percentOfRoute": 0.00002
+  },
   "byHighway": [
     {
       "highway": "residential",
-      "distance": 148.7,
+      "distance": 148.8,
       "percentOfRoute": 0.42,
       "bySurface": [
         {
@@ -46,9 +50,9 @@
         },
         {
           "surface": "NONE",
-          "distance": 17.4,
+          "distance": 17.6,
           "percentOfHighway": 0.12,
-          "percentOfRoute": 0.048
+          "percentOfRoute": 0.049
         },
         {
           "surface": "unpaved",
@@ -226,7 +230,7 @@
           "surface": "asphalt",
           "distance": 12.4,
           "percentOfHighway": 0.35,
-          "percentOfRoute": 0.035
+          "percentOfRoute": 0.034
         },
         {
           "surface": "compacted",
@@ -244,7 +248,7 @@
           "surface": "dirt",
           "distance": 0.18,
           "percentOfHighway": 0.0052,
-          "percentOfRoute": 0.00052
+          "percentOfRoute": 0.00051
         },
         {
           "surface": "wood",
@@ -290,13 +294,13 @@
           "percentOfRoute": 0.011
         },
         {
-          "surface": "NONE",
+          "surface": "asphalt",
           "distance": 2.76,
           "percentOfHighway": 0.18,
           "percentOfRoute": 0.0077
         },
         {
-          "surface": "asphalt",
+          "surface": "NONE",
           "distance": 2.72,
           "percentOfHighway": 0.18,
           "percentOfRoute": 0.0076
@@ -322,8 +326,8 @@
       "bySurface": [
         {
           "surface": "NONE",
-          "distance": 8.7,
-          "percentOfHighway": 0.69,
+          "distance": 8.6,
+          "percentOfHighway": 0.68,
           "percentOfRoute": 0.024
         },
         {
@@ -340,9 +344,9 @@
         },
         {
           "surface": "asphalt",
-          "distance": 0.73,
-          "percentOfHighway": 0.058,
-          "percentOfRoute": 0.002
+          "distance": 0.79,
+          "percentOfHighway": 0.063,
+          "percentOfRoute": 0.0022
         },
         {
           "surface": "unpaved",
@@ -373,6 +377,12 @@
           "distance": 0.054,
           "percentOfHighway": 0.0043,
           "percentOfRoute": 0.00015
+        },
+        {
+          "surface": "fine_gravel",
+          "distance": 0.021,
+          "percentOfHighway": 0.0016,
+          "percentOfRoute": 0.00006
         },
         {
           "surface": "paving_stones",
@@ -462,7 +472,7 @@
   "bySurface": [
     {
       "surface": "asphalt",
-      "distance": 138.4,
+      "distance": 138.5,
       "percentOfRoute": 0.39,
       "byHighway": [
         {
@@ -481,7 +491,7 @@
           "highway": "cycleway",
           "distance": 12.4,
           "percentOfSurface": 0.089,
-          "percentOfRoute": 0.035
+          "percentOfRoute": 0.034
         },
         {
           "highway": "unclassified",
@@ -491,15 +501,15 @@
         },
         {
           "highway": "service",
-          "distance": 2.72,
+          "distance": 2.76,
           "percentOfSurface": 0.02,
-          "percentOfRoute": 0.0076
+          "percentOfRoute": 0.0077
         },
         {
           "highway": "footway",
-          "distance": 0.73,
-          "percentOfSurface": 0.0052,
-          "percentOfRoute": 0.002
+          "distance": 0.79,
+          "percentOfSurface": 0.0057,
+          "percentOfRoute": 0.0022
         },
         {
           "highway": "path",
@@ -534,9 +544,9 @@
         },
         {
           "highway": "residential",
-          "distance": 17.4,
+          "distance": 17.6,
           "percentOfSurface": 0.22,
-          "percentOfRoute": 0.048
+          "percentOfRoute": 0.049
         },
         {
           "highway": "path",
@@ -552,15 +562,15 @@
         },
         {
           "highway": "footway",
-          "distance": 8.7,
+          "distance": 8.6,
           "percentOfSurface": 0.11,
           "percentOfRoute": 0.024
         },
         {
           "highway": "service",
-          "distance": 2.76,
+          "distance": 2.72,
           "percentOfSurface": 0.034,
-          "percentOfRoute": 0.0077
+          "percentOfRoute": 0.0076
         },
         {
           "highway": "pedestrian",
@@ -726,7 +736,7 @@
           "highway": "cycleway",
           "distance": 0.18,
           "percentOfSurface": 0.024,
-          "percentOfRoute": 0.00052
+          "percentOfRoute": 0.00051
         }
       ]
     },
@@ -800,14 +810,20 @@
     },
     {
       "surface": "fine_gravel",
-      "distance": 1.31,
-      "percentOfRoute": 0.0036,
+      "distance": 1.33,
+      "percentOfRoute": 0.0037,
       "byHighway": [
         {
           "highway": "cycleway",
           "distance": 1.31,
-          "percentOfSurface": 1,
+          "percentOfSurface": 0.98,
           "percentOfRoute": 0.0036
+        },
+        {
+          "highway": "footway",
+          "distance": 0.021,
+          "percentOfSurface": 0.015,
+          "percentOfRoute": 0.00006
         }
       ]
     },

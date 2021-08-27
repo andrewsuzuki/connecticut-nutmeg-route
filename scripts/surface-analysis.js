@@ -285,7 +285,7 @@ function summary(segments, filteredAscendMeters = null) {
 
     ...(typeof filteredAscendMeters === "number"
       ? {
-          filteredAscendUnit: "feet",
+          filteredAscendUnit: "foot",
           filteredAscend: intelligentRound(filteredAscendFeet),
           filteredAscendPerUnitDistance: intelligentRound(
             filteredAscendFeet / totalDistanceMiles
@@ -307,6 +307,18 @@ function summary(segments, filteredAscendMeters = null) {
     disusedOrAbandoned: distanceAndPercents(
       segments.filter(
         ({ tags }) => tags.disused === "yes" || tags.abandoned === "yes"
+      ),
+      { percentOfRoute: totalDistanceMeters }
+    ),
+
+    wrongWay: distanceAndPercents(
+      segments.filter(
+        ({ tags }) =>
+          tags.reversedirection === "yes" &&
+          tags.oneway === "yes" &&
+          tags.cycleway !== "opposite_lane" &&
+          tags["cycleway:left"] !== "opposite_lane" &&
+          tags["cycleway:right"] !== "opposite_lane"
       ),
       { percentOfRoute: totalDistanceMeters }
     ),

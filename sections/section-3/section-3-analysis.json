@@ -1,7 +1,7 @@
 {
   "distanceUnit": "mile",
   "distance": 87.8,
-  "filteredAscendUnit": "feet",
+  "filteredAscendUnit": "foot",
   "filteredAscend": 5118.1,
   "filteredAscendPerUnitDistance": 58.3,
   "unpavedPavedIndeterminate": {
@@ -23,6 +23,10 @@
     "percentOfRoute": 0.25
   },
   "disusedOrAbandoned": {
+    "distance": 0,
+    "percentOfRoute": 0
+  },
+  "wrongWay": {
     "distance": 0,
     "percentOfRoute": 0
   },
