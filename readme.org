@@ -85,10 +85,10 @@ To maximize the amount of dirt, examine a lot of the route manually using satell
   + Add CT backpacking shelters to OSM
     + DONE Pachaug
     + DONE Cockaponset (Pattaconk Reservoir)
+    + DONE Tunxis/Nepaug
     + Natchaug
     + Nipmuck/Bigelow
     + Mohawk trail (wickwire rd)? Kinda far from the route, but could be useful
-    + Tunxis/Nepaug (kinda far from the route, but could be useful)
   + Winchester Land Trust?
 
 * Overpass API
