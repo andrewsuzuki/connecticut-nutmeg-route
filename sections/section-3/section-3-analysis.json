@@ -30,6 +30,10 @@
     "distance": 0,
     "percentOfRoute": 0
   },
+  "noAccess": {
+    "distance": 0,
+    "percentOfRoute": 0
+  },
   "byHighway": [
     {
       "highway": "residential",

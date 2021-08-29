@@ -2,7 +2,7 @@
   "distanceUnit": "mile",
   "distance": 355.9,
   "filteredAscendUnit": "foot",
-  "filteredAscend": 21318.9,
+  "filteredAscend": 21315.6,
   "filteredAscendPerUnitDistance": 59.9,
   "unpavedPavedIndeterminate": {
     "unpaved": {
@@ -29,6 +29,10 @@
   "wrongWay": {
     "distance": 0.0075,
     "percentOfRoute": 0.00002
+  },
+  "noAccess": {
+    "distance": 1.93,
+    "percentOfRoute": 0.0054
   },
   "byHighway": [
     {
@@ -87,7 +91,7 @@
       "bySurface": [
         {
           "surface": "NONE",
-          "distance": 22.2,
+          "distance": 22.1,
           "percentOfHighway": 0.36,
           "percentOfRoute": 0.062
         },
@@ -100,7 +104,7 @@
         {
           "surface": "earth",
           "distance": 6.4,
-          "percentOfHighway": 0.1,
+          "percentOfHighway": 0.11,
           "percentOfRoute": 0.018
         },
         {
@@ -538,7 +542,7 @@
       "byHighway": [
         {
           "highway": "track",
-          "distance": 22.2,
+          "distance": 22.1,
           "percentOfSurface": 0.25,
           "percentOfRoute": 0.062
         },
@@ -680,7 +684,7 @@
     },
     {
       "surface": "earth",
-      "distance": 15.7,
+      "distance": 15.8,
       "percentOfRoute": 0.044,
       "byHighway": [
         {
@@ -704,7 +708,7 @@
         {
           "highway": "service",
           "distance": 0.0075,
-          "percentOfSurface": 0.00048,
+          "percentOfSurface": 0.00047,
           "percentOfRoute": 0.00002
         }
       ]

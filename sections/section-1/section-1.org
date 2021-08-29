@@ -12,4 +12,4 @@ nutmeg-brouter-profile-4
 
 * TODO TODO
 
-- Smoothest path down from West Rock? All the way almost down to Brooks Rd, or half-way down (as it is now)?
+- Find a different route around West Rock, since Sanford Feeder is bicycle=no

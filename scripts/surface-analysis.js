@@ -323,6 +323,16 @@ function summary(segments, filteredAscendMeters = null) {
       { percentOfRoute: totalDistanceMeters }
     ),
 
+    noAccess: distanceAndPercents(
+      segments.filter(
+        ({ tags }) =>
+          tags.access === "private" ||
+          tags.access === "no" ||
+          tags.bicycle === "no"
+      ),
+      { percentOfRoute: totalDistanceMeters }
+    ),
+
     byHighway: keyedDistancesToSortedMaps(
       mapValues(groupByTag(segments, "highway"), (highwaySegments) => ({
         ...distanceAndPercents(highwaySegments, {
