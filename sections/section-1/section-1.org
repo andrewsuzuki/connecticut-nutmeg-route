@@ -12,4 +12,5 @@ nutmeg-brouter-profile-4
 
 * TODO TODO
 
-- Regen after OSM update (after work around Lake Chamberlain + Roxbury)
+- Ground truth
+  - In Roxbury, consider Mine Hill / Carter Preserves (trails?) instead of long section of compacted road
