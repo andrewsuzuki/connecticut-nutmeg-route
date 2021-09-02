@@ -26,14 +26,36 @@
     "distance": 0,
     "percentOfRoute": 0
   },
-  "wrongWay": {
-    "distance": 0,
-    "percentOfRoute": 0
-  },
   "noAccess": {
     "distance": 0,
     "percentOfRoute": 0
   },
+  "impassable": {
+    "distance": 0,
+    "percentOfRoute": 0
+  },
+  "byBikeClassification": [
+    {
+      "classification": "none",
+      "distance": 60.5,
+      "percentOfRoute": 0.8
+    },
+    {
+      "classification": "dedicated",
+      "distance": 13.5,
+      "percentOfRoute": 0.18
+    },
+    {
+      "classification": "sharrow",
+      "distance": 1.35,
+      "percentOfRoute": 0.018
+    },
+    {
+      "classification": "lane",
+      "distance": 0.22,
+      "percentOfRoute": 0.003
+    }
+  ],
   "byHighway": [
     {
       "highway": "residential",

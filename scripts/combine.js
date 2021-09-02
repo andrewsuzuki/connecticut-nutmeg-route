@@ -7,6 +7,7 @@ const {
   summary,
   parseSegments,
   geojsonSegmentMessageRowsToJson,
+  certainlyPavedHighwayValues,
 } = require("./surface-analysis");
 
 const pathToSections = __dirname + "/../sections";
@@ -116,6 +117,35 @@ async function run() {
   const xml = builder.buildObject(gpxObj);
   await writeFile(`${__dirname}/../route.gpx`, xml);
   console.log("Combined gpx and saved route.gpx (done)");
+
+  // Export surface fixmes
+  const insertAt = (str, sub, pos) =>
+    `${str.slice(0, pos)}${sub}${str.slice(pos)}`;
+  const surfaceFixmes = sections
+    .reduce((acc, section) => {
+      return [...acc, ...section.segments];
+    }, [])
+    .filter(
+      (segment) =>
+        !segment.tags.surface &&
+        !certainlyPavedHighwayValues.includes(segment.tags.highway) &&
+        !["track", "path"].includes(segment.tags.highway) && // might want to fix these later, but not a priority, as they're likely unpaved
+        !["sidewalk", "crossing"].includes(segment.tags.footway)
+    )
+    .map(({ original, distance, tags }) => ({
+      distance,
+      tags,
+      coordinateString: `${insertAt(original.Latitude, ".", 2)}, ${insertAt(
+        original.Longitude,
+        ".",
+        3
+      )}`,
+    }));
+  await writeFile(
+    `${__dirname}/../route-surface-fixmes.json`,
+    JSON.stringify(surfaceFixmes, null, 2)
+  );
+  console.log("Found and saved surface fixmes (done)");
 }
 
 run();

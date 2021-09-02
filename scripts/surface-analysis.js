@@ -34,6 +34,7 @@ const certainlyPavedHighwayValues = [
   "tertiary_link",
   "major", // special internal type that the other ones collapse into, see explanation above
 ];
+exports.certainlyPavedHighwayValues = certainlyPavedHighwayValues;
 
 const likelyUnpavedRoadHighwayValues = [
   "track",
@@ -73,26 +74,6 @@ const unpavedSurfaceValues = [
   "sett",
   "unhewn_cobblestone",
   "paving_stones",
-];
-
-// smoothness= values that are bad, in a good way
-// only used to warn if segment doesn't have surface tag
-const goodBadSmoothnessValues = [
-  "bad",
-  "very_bad",
-  "horrible",
-  "very_horrible",
-  "impassable",
-];
-
-// tracktype= values that are bad, in a good way
-// only used to warn if segment doesn't have surface tag
-const goodBadTracktypeValues = [
-  "grade1", // supposed to be smooth, but in practice, often used for rougher tracks
-  "grade2",
-  "grade3",
-  "grade4",
-  "grade5",
 ];
 
 // Get from brouter-web data table
@@ -150,15 +131,6 @@ function parseSegments(data) {
 }
 exports.parseSegments = parseSegments;
 
-function hasSmoothnessOrTracktypeButNoSurface(tags) {
-  const { surface, smoothness, tracktype } = tags;
-  return (
-    !surface &&
-    ((smoothness && goodBadSmoothnessValues.includes(smoothness)) ||
-      (tracktype && goodBadTracktypeValues.includes(tracktype)))
-  );
-}
-
 function isExplicitlyUnpaved(tags) {
   const { surface } = tags;
   return surface && unpavedSurfaceValues.includes(surface);
@@ -208,18 +180,331 @@ function isLikelyPaved(tags) {
   );
 }
 
+/**
+ * Classify cycleways, and also determines bike access and if we're going the wrong way down a road.
+ * This function provides dual-duty because determining these things is complicated by
+ * contra-flow, bidirectional, etc cycleways that can be tagged a number of ways.
+ * See array immediately below for possible return values.
+ */
+function cyclewayClassification(tags, drivesOn = "right") {
+  // Possible return values, in order from best to worst
+  // (used to determine the best option if there are multiple)
+  const possibleReturnValues = [
+    "dedicated", // protected cycle track, cyclestreet, pedestrian road, or shared busway
+    "lane", // bike lane (in road)
+    "sharrow", // sharrow (road)
+    "none", // no cycleway, but still allowed to ride on road
+    "discouraged", // discouraged or sidepath annotation
+    "not-allowed", // bikes not allowed, but going the right way at least (NOTE based only on bicycle=, not access=)
+    "wrong-way", // bikes not allowed, and going the wrong way down a street
+  ];
+
+  const {
+    highway,
+    cycleway,
+    "cycleway:both": cyclewayBoth,
+    "oneway:bicycle": onewayBicycle,
+    bicycle,
+  } = tags;
+  const isReverseDirection = tags.reversedirection === "yes";
+  const isOneway = tags.oneway === "yes";
+  const isCyclestreet = tags.cyclestreet === "yes";
+  const isAgainstOnewayMainRoad = isReverseDirection && isOneway;
+  const isBicycleDiscouraged = ["use_sidepath", "discouraged"].includes(
+    bicycle
+  );
+  const isBicycleNotAllowed = ["no", "dismount"].includes(bicycle);
+  const hasCyclewayLeftOrRightValue = ["left", "right"].some(
+    (side) => tags[`cycleway:${side}`]
+  );
+  const isAgainstOnewayMainRoadAndExplicitlyAllowed =
+    isAgainstOnewayMainRoad && onewayBicycle === "no";
+  const isPlainDirectionAllowed = // NOTE doesn't include cycleway:[side]:oneway or cycleway=opposite_[lane/track/share_busway] logic
+    !isAgainstOnewayMainRoad || isAgainstOnewayMainRoadAndExplicitlyAllowed;
+
+  const plainRoadDefault = isPlainDirectionAllowed ? "none" : "wrong-way";
+
+  const defaultToPlainDirectionAndBicycle = (defaultValue) =>
+    isPlainDirectionAllowed
+      ? isBicycleNotAllowed
+        ? "not-allowed"
+        : isBicycleDiscouraged
+        ? "discouraged"
+        : defaultValue
+      : "wrong-way";
+
+  // Handle separately-tagged cycleways, which are always dedicated/protected
+
+  if (highway === "cycleway") {
+    if (isBicycleNotAllowed) {
+      console.warn(
+        `Found highway=cycleway with bicycle=${bicycle}, which doesn't make sense. Returning 'not-allowed'.`
+      );
+    }
+    return defaultToPlainDirectionAndBicycle("dedicated");
+  }
+
+  // Handle ways without any of the cycleway* tags
+
+  if (!cycleway && !cyclewayBoth && !hasCyclewayLeftOrRightValue) {
+    if (isCyclestreet) {
+      // Special case: cyclestreets
+      return defaultToPlainDirectionAndBicycle("dedicated");
+    } else if (likelyPathLikeHighwayValues.includes(highway)) {
+      // Special case: path-like highway values (path, footway, pedestrian, bridleway, etc)
+      return defaultToPlainDirectionAndBicycle("dedicated");
+    } else if (tags.motor_vehicle === "no") {
+      // Special case: motor vehicle not allowed
+      return defaultToPlainDirectionAndBicycle("dedicated");
+    } else {
+      // No other relevant bike tags, so it's probably just a normal road
+      return defaultToPlainDirectionAndBicycle("none");
+    }
+  }
+
+  // [At this point, it definitely has one of the cycleway* tags]
+
+  // Sanity check; ensure bicycle= makes sense
+  if (isBicycleNotAllowed) {
+    console.warn(
+      `Found cycleway*=* with bicycle=${bicycle}, which doesn't make sense. Ignoring bicycle tag.`
+    );
+  }
+
+  // Handle way with cycleway* tags
+
+  const cyclewayValuesDedicatedGeneric = ["track", "share_busway"];
+  const cyclewayValuesDedicatedOpposite = [
+    "opposite_track",
+    "opposite_share_busway",
+  ];
+  const cyclewayValuesLaneGeneric = ["lane", "crossing"];
+  const cyclewayValuesLaneOpposite = ["opposite_lane"];
+  const cyclewayValuesSharrowGeneric = ["shared_lane", "shared"];
+  const cyclewayValuesSharrowOpposite = ["opposite"];
+  const cyclewayValuesNo = [
+    "no",
+    "proposed",
+    // TODO the rest should probably be classified as "discouraged", not "no"
+    "separate",
+    "sidepath",
+    "sidewalk",
+  ];
+
+  // Group cycleway values based on whether they're generic (either bidirectional or
+  // one-way/contra-flow using modern tagging) or "opposite" (deprecated contra-flow tagging)
+  const cyclewayValuesYesGeneric = [
+    ...cyclewayValuesDedicatedGeneric,
+    ...cyclewayValuesLaneGeneric,
+    ...cyclewayValuesSharrowGeneric,
+  ];
+  const cyclewayValuesYesOpposite = [
+    ...cyclewayValuesDedicatedOpposite,
+    ...cyclewayValuesLaneOpposite,
+    ...cyclewayValuesSharrowOpposite,
+  ];
+
+  // Group cycleway values based on final cycleway classification
+  const cyclewayValuesDedicated = [
+    ...cyclewayValuesDedicatedGeneric,
+    ...cyclewayValuesDedicatedOpposite,
+  ];
+  const cyclewayValuesLane = [
+    ...cyclewayValuesLaneGeneric,
+    ...cyclewayValuesLaneOpposite,
+  ];
+  const cyclewayValuesSharrow = [
+    ...cyclewayValuesSharrowGeneric,
+    ...cyclewayValuesSharrowOpposite,
+  ];
+
+  // Converts cycleway= value to the final cycleway classification
+  const cyclewayValueClassification = (cyclewayValue) => {
+    const classification = cyclewayValuesDedicated.includes(cyclewayValue)
+      ? "dedicated"
+      : cyclewayValuesLane.includes(cyclewayValue)
+      ? "lane"
+      : cyclewayValuesSharrow.includes(cyclewayValue)
+      ? "sharrow"
+      : cyclewayValuesNo.includes(cyclewayValue)
+      ? "none"
+      : null; // caught below
+    if (!classification) {
+      console.warn(
+        `Unknown cycleway= value "${cyclewayValue}". Returning "none"`
+      );
+      return "none";
+    }
+    return classification;
+  };
+
+  if (
+    cyclewayValuesYesGeneric.includes(cyclewayBoth) ||
+    cyclewayValuesYesOpposite.includes(cyclewayBoth) // invalid, but include for sanity check and treat as normal
+  ) {
+    // Handle cycleway:both
+
+    // Sanity check
+    if (cycleway || hasCyclewayLeftOrRightValue) {
+      console.warn(
+        "Found cycleway:both with cycleway, cycleway:left, or cycleway:right (using cycleway:both only)"
+      );
+    }
+    if (cyclewayValuesYesOpposite.includes(cyclewayBoth)) {
+      console.warn(
+        "Found cycleway:both with a value suggesting a contra-flow (opposite_*) on both sides, which seems unlikely"
+      );
+    }
+
+    return cyclewayValueClassification(cyclewayBoth);
+  } else if (cyclewayValuesYesGeneric.includes(cycleway)) {
+    // Handle cycleway=, except for opposite* (contra-flow) values
+
+    // Sanity check
+    if (hasCyclewayLeftOrRightValue) {
+      console.warn(
+        "Found cycleway with cycleway:left or cycleway:right (using cycleway only)"
+      );
+    }
+
+    if (isOneway) {
+      // Road is oneway
+      if (onewayBicycle === "no") {
+        return cyclewayValueClassification(cycleway);
+      } else if (!onewayBicycle || onewayBicycle === "yes") {
+        return isReverseDirection
+          ? "wrong-way"
+          : cyclewayValueClassification(cycleway);
+      }
+    } else {
+      // Road is bidirectional
+      if (!onewayBicycle || onewayBicycle === "no") {
+        return cyclewayValueClassification(cycleway);
+      }
+      // Don't handle case where it isn't oneway but onewayBicycle=yes or -1 (rare / undocumented)
+    }
+
+    console.warn(
+      `Found cycleway=* with undocumented/ambiguous usage of oneway:bicycle. Returning "${plainRoadDefault}"`
+    );
+    return plainRoadDefault;
+  } else if (cyclewayValuesYesOpposite.includes(cycleway)) {
+    // Handle cycleway=opposite* (deprecated contra-flow tagging)
+
+    // Sanity check; must be oneway=yes
+    // Wiki says to put oneway:bicycle=no, but a contra-flow is heavily implied
+    // by using the opposite* value, so omitting it seems allowable.
+    if (!isOneway) {
+      console.warn(
+        `Found cycleway=opposite*, suggesting contra-flow, but without oneway=yes. Assuming it's a oneway.`
+      );
+    }
+
+    if (isReverseDirection) {
+      // We're in the contra-flow lane
+      return cyclewayValueClassification(cycleway);
+    }
+
+    // NOTE It's still likely a decent street to ride on, having a contra-flow lane and all, but
+    // there isn't any additional tagging to suggest it has sharrows or anything, unless it was
+    // tagged using a mixture of cycleway= and cycleway:[side] tags,
+    return defaultToPlainDirectionAndBicycle("none");
+  } else if (hasCyclewayLeftOrRightValue) {
+    // Handle cycleway:left and/or cycleway:right
+
+    const SIDE_ONEWAY_WITH = "yes";
+    const SIDE_ONEWAY_CONTRA_FLOW = "-1";
+    const SIDE_ONEWAY_BOTH = "no";
+
+    // Check if we're on one of the sides, and if so, what its value is
+    const onCyclewaySideValue = (side) => {
+      const value = tags[`cycleway:${side}`];
+      if (!value) {
+        return undefined;
+      }
+      // Get the oneway value for this side, if it was specified
+      const explicitSideOneway = tags[`cycleway:${side}:oneway`];
+      // Use the oneway value, or use the implied value based on what side the country
+      // drives on and whether the main road is a oneway.
+      const sideOneway =
+        explicitSideOneway ||
+        (!isOneway
+          ? drivesOn === side
+            ? SIDE_ONEWAY_WITH
+            : SIDE_ONEWAY_CONTRA_FLOW
+          : SIDE_ONEWAY_WITH); // NOTE ambiguous, see warning below.
+
+      if (
+        !explicitSideOneway &&
+        isOneway &&
+        drivesOn !== side &&
+        !cyclewayValuesYesOpposite.includes(value)
+      ) {
+        // NOTE Could possibly use oneway:bicycle=no to hint at a contra-flow, but then that would also be
+        // ambiguous if there's another lane on the other side (wouldn't know which is which), possibly with a proper :oneway tag.
+        console.warn(
+          `Found a oneway=yes cycleway:${side}=${value} without cycleway:${side}:oneway on the opposite side of the road the country usually drives on. ` +
+            `It could be a contra-flow, but assuming it is NOT a contra-flow and that it is going in the same direction as the road.`
+        );
+      }
+
+      // While using traditional opposite* (contra-flow) values isn't mentioned in the wiki with the cycleway:[side] keys,
+      // it's still understandable at least if it doesn't have an explicit :oneway tag.
+      // https://wiki.openstreetmap.org/wiki/Key:cycleway:right
+      if (cyclewayValuesYesOpposite.includes(value)) {
+        if (explicitSideOneway) {
+          // If it DOES have a :oneway tag, then it's too ambiguous to understand (like a double negative)
+          console.warn(
+            `Found cycleway:${side}=${value}, which is already bad usage, but with a cycleway:${side}:oneway tag (ambiguous or double negative); ignoring`
+          );
+          return undefined;
+        } else {
+          // Otherwise, treat it the same as a cycleway=opposite*
+          // Sanity check; the main road must be oneway
+          if (!isOneway) {
+            console.warn(
+              `Found cycleway:${side}=${value}, suggesting contra-flow, but without oneway=yes. Assuming it's a oneway.`
+            );
+          }
+          return isReverseDirection ? value : undefined;
+        }
+      }
+
+      // Value is standard/generic (not a deprecated contra-flow tagging), so use
+      // the [possibly implied] :oneway tags to determine if we're going in the same direction.
+      return sideOneway === SIDE_ONEWAY_BOTH ||
+        sideOneway ===
+          (isReverseDirection ? SIDE_ONEWAY_CONTRA_FLOW : SIDE_ONEWAY_WITH)
+        ? value
+        : undefined;
+    };
+
+    const selectBestClassification = (classifications) => {
+      return possibleReturnValues.find((classification) =>
+        classifications.includes(classification)
+      );
+    };
+
+    return selectBestClassification([
+      ...["left", "right"]
+        .map(onCyclewaySideValue)
+        .filter((x) => x)
+        .map(cyclewayValueClassification),
+      ...[defaultToPlainDirectionAndBicycle("none")],
+    ]);
+  }
+
+  console.warn(
+    `Found unknown tag cycleway* value "${cycleway}", returning none`
+  );
+  return "none";
+}
+
 // Group segments by unpaved/paved/indeterminate
 function groupByUnpavedPaved(segments) {
   return segments.reduce(
     (acc, segment) => {
-      const { tags, original } = segment;
-
-      if (hasSmoothnessOrTracktypeButNoSurface(tags)) {
-        console.warn(
-          "Segment has smoothness or tracktype, but missing surface",
-          original
-        );
-      }
+      const { tags } = segment;
 
       const type = isLikelyUnpaved(tags)
         ? "unpaved"
@@ -311,18 +596,6 @@ function summary(segments, filteredAscendMeters = null) {
       { percentOfRoute: totalDistanceMeters }
     ),
 
-    wrongWay: distanceAndPercents(
-      segments.filter(
-        ({ tags }) =>
-          tags.reversedirection === "yes" &&
-          tags.oneway === "yes" &&
-          tags.cycleway !== "opposite_lane" &&
-          tags["cycleway:left"] !== "opposite_lane" &&
-          tags["cycleway:right"] !== "opposite_lane"
-      ),
-      { percentOfRoute: totalDistanceMeters }
-    ),
-
     noAccess: distanceAndPercents(
       segments.filter(
         ({ tags }) =>
@@ -331,6 +604,25 @@ function summary(segments, filteredAscendMeters = null) {
           tags.bicycle === "no"
       ),
       { percentOfRoute: totalDistanceMeters }
+    ),
+
+    impassable: distanceAndPercents(
+      segments.filter(({ tags }) => tags.smoothness === "impassable"),
+      { percentOfRoute: totalDistanceMeters }
+    ),
+
+    byBikeClassification: keyedDistancesToSortedMaps(
+      mapValues(
+        segments.reduce((acc, segment) => {
+          const value = cyclewayClassification(segment.tags);
+          return { ...acc, [value]: [...(acc[value] || []), segment] };
+        }, {}),
+        (classificationSegments) =>
+          distanceAndPercents(classificationSegments, {
+            percentOfRoute: totalDistanceMeters,
+          })
+      ),
+      "classification"
     ),
 
     byHighway: keyedDistancesToSortedMaps(

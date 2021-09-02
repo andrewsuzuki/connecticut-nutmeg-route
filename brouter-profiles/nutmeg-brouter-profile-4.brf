@@ -109,6 +109,7 @@ assign cycle                    = not ( or cycleway= cycleway=no|none|proposed )
 assign l_cycle                  = not ( or cycleway:left= cycleway:left=no )
 assign r_cycle                  = not ( or cycleway:right= cycleway:right=no )
 assign has_cycleway             = or cycle ( or l_cycle r_cycle )
+assign DUMMY_INCLUDE_CYCLEWAY_SIDE_ONEWAYS_IN_SEGMENTS = or cycleway:left:oneway= cycleway:left:oneway=
 
 #
 # is it a low-speed highway?
