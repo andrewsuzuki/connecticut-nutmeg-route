@@ -98,30 +98,54 @@ async function run() {
   const allPoints = sections.reduce((acc, section) => {
     return [...acc, ...section.points];
   }, []);
-  const gpxObj = {
-    gpx: {
-      "@xmlns": "http://www.topografix.com/GPX/1/1",
-      "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-      "@xsi:schemaLocation":
-        "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
-      "@creator": "BRouter-1.6.1",
-      "@version": "1.1",
-      trk: {
-        name: `CT Nutmeg Bikepacking Route ${new Date().toISOString()}`,
-        trkseg: {
-          trkpt: allPoints.map((point) => ({
-            "@lon": `${point[0]}`,
-            "@lat": `${point[1]}`,
-            ele: `${point[2]}`,
-          })),
+  const generatedDateTimeString = new Date().toISOString();
+  const doc = xmlbuilder2.create(
+    { version: "1.0", encoding: "UTF-8", standalone: true }, // <?xml> tag options
+    {
+      gpx: {
+        "@xmlns": "http://www.topografix.com/GPX/1/1",
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xsi:schemaLocation":
+          "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
+        "@creator": "BRouter-1.6.1",
+        "@version": "1.1",
+        trk: {
+          metadata: {
+            name: `CT Nutmeg Bikepacking Route ${generatedDateTimeString}`,
+            // desc: "", // TODO
+            author: {
+              name: "Andrew Suzuki",
+              // email: ""
+            },
+            time: generatedDateTimeString,
+            keywords: [
+              "bikepacking",
+              "bike touring",
+              "gravel",
+              "mtb",
+              "connecticut",
+              "nutmeg",
+            ].join(", "),
+            link: {
+              href: "https://github.com/andrewsuzuki/connecticut-nutmeg-route",
+              text: "CT Nutmeg Bikepacking Route Source Repository",
+              type: "text/html",
+            },
+            // bounds: { @minlat, @minlon, @maxlat, @maxlon } // TODO
+          },
+          trkseg: {
+            trkpt: allPoints.map((point) => ({
+              "@lon": `${point[0]}`,
+              "@lat": `${point[1]}`,
+              ele: `${point[2]}`,
+            })),
+          },
         },
       },
-    },
-  };
-  const doc = xmlbuilder2.create(gpxObj);
-  doc.dec({ version: "1.0", encoding: "UTF-8", standalone: true });
-  const xml = doc.end({ prettyPrint: true });
-  await fs.writeFile(`${__dirname}/../route.gpx`, xml);
+    }
+  );
+  const xmlString = doc.end({ prettyPrint: true });
+  await fs.writeFile(`${__dirname}/../route.gpx`, xmlString);
   console.log("Combined gpx and saved route.gpx (done)");
 
   // Export surface fixmes
