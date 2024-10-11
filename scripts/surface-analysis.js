@@ -34,7 +34,9 @@ const certainlyPavedHighwayValues = [
   "tertiary_link",
   "major", // special internal type that the other ones collapse into, see explanation above
 ];
-exports.certainlyPavedHighwayValues = certainlyPavedHighwayValues;
+if (typeof module !== "undefined") {
+  exports.certainlyPavedHighwayValues = certainlyPavedHighwayValues;
+}
 
 const likelyUnpavedRoadHighwayValues = [
   "track",
@@ -83,12 +85,12 @@ function getRawSegmentsFromBrouterWeb() {
     throw new Error("Data table sidebar must be open to grab segments");
   }
   const list = [];
-  for (var i = 1; i < rows.length; i++) {
-    const el = rows[i].children;
+  for (const row of rows) {
+    const cells = row.children;
     list.push({
-      Elevation: el[0].innerText,
-      Distance: el[1].innerText,
-      WayTags: el[7].innerText,
+      Elevation: cells[0].innerText,
+      Distance: cells[1].innerText,
+      WayTags: cells[7].innerText,
     });
   }
   return list;
@@ -129,7 +131,9 @@ function parseSegments(data) {
       return true;
     });
 }
-exports.parseSegments = parseSegments;
+if (typeof module !== "undefined") {
+  exports.parseSegments = parseSegments;
+}
 
 function isExplicitlyUnpaved(tags) {
   const { surface } = tags;
@@ -599,9 +603,11 @@ function summary(segments, filteredAscendMeters = null) {
     noAccess: distanceAndPercents(
       segments.filter(
         ({ tags }) =>
-          tags.access === "private" ||
-          tags.access === "no" ||
-          tags.bicycle === "no"
+          (tags.access === "private" ||
+            tags.access === "no" ||
+            tags.bicycle === "no") &&
+          tags.bicycle !== "yes" &&
+          tags.bicycle !== "permissive"
       ),
       { percentOfRoute: totalDistanceMeters }
     ),
@@ -662,7 +668,9 @@ function summary(segments, filteredAscendMeters = null) {
     ),
   };
 }
-exports.summary = summary;
+if (typeof module !== "undefined") {
+  exports.summary = summary;
+}
 
 function geojsonSegmentMessageRowsToJson(messages) {
   const [headers, ...rows] = messages;
@@ -671,11 +679,13 @@ function geojsonSegmentMessageRowsToJson(messages) {
     row.reduce((obj, value, i) => ({ ...obj, [headers[i]]: value }), {})
   );
 }
-exports.geojsonSegmentMessageRowsToJson = geojsonSegmentMessageRowsToJson;
+if (typeof module !== "undefined") {
+  exports.geojsonSegmentMessageRowsToJson = geojsonSegmentMessageRowsToJson;
+}
 
 // Run in node.js from file with file argument (geojson)
 async function runf() {
-  const { readFile } = require("fs/promises");
+  const fs = require("node:fs/promises");
 
   const filename = process.argv[2];
 
@@ -683,7 +693,7 @@ async function runf() {
     throw new Error("Missing filename");
   }
 
-  const gj = JSON.parse(await readFile(filename));
+  const gj = JSON.parse(await fs.readFile(filename));
 
   const segments = parseSegments(
     geojsonSegmentMessageRowsToJson(gj.features[0].properties.messages)
@@ -692,7 +702,13 @@ async function runf() {
 }
 
 // Run in browser console (brouter-web)
-function runw() {
+async function runw() {
+  // Open sidebar data tab
+  if (!document.querySelector("#sidebar:not(.collapsed) div#tab_data.active")) {
+    document.querySelector("a[href='#tab_data']").click();
+  }
+  await new Promise((r) => setTimeout(r, 1000));
+
   const segments = parseSegments(getRawSegmentsFromBrouterWeb());
   console.dir(summary(segments), { depth: null });
 }

@@ -99,8 +99,14 @@ async function run() {
     return [...acc, ...section.points];
   }, []);
   const generatedDateTimeString = new Date().toISOString();
+  const gpxTitle = `CT Nutmeg Bikepacking Route ${generatedDateTimeString}`;
   const doc = xmlbuilder2.create(
-    { version: "1.0", encoding: "UTF-8", standalone: true }, // <?xml> tag options
+    {
+      // <?xml> tag options
+      version: "1.0",
+      encoding: "UTF-8",
+      // standalone: true // TODO omit, yes, or no?
+    },
     {
       gpx: {
         "@xmlns": "http://www.topografix.com/GPX/1/1",
@@ -109,30 +115,31 @@ async function run() {
           "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd",
         "@creator": "BRouter-1.6.1",
         "@version": "1.1",
-        trk: {
-          metadata: {
-            name: `CT Nutmeg Bikepacking Route ${generatedDateTimeString}`,
-            // desc: "", // TODO
-            author: {
-              name: "Andrew Suzuki",
-              // email: ""
-            },
-            time: generatedDateTimeString,
-            keywords: [
-              "bikepacking",
-              "bike touring",
-              "gravel",
-              "mtb",
-              "connecticut",
-              "nutmeg",
-            ].join(", "),
-            link: {
-              href: "https://github.com/andrewsuzuki/connecticut-nutmeg-route",
-              text: "CT Nutmeg Bikepacking Route Source Repository",
-              type: "text/html",
-            },
-            // bounds: { @minlat, @minlon, @maxlat, @maxlon } // TODO
+        metadata: {
+          name: gpxTitle,
+          // desc: "", // TODO
+          author: {
+            name: "Andrew Suzuki",
+            // email: ""
           },
+          time: generatedDateTimeString,
+          keywords: [
+            "bikepacking",
+            "bike touring",
+            "gravel",
+            "mtb",
+            "connecticut",
+            "nutmeg",
+          ].join(", "),
+          link: {
+            href: "https://github.com/andrewsuzuki/connecticut-nutmeg-route",
+            text: "CT Nutmeg Bikepacking Route Source Repository",
+            type: "text/html",
+          },
+          // bounds: { @minlat, @minlon, @maxlat, @maxlon } // TODO
+        },
+        trk: {
+          name: gpxTitle,
           trkseg: {
             trkpt: allPoints.map((point) => ({
               "@lon": `${point[0]}`,
