@@ -173,11 +173,11 @@ http://brouter.de/brouter-web/#map=10/41.6631/-73.0501/standard,HikeBike.HillSha
 * Sections
 
 Staring in New Haven (41.30733,-72.92582), going clockwise:
-1. Macedonia Brook State Park (~75mi) (41.76623,-73.49493)
-2. Nepaug State Forest (~68mi) (41.84531,-72.963359)
-3. Nipmuck State Forest / Bigelow Hollow State Park (~77mi) (42.00922,-72.11551)
-4. Gillette Castle (~77mi) (41.42235,-72.42873)
-5. New Haven (~59mi) (41.30724,-72.92558)
+1. Macedonia Brook State Park (~80mi) (41.76623,-73.49493)
+2. Nepaug State Forest (~62mi) (41.84531,-72.963359)
+3. Nipmuck State Forest / Bigelow Hollow State Park (~78mi) (42.00922,-72.11551)
+4. Gillette Castle (~90mi) (41.42235,-72.42873)
+5. New Haven (~58mi) (41.30724,-72.92558)
 
 Each section:
 - Waypoints (list of coordinates for BRouter/whatever)
