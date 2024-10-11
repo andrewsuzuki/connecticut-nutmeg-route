@@ -4,8 +4,42 @@ Nepaug State Forest to Nipmuck State Forest
 
 * Waypoints
 
--72.963359,41.84531;-72.955838,41.845356;-72.951096,41.842311;-72.926267,41.80997;-72.923614,41.810986;-72.923521,41.811014;-72.922761,41.811808;-72.922193,41.81916;-72.890157,41.822966;-72.769575,41.891065;-72.766925,41.896687;-72.763631,41.904952;-72.692338,41.946516;-72.68603,41.945981;-72.682264,41.948288;-72.67279,41.940012;-72.670332,41.93978;-72.662502,41.935894;-72.65807,41.934649;-72.655029,41.934514;-72.653339,41.935436;-72.649364,41.935447;-72.648044,41.934557;-72.633062,41.929724;-72.628502,41.929625;-72.627163,41.929286;-72.611967,41.963131;-72.597721,41.986722;-72.594116,41.980932;-72.592356,41.98039;-72.592163,41.978683;-72.592077,41.977486;-72.592024,41.976808;-72.592067,41.9757;-72.592142,41.974711;-72.592421,41.971919;-72.577271,41.961788;-72.507384,41.979177;-72.498222,41.978459;-72.453202,41.963442;-72.420781,41.958598;-72.413579,41.958132;-72.412916,41.957954;-72.410996,41.958038;-72.401701,41.961978;-72.242231,41.975634;-72.232532,41.988971;-72.176571,42.008904;-72.125373,42.03017;-72.115513,42.00923
+-72.956812,41.848497;-72.957802,41.838012;-72.953424,41.82228;-72.949455,41.823687;-72.944283,41.826916;-72.926267,41.80997;-72.923614,41.810986;-72.923521,41.811014;-72.922761,41.811808;-72.922193,41.81916;-72.890157,41.822966;-72.881123,41.833127;-72.856479,41.856473;-72.854746,41.856952;-72.85017,41.85887;-72.818405,41.869591;-72.78024,41.915867;-72.765329,41.925813;-72.749705,41.938584;-72.729953,41.942056;-72.692338,41.946516;-72.68603,41.945981;-72.682264,41.948288;-72.67279,41.940012;-72.670332,41.93978;-72.662502,41.935894;-72.65807,41.934649;-72.655029,41.934514;-72.653339,41.935436;-72.649364,41.935447;-72.648044,41.934557;-72.633062,41.929724;-72.628223,41.928208;-72.627163,41.929286;-72.611967,41.963131;-72.597721,41.986722;-72.594116,41.980932;-72.592356,41.98039;-72.592238,41.979022;-72.592077,41.977486;-72.592024,41.976808;-72.592067,41.9757;-72.592142,41.974711;-72.592303,41.97357;-72.592367,41.973131;-72.592421,41.971919;-72.577271,41.961788;-72.527055,41.958975;-72.453202,41.963442;-72.420781,41.958598;-72.413775,41.957699;-72.413893,41.957344;-72.415545,41.955549;-72.413201,41.956263;-72.410996,41.958038;-72.401701,41.961978;-72.220945,41.996686;-72.194681,41.991651;-72.191055,41.981985;-72.190347,41.977614;-72.174908,41.964014;-72.150822,41.954863;-72.134686,41.957991;-72.136102,41.981602;-72.13033,41.98784;-72.129477,41.991184;-72.130469,41.991383;-72.129198,41.992336;-72.12614,41.993604;-72.124279,41.993197;-72.119963,42.00252;-72.11551,42.009224
 
 * BRouter Profile
 
 nutmeg-brouter-profile-4
+
+* Decisions/Notes
+
+- From Nepaug State Forest to the Nepaug Reservoir/Dam
+  - TODO Can either follow Satan's Kingdom Road all the way to the main entrance,
+    or take the other gravel road to the other entrance closer to the dam,
+    which actually seems to be outside the Nepaug State Forest, but is marked on the trail map as a gravel road.
+- Farmington River Trail
+- TODO consider a reroute going much farther south towards Farmington center and then back up through the West Hartford Reservoirs Area
+- Werner's Woods?
+  - I don't see any Strava activity, and the entrance from Lawton Road doesn't seem to exist on streetside?
+- Simsbury Land Trust -- biking is prohibitied except where noted
+  - Tanager Hill would have been convenient
+- Penwood State Park?
+  - Weird, on ctparks.org it has multiple photos of people mountain biking, yet on the trail map it says all trails are foot-only?
+- Skirting around Bradley airport seems like the best option (don't have to go on major roads)
+- In the center of Windsor Locks, looks like they closed down the end of Church St and are making it more pedestrian friendly.
+  TODO update route when construction finishes.
+- Windsor Locks Canal State Park Trail seems nice
+- Enfield multi-use trail along Town Farm Road will be 2mi paved, but won't be completed for a couple more years (2026?)
+- Shenipsit State Forest
+  - Soapstone Mountain climb
+    - TODO where's the best overlook?
+  - TODO is Old Country Road rideable and legal?
+- Doesn't look like Breakneck Hill Road (for entering Nipmuck, from MA) is public
+- Nipmuck Trail in Yale-Myers Forest: sign says foot travel only
+- Nipmuck State Forest
+  - "The Blue Blazed Nipmuck Trail is foot travel only.
+    Other trails at Bigelow Hollow State Park & Nipmuck State Forest
+    are multi-use non-motorized (except snowmobile)."
+  - End section at the South Shelter on Breakneck Pond
+    - https://youtu.be/1rdoaU9-fCU?t=188
+    - Or the East Shelter?
+      - https://youtu.be/8qGicrTfScs?t=162

@@ -4,12 +4,55 @@ Macedonia Brook State Park to Nepaug State Forest
 
 * Waypoints
 
--73.494933,41.766234;-73.485915,41.785585;-73.383865,41.900678;-73.370132,41.891165;-73.368072,41.879405;-73.363813,41.871566;-73.326058,41.924089;-73.251343,41.947618;-73.202553,41.989317;-73.20007,41.989345;-73.199973,41.989967;-73.199126,41.990716;-73.175726,41.955788;-73.044705,41.855594;-73.000621,41.855778;-72.975805,41.827083;-72.973713,41.824884;-72.973133,41.824293;-72.96638,41.82275;-72.964845,41.825756;-72.963359,41.84531
+-73.494933,41.766234;-73.47793,41.847187;-73.477206,41.865981;-73.477421,41.87167;-73.477045,41.876751;-73.476959,41.878652;-73.476777,41.879818;-73.476691,41.880521;-73.476573,41.881144;-73.475962,41.881702;-73.472797,41.882989;-73.469417,41.884396;-73.461199,41.885631;-73.368759,41.871483;-73.359228,41.900166;-73.353374,41.921166;-73.314664,41.945351;-73.281299,41.949277;-73.257394,41.974264;-73.229885,41.987342;-73.19993,41.987495;-73.198954,41.988852;-73.195897,41.991825;-73.19272,41.994888;-73.188149,42.012362;-73.156731,42.010733;-73.050845,41.989351;-73.003763,41.953108;-72.993592,41.940371;-72.995823,41.924314;-72.985504,41.916122;-72.980949,41.913156;-72.980472,41.912905;-72.966149,41.896208;-72.958102,41.851494;-72.956812,41.848497
 
 * BRouter Profile
 
 nutmeg-brouter-profile-4
 
-* TODO TODO
+* Brief Stats
 
-- Is Shadybrook Rd (forest track) bike-legal?
+~35% unpaved
+
+* Decisions/Notes
+
+- Sharon Land Trust
+  - "Mountain biking is prohibited." https://sharonlandtrust.org/hiking-trails/
+- Go straight through the Sharon town center for amenities (Sharon Farm Market, Shell)
+- Mount Easter Road / Clay Bed Road
+  - According to Sharon GIS, this seems to be State of Connecticut land? https://gis.vgsi.com/sharonct/Parcel.aspx?pid=1195
+  - Eh, maybe not. The problem is that they end up on RT 7.
+- Calkinstown Road and West Cornwall Road seem fairly safe, low traffic, smooth pavement, 30mph?
+- West Cornwall Covered Bridge
+- Music Mountain?
+  - There's Music Mountain Road (paved) in Canaan
+  - OR Wickwire Road in Housatonic State Forest, Cornwall
+    - Connects to / parallels the Mohawk Trail
+      - Note: looks like it turns into Mohawk Trail east of the shelter, but that section actually looks like doubletrack, so might be fine?
+    - Has a shelter along it (Cream Hill Shelter)
+    - TODO does it require fording Reed Brook at the beginning (from Cream Hill Road)?
+- Lower Barrack Road?
+  - TODO ground truth, pretty sure the middle track is closed to cars, but not sure about bikes
+- Bard Road / part of Yelping Hill Road (gravel) in Cornwall -- note I think this is privately owned, use Town St instead
+- Great Mountain Forest?
+  - Private, allows visitors but must sign in. Not sure if it's worth the hassle.
+  - Instead, skirt the top of it (Wangum Road)
+    - Could also consider going south of it (North Goshen Road), but then it's hard to avoid US 44.
+- Pine Mountain Preserve (Norfolk Land Trust) including Tait Trail / CT River Watershed Council land?
+  - No Strava activity...maybe not
+- Cedar Swamp WMA
+  - TODO add Marsh Road in New Hartford back in (next to Cedar Swamp WMA) after OSM updates, someone deleted it.
+  - Note: Marsh Road and Shadybrook Road (dirt) are marked on the map as "not a thru road", but probably just cars
+  - TODO Reconsider this, since it seems to be open to hunting in the fall
+- American Legion & Peoples State Forests
+  - "The blazed trails in American Legion & Peoples State Forests are foot travel only. All other trails are non-motorized (except snowmobile route) multi-use trails."
+  - Greenwoods Road straight through Peoples State Forest looks good -- pretty sure it's unpaved
+- TODO Fuller Road
+  - Seems to be a swing gate at entrance, but it appears to be a public road on Barkhamsted GIS
+- Lake McDonough / Goose Green Beach Road
+  - MDC land
+  - Seems to be ok for bikes, I see swing gates.
+- Nepaug State Forest
+  - Satan's Kingdom Road is a no-brainer
+  - End at the DEEP campsite access trail
+    - Is the trail there rideable, and bike-legal (blue-yellow)? Might be part of the Tunxis Trail 2022 rerouting?

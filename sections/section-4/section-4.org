@@ -4,15 +4,38 @@ Nipmuck State Forest to Gillette Castle State Park
 
 * Waypoints
 
--72.115513,42.009226;-72.121671,42.000397;-72.117562,41.995637;-72.137432,41.979975;-72.141381,41.956813;-72.139106,41.929166;-72.128936,41.916202;-72.067351,41.902437;-72.061021,41.898125;-72.050013,41.873907;-72.054885,41.843158;-72.067587,41.832176;-72.082393,41.826548;-72.094688,41.824261;-72.095075,41.817848;-72.09926,41.806733;-72.092006,41.799167;-72.206322,41.712454;-72.206695,41.71246;-72.208226,41.712721;-72.211799,41.71344;-72.212885,41.711976;-72.214065,41.71223;-72.214969,41.712408;-72.216383,41.712693;-72.217201,41.712849;-72.218118,41.713005;-72.218698,41.712749;-72.437754,41.567105;-72.440929,41.559109;-72.448525,41.553313;-72.440103,41.554847;-72.434825,41.560868;-72.424031,41.557721;-72.419837,41.556107;-72.385483,41.535503;-72.333727,41.511695;-72.328033,41.510383;-72.328749,41.475532;-72.327826,41.47349;-72.333341,41.469752;-72.3663,41.459166;-72.374539,41.46119;-72.387972,41.44004;-72.424868,41.425545;-72.427894,41.424459;-72.427599,41.423271;-72.428063,41.422884;-72.42832,41.422947;-72.42909,41.422518;-72.428731,41.422343
+# -72.115513,42.009226;-72.10988,42.018545;-72.101131,42.02124;-72.103746,42.006608;-72.11216,41.985813;-72.114822,41.980548;-72.113442,41.975253;-72.092681,41.966095;-72.067566,41.958469;-72.07119,41.952421;-72.063338,41.947985;-72.067351,41.902437;-72.061021,41.898125;-72.050013,41.873907;-72.054885,41.843158;-72.058384,41.83136;-72.082393,41.826548;-72.094688,41.824261;-72.095075,41.817848;-72.09926,41.806733;-72.092006,41.799167;-72.206322,41.712454;-72.206695,41.71246;-72.208226,41.712721;-72.211799,41.71344;-72.212885,41.711976;-72.214065,41.71223;-72.214969,41.712408;-72.216383,41.712693;-72.217201,41.712849;-72.217858,41.712973;-72.218698,41.712749;-72.437754,41.567105;-72.440929,41.559109;-72.448525,41.553313;-72.440103,41.554847;-72.434825,41.560868;-72.424031,41.557721;-72.419837,41.556107;-72.385483,41.535503;-72.333727,41.511695;-72.328033,41.510383;-72.327257,41.495183;-72.328749,41.475532;-72.327826,41.47349;-72.333341,41.469752;-72.3663,41.459166;-72.374539,41.46119;-72.387972,41.44004;-72.424868,41.425545;-72.427894,41.424459;-72.427599,41.423271;-72.428063,41.422884;-72.42832,41.422947;-72.42909,41.422518;-72.428731,41.422343
+
+Goodwin Trail Alternate:
+-72.115513,42.009226;-72.10988,42.018545;-72.101131,42.02124;-72.103746,42.006608;-72.11216,41.985813;-72.114822,41.980548;-72.113442,41.975253;-72.092681,41.966095;-72.067566,41.958469;-72.07119,41.952421;-72.063338,41.947985;-72.067351,41.902437;-72.061021,41.898125;-72.050013,41.873907;-72.054885,41.843158;-72.058384,41.83136;-72.082393,41.826548;-72.094688,41.824261;-72.095075,41.817848;-72.09926,41.806733;-72.092006,41.799167;-72.206322,41.712454;-72.206695,41.71246;-72.208226,41.712721;-72.211799,41.71344;-72.212885,41.711976;-72.214065,41.71223;-72.214969,41.712408;-72.216383,41.712693;-72.217201,41.712849;-72.217858,41.712973;-72.218698,41.712749;-72.437754,41.567105;-72.440929,41.559109;-72.448525,41.553313;-72.440103,41.554847;-72.434825,41.560868;-72.424031,41.557721;-72.419837,41.556107;-72.385483,41.535503;-72.33819,41.494952;-72.327547,41.496814;-72.312012,41.475597;-72.311325,41.470202;-72.310317,41.463232;-72.299867,41.459722;-72.299432,41.459921;-72.297431,41.460626;-72.296004,41.461077;-72.294309,41.461511;-72.292786,41.461752;-72.290297,41.462154;-72.286434,41.46291;-72.283258,41.463641;-72.279847,41.462664;-72.272358,41.458295;-72.239356,41.441665;-72.260256,41.438484;-72.267338,41.447068;-72.280877,41.436293;-72.304201,41.435794;-72.30918,41.437905;-72.314362,41.436614;-72.315102,41.43782;-72.32377,41.435393;-72.331603,41.434772;-72.33583,41.43668;-72.351322,41.44845;-72.366428,41.448967;-72.376213,41.447423;-72.387264,41.443498;-72.424868,41.425545;-72.427894,41.424459;-72.427599,41.423271;-72.428063,41.422884;-72.42832,41.422947;-72.42909,41.422518;-72.428731,41.422343
 
 * BRouter Profile
 
 nutmeg-brouter-profile-4
 
-* TODO TODO
+* Decisions/Notes
 
-- Ground truth
-  - Around Pisgah Hill / Sherman Hill (SE of Eastford, north of RT 44). There are two possible unpaved tracks, and one paved road, that can be taken going south. The westernmost seems to be the most rugged (not on heatmap), and goes through a Wyndham Land Trust property...perhaps contact them asking if it's legal/passable. The other unpaved track (eastern) seems to go through Natchaug, which is good, but then at the very end it seems to reach RT 44 via a private rest stop (Frog Rock)? And the paved road is, well, paved. So, decide on the best road here.
-  - A bit later, when leaving Fayette Wright Rd on the Orange trail, decide on the best way through that section (until Silvermine Horse Camp). Consider turning onto Pilfershire Rd first.
-  - Between Kingsbury Rd and Morey Rd, consider rounding onto the less-travelled track and winding singetrack instead of the unnamed unpaved service road, if it's gentle enough. Would cut out the pavement on Morey Rd.
+- Leaving Nipmuck State Forest
+  - It would be nice to use some of those tracks to get over to Pole Bridge Road without having to ride on CT 198 for too long,
+    but they have no strava activity. Might have to check them out.
+- James L Goodwin & Natchaug State Forests
+  - "The Blue-Blazed Natchaug Trail in Goodwin State Forest is foot travel only.
+    All other trails in Goodwin State Forest are non-motorized multi-use trails."
+  - TODO Between Kingsbury Rd and Morey Rd, consider rounding onto the less-travelled track and winding singetrack instead of the unnamed unpaved service road, if it's gentle enough. Would cut out the pavement on Morey Rd.
+- Airline Trail
+- Leave Airline Trail for River Road (Salmon River)?
+  - Yes. It's pretty.
+- Salmon River State Forest / Day Pond State Park
+  - Only one way through following the yellow diamond (horse trail).
+    The Salmon River Trail (blue) is foot travel only.
+- Goodwin Trail (Eightmile River)?
+  - A bit hard to get to (have to go on CT 82), but I think it's worth it
+  - Photos https://www.alltrails.com/trail/us/connecticut/richard-goodwin-trail/photos
+  - MTB video https://www.youtube.com/watch?v=Y1KQfIqbXQo
+  - Hike video https://www.youtube.com/watch?v=1iQzXB7ieoM
+- TODO George Babcock Road (or is it Dolbia Hill Road?) / Lena Reserve?
+  - Someone marked it private on OSM, but it seems public on East Haddam GIS
+    - https://www.openstreetmap.org/changeset/148790333
+    - https://next.axisgis.com/East_HaddamCT/
+  - Go through Lena Reserve trails, or stick to the old town tracks?
+- TODO End this section earlier to make section 5 longer (130-150km vs 90-100km)?

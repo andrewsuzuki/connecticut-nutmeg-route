@@ -1,30 +1,5 @@
 [
   {
-    "distance": 1,
-    "tags": {
-      "highway": "footway",
-      "foot": "yes"
-    },
-    "coordinateString": "41.307333, -72.925814"
-  },
-  {
-    "distance": 50,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway",
-      "foot": "yes"
-    },
-    "coordinateString": "41.307534, -72.926315"
-  },
-  {
-    "distance": 186,
-    "tags": {
-      "highway": "footway",
-      "foot": "yes"
-    },
-    "coordinateString": "41.307346, -72.928479"
-  },
-  {
     "distance": 4,
     "tags": {
       "reversedirection": "yes",
@@ -32,38 +7,6 @@
       "foot": "yes"
     },
     "coordinateString": "41.307338, -72.928521"
-  },
-  {
-    "distance": 14,
-    "tags": {
-      "highway": "residential",
-      "cycleway": "lane"
-    },
-    "coordinateString": "41.314664, -72.959051"
-  },
-  {
-    "distance": 5,
-    "tags": {
-      "highway": "residential",
-      "cycleway": "lane"
-    },
-    "coordinateString": "41.314703, -72.959077"
-  },
-  {
-    "distance": 322,
-    "tags": {
-      "highway": "residential",
-      "cycleway": "lane"
-    },
-    "coordinateString": "41.317481, -72.959946"
-  },
-  {
-    "distance": 12,
-    "tags": {
-      "highway": "residential",
-      "cycleway": "lane"
-    },
-    "coordinateString": "41.317582, -72.959950"
   },
   {
     "distance": 11,
@@ -80,7 +23,7 @@
     "coordinateString": "41.323196, -72.971823"
   },
   {
-    "distance": 214,
+    "distance": 211,
     "tags": {
       "highway": "residential",
       "oneway": "yes"
@@ -88,7 +31,7 @@
     "coordinateString": "41.324891, -72.971888"
   },
   {
-    "distance": 3,
+    "distance": 2,
     "tags": {
       "highway": "residential",
       "oneway": "yes"
@@ -104,84 +47,100 @@
     "coordinateString": "41.325005, -72.971854"
   },
   {
-    "distance": 324,
+    "distance": 317,
     "tags": {
       "highway": "residential"
     },
     "coordinateString": "41.324101, -72.974795"
   },
   {
-    "distance": 15,
+    "distance": 6,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.324146, -72.974946"
-  },
-  {
-    "distance": 235,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.324769, -72.977582"
-  },
-  {
-    "distance": 2,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.324775, -72.977601"
-  },
-  {
-    "distance": 14,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.324758, -72.977712"
-  },
-  {
-    "distance": 2,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.324743, -72.977723"
-  },
-  {
-    "distance": 1179,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.329756, -72.982764"
-  },
-  {
-    "distance": 3,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.329776, -72.982753"
+    "coordinateString": "41.324124, -72.974861"
   },
   {
     "distance": 8,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.329841, -72.982718"
+    "coordinateString": "41.324146, -72.974946"
   },
   {
-    "distance": 9,
+    "distance": 234,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.346215, -73.004825"
+    "coordinateString": "41.324775, -72.977601"
   },
   {
-    "distance": 200,
+    "distance": 7,
     "tags": {
-      "highway": "unclassified"
+      "highway": "residential"
     },
-    "coordinateString": "41.349863, -73.008401"
+    "coordinateString": "41.324801, -72.977681"
   },
   {
-    "distance": 405,
+    "distance": 5,
+    "tags": {
+      "highway": "residential"
+    },
+    "coordinateString": "41.324758, -72.977712"
+  },
+  {
+    "distance": 851,
+    "tags": {
+      "highway": "residential"
+    },
+    "coordinateString": "41.327129, -72.984156"
+  },
+  {
+    "distance": 316,
+    "tags": {
+      "highway": "residential"
+    },
+    "coordinateString": "41.329764, -72.982746"
+  },
+  {
+    "distance": 1,
+    "tags": {
+      "highway": "residential"
+    },
+    "coordinateString": "41.329773, -72.982741"
+  },
+  {
+    "distance": 8,
+    "tags": {
+      "highway": "residential"
+    },
+    "coordinateString": "41.329840, -72.982708"
+  },
+  {
+    "distance": 246,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.348072, -73.005571"
+  },
+  {
+    "distance": 247,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.348236, -73.008355"
+  },
+  {
+    "distance": 113,
+    "tags": {
+      "highway": "footway"
+    },
+    "coordinateString": "41.350571, -73.011308"
+  },
+  {
+    "distance": 277,
     "tags": {
       "highway": "footway"
     },
@@ -193,337 +152,74 @@
       "reversedirection": "yes",
       "highway": "footway"
     },
-    "coordinateString": "41.352901, -73.010662"
+    "coordinateString": "41.352906, -73.010663"
   },
   {
-    "distance": 44,
+    "distance": 13,
+    "tags": {
+      "highway": "service"
+    },
+    "coordinateString": "41.679456, -73.496872"
+  },
+  {
+    "distance": 13,
     "tags": {
       "reversedirection": "yes",
       "highway": "service"
     },
-    "coordinateString": "41.353274, -73.010452"
+    "coordinateString": "41.679345, -73.496829"
   },
   {
-    "distance": 159,
+    "distance": 17,
     "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.354403, -73.013263"
-  },
-  {
-    "distance": 35,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service"
-    },
-    "coordinateString": "41.354686, -73.013196"
-  },
-  {
-    "distance": 88,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.364847, -73.022740"
-  },
-  {
-    "distance": 1042,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.369748, -73.013571"
-  },
-  {
-    "distance": 279,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.368402, -73.011657"
-  },
-  {
-    "distance": 20,
-    "tags": {
-      "highway": "service"
-    },
-    "coordinateString": "41.368225, -73.011660"
-  },
-  {
-    "distance": 247,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service"
-    },
-    "coordinateString": "41.368502, -73.008990"
-  },
-  {
-    "distance": 224,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.368674, -73.006287"
-  },
-  {
-    "distance": 715,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.369605, -72.997933"
-  },
-  {
-    "distance": 877,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.376595, -72.991414"
-  },
-  {
-    "distance": 464,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.391316, -72.983202"
-  },
-  {
-    "distance": 11,
-    "tags": {
-      "highway": "service"
-    },
-    "coordinateString": "41.391302, -72.983323"
-  },
-  {
-    "distance": 69,
-    "tags": {
-      "highway": "service"
-    },
-    "coordinateString": "41.391214, -72.984123"
-  },
-  {
-    "distance": 53,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.431207, -73.005229"
-  },
-  {
-    "distance": 359,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.446451, -73.069316"
-  },
-  {
-    "distance": 56,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service",
-      "tracktype": "grade1"
-    },
-    "coordinateString": "41.456432, -73.061844"
-  },
-  {
-    "distance": 61,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service"
-    },
-    "coordinateString": "41.494545, -73.103438"
-  },
-  {
-    "distance": 21,
-    "tags": {
-      "highway": "residential",
-      "route_bicycle_lcn": "yes"
-    },
-    "coordinateString": "41.471326, -73.199263"
-  },
-  {
-    "distance": 1687,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.585317, -73.389459"
-  },
-  {
-    "distance": 4,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service"
-    },
-    "coordinateString": "41.581161, -73.407734"
-  },
-  {
-    "distance": 6,
-    "tags": {
-      "highway": "service"
-    },
-    "coordinateString": "41.581184, -73.407770"
-  },
-  {
-    "distance": 19,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.580484, -73.415557"
-  },
-  {
-    "distance": 1420,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.592338, -73.418221"
-  },
-  {
-    "distance": 704,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.592853, -73.426312"
-  },
-  {
-    "distance": 279,
-    "tags": {
-      "reversedirection": "yes",
       "highway": "residential",
       "route_bicycle_ncn": "yes"
     },
-    "coordinateString": "41.646784, -73.476133"
-  },
-  {
-    "distance": 9,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "route_bicycle_ncn": "yes"
-    },
-    "coordinateString": "41.646818, -73.476040"
-  },
-  {
-    "distance": 14,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "lanes": "1",
-      "route_bicycle_ncn": "yes"
-    },
-    "coordinateString": "41.675692, -73.508768"
-  },
-  {
-    "distance": 23,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "route_bicycle_ncn": "yes"
-    },
-    "coordinateString": "41.675711, -73.509035"
-  },
-  {
-    "distance": 432,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "route_bicycle_ncn": "yes"
-    },
-    "coordinateString": "41.675698, -73.514095"
-  },
-  {
-    "distance": 32,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "route_bicycle_ncn": "yes"
-    },
-    "coordinateString": "41.675768, -73.514457"
+    "coordinateString": "41.917367, -73.359205"
   },
   {
     "distance": 10,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.729358, -73.489040"
+    "coordinateString": "41.918410, -73.341305"
   },
   {
-    "distance": 414,
+    "distance": 94,
     "tags": {
-      "highway": "residential"
+      "reversedirection": "yes",
+      "highway": "service"
     },
-    "coordinateString": "41.830101, -73.426971"
+    "coordinateString": "41.905528, -72.970088"
   },
   {
-    "distance": 81,
+    "distance": 28,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "41.830465, -73.426130"
+    "coordinateString": "41.853695, -72.952545"
   },
   {
-    "distance": 7,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.918564, -73.341229"
-  },
-  {
-    "distance": 2625,
+    "distance": 8,
     "tags": {
       "reversedirection": "yes",
-      "highway": "footway"
+      "highway": "residential",
+      "route_bicycle_rcn": "yes"
     },
-    "coordinateString": "41.968163, -73.226237"
+    "coordinateString": "41.818717, -72.922081"
   },
   {
-    "distance": 945,
-    "tags": {
-      "highway": "service",
-      "access": "permissive"
-    },
-    "coordinateString": "41.986885, -73.222476"
-  },
-  {
-    "distance": 75,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.838822, -73.029537"
-  },
-  {
-    "distance": 149,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.838751, -73.023307"
-  },
-  {
-    "distance": 536,
+    "distance": 50,
     "tags": {
       "reversedirection": "yes",
-      "highway": "unclassified"
+      "highway": "residential",
+      "route_bicycle_rcn": "yes"
     },
-    "coordinateString": "41.832788, -72.930792"
+    "coordinateString": "41.819157, -72.922210"
   },
   {
-    "distance": 1021,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.824142, -72.929726"
-  },
-  {
-    "distance": 270,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.820579, -72.931090"
-  },
-  {
-    "distance": 153,
+    "distance": 90,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential",
@@ -532,7 +228,7 @@
     "coordinateString": "41.819960, -72.922347"
   },
   {
-    "distance": 19,
+    "distance": 18,
     "tags": {
       "highway": "cycleway",
       "foot": "designated",
@@ -553,7 +249,7 @@
     "coordinateString": "41.820015, -72.922047"
   },
   {
-    "distance": 7,
+    "distance": 6,
     "tags": {
       "highway": "cycleway",
       "foot": "designated",
@@ -564,7 +260,7 @@
     "coordinateString": "41.820050, -72.921989"
   },
   {
-    "distance": 6,
+    "distance": 5,
     "tags": {
       "reversedirection": "yes",
       "highway": "cycleway",
@@ -573,7 +269,7 @@
     "coordinateString": "41.820798, -72.913599"
   },
   {
-    "distance": 17,
+    "distance": 16,
     "tags": {
       "reversedirection": "yes",
       "highway": "cycleway",
@@ -592,211 +288,241 @@
     "coordinateString": "41.823608, -72.888437"
   },
   {
-    "distance": 110,
+    "distance": 3,
     "tags": {
       "highway": "cycleway",
       "foot": "designated",
       "bicycle": "designated",
       "route_bicycle_rcn": "yes"
     },
-    "coordinateString": "41.823948, -72.887546"
+    "coordinateString": "41.823632, -72.888440"
   },
   {
-    "distance": 464,
+    "distance": 46,
     "tags": {
-      "highway": "residential",
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated",
       "route_bicycle_rcn": "yes"
     },
-    "coordinateString": "41.827478, -72.884647"
+    "coordinateString": "41.823593, -72.887986"
   },
   {
-    "distance": 513,
+    "distance": 3,
     "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated",
+      "cycleway": "crossing",
+      "route_bicycle_rcn": "yes"
     },
-    "coordinateString": "41.835482, -72.878539"
+    "coordinateString": "41.823606, -72.887948"
   },
   {
-    "distance": 583,
+    "distance": 3,
+    "tags": {
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated",
+      "cycleway": "crossing",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.823615, -72.887913"
+  },
+  {
+    "distance": 25,
+    "tags": {
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.823812, -72.887766"
+  },
+  {
+    "distance": 5,
+    "tags": {
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.825192, -72.886442"
+  },
+  {
+    "distance": 112,
+    "tags": {
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.826094, -72.885872"
+  },
+  {
+    "distance": 618,
     "tags": {
       "highway": "residential",
+      "maxspeed": "50",
+      "cycleway": "shared_lane",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.833130, -72.881133"
+  },
+  {
+    "distance": 334,
+    "tags": {
+      "highway": "residential",
+      "maxspeed": "50",
+      "cycleway": "shared_lane",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.835395, -72.878547"
+  },
+  {
+    "distance": 31,
+    "tags": {
+      "highway": "residential",
+      "maxspeed": "50",
+      "cycleway": "shared_lane",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.835476, -72.878205"
+  },
+  {
+    "distance": 8,
+    "tags": {
+      "highway": "residential",
+      "maxspeed": "40",
+      "cycleway": "shared_lane",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.835480, -72.878109"
+  },
+  {
+    "distance": 523,
+    "tags": {
+      "highway": "residential",
+      "maxspeed": "40",
+      "cycleway": "shared_lane",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.837526, -72.872688"
+  },
+  {
+    "distance": 17,
+    "tags": {
+      "highway": "residential",
+      "maxspeed": "40",
+      "cycleway": "shared_lane",
       "route_bicycle_rcn": "yes"
     },
     "coordinateString": "41.837606, -72.872518"
   },
   {
-    "distance": 520,
+    "distance": 4,
     "tags": {
       "reversedirection": "yes",
-      "highway": "residential",
+      "highway": "cycleway",
       "route_bicycle_rcn": "yes"
     },
-    "coordinateString": "41.841394, -72.869504"
-  },
-  {
-    "distance": 441,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "route_bicycle_rcn": "yes"
-    },
-    "coordinateString": "41.845123, -72.867768"
-  },
-  {
-    "distance": 35,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "route_bicycle_rcn": "yes"
-    },
-    "coordinateString": "41.845416, -72.867642"
-  },
-  {
-    "distance": 14,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.860008, -72.837852"
-  },
-  {
-    "distance": 637,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "oneway": "no"
-    },
-    "coordinateString": "41.869976, -72.791089"
-  },
-  {
-    "distance": 153,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.868648, -72.791444"
-  },
-  {
-    "distance": 7,
-    "tags": {
-      "highway": "steps"
-    },
-    "coordinateString": "41.865518, -72.786234"
-  },
-  {
-    "distance": 15,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.905271, -72.763206"
-  },
-  {
-    "distance": 15,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service",
-      "bicycle": "yes"
-    },
-    "coordinateString": "41.905359, -72.763336"
-  },
-  {
-    "distance": 167,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.907415, -72.765483"
-  },
-  {
-    "distance": 13,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.907515, -72.765549"
-  },
-  {
-    "distance": 257,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.909551, -72.766843"
-  },
-  {
-    "distance": 100,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.909874, -72.765776"
-  },
-  {
-    "distance": 237,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.910461, -72.763051"
-  },
-  {
-    "distance": 9,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.910493, -72.762958"
-  },
-  {
-    "distance": 122,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.910011, -72.761999"
-  },
-  {
-    "distance": 627,
-    "tags": {
-      "highway": "footway"
-    },
-    "coordinateString": "41.911304, -72.757252"
-  },
-  {
-    "distance": 3276,
-    "tags": {
-      "highway": "footway"
-    },
-    "coordinateString": "41.946017, -72.741075"
-  },
-  {
-    "distance": 3,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.932369, -72.655181"
-  },
-  {
-    "distance": 3,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.934533, -72.655019"
-  },
-  {
-    "distance": 77,
-    "tags": {
-      "highway": "service",
-      "route_bicycle_lcn": "yes"
-    },
-    "coordinateString": "41.932515, -72.626713"
+    "coordinateString": "41.869578, -72.818411"
   },
   {
     "distance": 33,
     "tags": {
       "reversedirection": "yes",
       "highway": "cycleway",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.869799, -72.818597"
+  },
+  {
+    "distance": 7,
+    "tags": {
+      "highway": "cycleway",
+      "cycleway": "crossing",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.869865, -72.818598"
+  },
+  {
+    "distance": 9,
+    "tags": {
+      "highway": "cycleway",
+      "cycleway": "crossing",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.869942, -72.818604"
+  },
+  {
+    "distance": 10,
+    "tags": {
+      "highway": "cycleway",
+      "foot": "yes",
+      "bicycle": "yes",
+      "cycleway": "crossing",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.870803, -72.803818"
+  },
+  {
+    "distance": 15,
+    "tags": {
+      "highway": "cycleway",
+      "foot": "yes",
+      "bicycle": "yes",
+      "cycleway": "crossing",
+      "route_bicycle_rcn": "yes"
+    },
+    "coordinateString": "41.870713, -72.803690"
+  },
+  {
+    "distance": 2,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential",
+      "maxspeed": "40"
+    },
+    "coordinateString": "41.934513, -72.655035"
+  },
+  {
+    "distance": 2,
+    "tags": {
+      "highway": "residential",
+      "maxspeed": "40"
+    },
+    "coordinateString": "41.934531, -72.655033"
+  },
+  {
+    "distance": 6,
+    "tags": {
+      "highway": "service"
+    },
+    "coordinateString": "41.929597, -72.629771"
+  },
+  {
+    "distance": 49,
+    "tags": {
+      "highway": "service"
+    },
+    "coordinateString": "41.929159, -72.629783"
+  },
+  {
+    "distance": 8,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service"
+    },
+    "coordinateString": "41.928219, -72.627350"
+  },
+  {
+    "distance": 32,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated",
       "route_bicycle_lcn": "yes"
     },
     "coordinateString": "41.957172, -72.618715"
@@ -806,31 +532,66 @@
     "tags": {
       "reversedirection": "yes",
       "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated",
       "route_bicycle_lcn": "yes"
     },
     "coordinateString": "41.986645, -72.605509"
   },
   {
-    "distance": 7,
+    "distance": 6,
     "tags": {
-      "highway": "service"
+      "highway": "service",
+      "access": "customers"
     },
     "coordinateString": "41.953557, -72.563110"
   },
   {
-    "distance": 341,
+    "distance": 448,
+    "tags": {
+      "highway": "residential",
+      "maxspeed": "50"
+    },
+    "coordinateString": "41.958977, -72.521071"
+  },
+  {
+    "distance": 1176,
+    "tags": {
+      "highway": "residential",
+      "maxspeed": "50"
+    },
+    "coordinateString": "41.962623, -72.510952"
+  },
+  {
+    "distance": 336,
     "tags": {
       "highway": "residential"
     },
     "coordinateString": "41.981882, -72.398979"
   },
   {
-    "distance": 392,
+    "distance": 18,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "footway"
+    },
+    "coordinateString": "41.952075, -72.070497"
+  },
+  {
+    "distance": 314,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "42.024957, -72.145319"
+    "coordinateString": "41.905458, -72.073691"
+  },
+  {
+    "distance": 137,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.901044, -72.073739"
   },
   {
     "distance": 87,
@@ -841,7 +602,7 @@
     "coordinateString": "41.886078, -72.043544"
   },
   {
-    "distance": 35,
+    "distance": 34,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
@@ -849,12 +610,24 @@
     "coordinateString": "41.798589, -72.090730"
   },
   {
-    "distance": 5,
+    "distance": 4,
     "tags": {
       "highway": "residential",
       "access": "yes",
       "foot": "yes",
-      "bicycle": "yes"
+      "sidewalk": "both",
+      "route_bicycle_ncn": "yes"
+    },
+    "coordinateString": "41.712453, -72.206325"
+  },
+  {
+    "distance": 1,
+    "tags": {
+      "highway": "residential",
+      "access": "yes",
+      "foot": "yes",
+      "sidewalk": "both",
+      "route_bicycle_ncn": "yes"
     },
     "coordinateString": "41.712457, -72.206324"
   },
@@ -867,7 +640,7 @@
     "coordinateString": "41.713456, -72.212278"
   },
   {
-    "distance": 167,
+    "distance": 161,
     "tags": {
       "highway": "residential",
       "oneway": "yes"
@@ -875,7 +648,7 @@
     "coordinateString": "41.712058, -72.212853"
   },
   {
-    "distance": 10,
+    "distance": 9,
     "tags": {
       "highway": "residential",
       "oneway": "yes"
@@ -883,130 +656,263 @@
     "coordinateString": "41.711977, -72.212887"
   },
   {
-    "distance": 55,
+    "distance": 54,
     "tags": {
       "highway": "cycleway",
       "foot": "designated",
       "bicycle": "designated",
-      "route_bicycle_lcn": "yes"
+      "route_bicycle_rcn": "yes"
     },
     "coordinateString": "41.713253, -72.238206"
   },
   {
-    "distance": 32,
+    "distance": 199,
     "tags": {
       "reversedirection": "yes",
-      "highway": "footway"
+      "highway": "residential"
     },
-    "coordinateString": "41.553401, -72.448784"
+    "coordinateString": "41.475597, -72.312170"
   },
   {
-    "distance": 25,
+    "distance": 13,
+    "tags": {
+      "highway": "service",
+      "access": "private"
+    },
+    "coordinateString": "41.475600, -72.312014"
+  },
+  {
+    "distance": 13,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service",
+      "access": "private"
+    },
+    "coordinateString": "41.475597, -72.312170"
+  },
+  {
+    "distance": 604,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.470203, -72.311308"
+  },
+  {
+    "distance": 805,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.463257, -72.310202"
+  },
+  {
+    "distance": 959,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.459649, -72.300020"
+  },
+  {
+    "distance": 792,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.458298, -72.272353"
+  },
+  {
+    "distance": 3495,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.441756, -72.239331"
+  },
+  {
+    "distance": 271,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.441839, -72.236151"
+  },
+  {
+    "distance": 31,
     "tags": {
       "highway": "service"
     },
-    "coordinateString": "41.444506, -72.383741"
+    "coordinateString": "41.438489, -72.260202"
   },
   {
-    "distance": 68,
+    "distance": 31,
     "tags": {
       "reversedirection": "yes",
-      "highway": "residential"
+      "highway": "service"
     },
-    "coordinateString": "41.424904, -72.428150"
+    "coordinateString": "41.438218, -72.260133"
   },
   {
-    "distance": 29,
+    "distance": 159,
     "tags": {
-      "highway": "residential"
+      "reversedirection": "yes",
+      "highway": "service"
+    },
+    "coordinateString": "41.435612, -72.313803"
+  },
+  {
+    "distance": 18,
+    "tags": {
+      "highway": "service"
+    },
+    "coordinateString": "41.435475, -72.314412"
+  },
+  {
+    "distance": 133,
+    "tags": {
+      "highway": "service"
+    },
+    "coordinateString": "41.435403, -72.333053"
+  },
+  {
+    "distance": 179,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service"
+    },
+    "coordinateString": "41.435332, -72.334168"
+  },
+  {
+    "distance": 19,
+    "tags": {
+      "highway": "service"
+    },
+    "coordinateString": "41.447446, -72.376149"
+  },
+  {
+    "distance": 19,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service"
+    },
+    "coordinateString": "41.447604, -72.376250"
+  },
+  {
+    "distance": 28,
+    "tags": {
+      "highway": "service"
     },
     "coordinateString": "41.422815, -72.428609"
   },
   {
     "distance": 26,
     "tags": {
-      "highway": "residential",
+      "highway": "service",
       "oneway": "yes"
     },
     "coordinateString": "41.422619, -72.428769"
   },
   {
-    "distance": 80,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.422345, -72.428733"
-  },
-  {
-    "distance": 1,
+    "distance": 35,
     "tags": {
       "highway": "service"
     },
-    "coordinateString": "41.422309, -72.428694"
+    "coordinateString": "41.422518, -72.429087"
   },
   {
-    "distance": 146,
+    "distance": 40,
+    "tags": {
+      "highway": "service"
+    },
+    "coordinateString": "41.422343, -72.428731"
+  },
+  {
+    "distance": 38,
     "tags": {
       "reversedirection": "yes",
-      "highway": "residential"
+      "highway": "service"
+    },
+    "coordinateString": "41.422518, -72.429087"
+  },
+  {
+    "distance": 42,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service"
+    },
+    "coordinateString": "41.422588, -72.428694"
+  },
+  {
+    "distance": 55,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service"
     },
     "coordinateString": "41.422321, -72.428167"
   },
   {
-    "distance": 35,
+    "distance": 31,
     "tags": {
-      "highway": "residential"
+      "highway": "service"
     },
     "coordinateString": "41.415499, -72.437234"
   },
   {
-    "distance": 351,
+    "distance": 872,
+    "tags": {
+      "highway": "residential"
+    },
+    "coordinateString": "41.420702, -72.453523"
+  },
+  {
+    "distance": 618,
+    "tags": {
+      "highway": "residential"
+    },
+    "coordinateString": "41.425867, -72.456024"
+  },
+  {
+    "distance": 17,
+    "tags": {
+      "highway": "footway"
+    },
+    "coordinateString": "41.309133, -72.670341"
+  },
+  {
+    "distance": 776,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "41.335164, -72.670308"
+    "coordinateString": "41.305023, -72.679451"
   },
   {
     "distance": 12,
     "tags": {
-      "highway": "footway"
-    },
-    "coordinateString": "41.309136, -72.670336"
-  },
-  {
-    "distance": 188,
-    "tags": {
+      "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "41.307870, -72.671812"
+    "coordinateString": "41.288163, -72.682118"
   },
   {
-    "distance": 2568,
+    "distance": 425,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "41.290281, -72.682800"
+    "coordinateString": "41.284416, -72.681153"
   },
   {
-    "distance": 35,
-    "tags": {
-      "highway": "residential",
-      "oneway": "yes"
-    },
-    "coordinateString": "41.290015, -72.682774"
-  },
-  {
-    "distance": 202,
+    "distance": 3,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "41.288270, -72.682159"
+    "coordinateString": "41.284386, -72.681149"
   },
   {
-    "distance": 454,
+    "distance": 7,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
@@ -1014,7 +920,23 @@
     "coordinateString": "41.284323, -72.681140"
   },
   {
-    "distance": 294,
+    "distance": 27,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "footway"
+    },
+    "coordinateString": "41.283920, -72.681697"
+  },
+  {
+    "distance": 64,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "footway"
+    },
+    "coordinateString": "41.283373, -72.681928"
+  },
+  {
+    "distance": 199,
     "tags": {
       "highway": "footway"
     },
@@ -1029,165 +951,56 @@
     "coordinateString": "41.281595, -72.681739"
   },
   {
-    "distance": 312,
+    "distance": 16,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.277133, -72.693526"
+    "coordinateString": "41.277753, -72.690675"
   },
   {
-    "distance": 144,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.275899, -72.693796"
-  },
-  {
-    "distance": 1210,
+    "distance": 288,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.276324, -72.706094"
+    "coordinateString": "41.277137, -72.693508"
   },
   {
-    "distance": 41,
+    "distance": 142,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "41.276488, -72.706488"
+    "coordinateString": "41.275906, -72.693769"
   },
   {
-    "distance": 92,
+    "distance": 213,
     "tags": {
-      "highway": "service"
+      "highway": "residential"
     },
-    "coordinateString": "41.276944, -72.707357"
+    "coordinateString": "41.276596, -72.695953"
   },
   {
-    "distance": 18,
+    "distance": 535,
+    "tags": {
+      "highway": "residential"
+    },
+    "coordinateString": "41.275754, -72.701432"
+  },
+  {
+    "distance": 801,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "41.292328, -72.724034"
+    "coordinateString": "41.270433, -72.696648"
   },
   {
-    "distance": 153,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway"
-    },
-    "coordinateString": "41.293390, -72.724948"
-  },
-  {
-    "distance": 140,
+    "distance": 116,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "41.292831, -72.726407"
-  },
-  {
-    "distance": 147,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service"
-    },
-    "coordinateString": "41.292211, -72.727919"
-  },
-  {
-    "distance": 24,
-    "tags": {
-      "highway": "service"
-    },
-    "coordinateString": "41.265486, -72.729944"
-  },
-  {
-    "distance": 17,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service"
-    },
-    "coordinateString": "41.266226, -72.732141"
-  },
-  {
-    "distance": 63,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service"
-    },
-    "coordinateString": "41.266197, -72.732864"
-  },
-  {
-    "distance": 423,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.264729, -72.750950"
-  },
-  {
-    "distance": 25,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway"
-    },
-    "coordinateString": "41.268819, -72.752401"
-  },
-  {
-    "distance": 252,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.269458, -72.755111"
-  },
-  {
-    "distance": 998,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway"
-    },
-    "coordinateString": "41.270043, -72.766705"
-  },
-  {
-    "distance": 14,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway"
-    },
-    "coordinateString": "41.270004, -72.766856"
-  },
-  {
-    "distance": 9,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway"
-    },
-    "coordinateString": "41.269962, -72.766945"
-  },
-  {
-    "distance": 63,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway"
-    },
-    "coordinateString": "41.270017, -72.767505"
-  },
-  {
-    "distance": 910,
-    "tags": {
-      "highway": "footway"
-    },
-    "coordinateString": "41.274686, -72.773246"
-  },
-  {
-    "distance": 712,
-    "tags": {
-      "highway": "footway"
-    },
-    "coordinateString": "41.272314, -72.776925"
+    "coordinateString": "41.269568, -72.695972"
   },
   {
     "distance": 151,
@@ -1195,31 +1008,115 @@
       "reversedirection": "yes",
       "highway": "footway"
     },
-    "coordinateString": "41.273038, -72.778101"
+    "coordinateString": "41.293390, -72.724948"
   },
   {
-    "distance": 213,
+    "distance": 150,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.292773, -72.726547"
+  },
+  {
+    "distance": 132,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service"
+    },
+    "coordinateString": "41.292211, -72.727919"
+  },
+  {
+    "distance": 23,
+    "tags": {
+      "highway": "service"
+    },
+    "coordinateString": "41.265486, -72.729944"
+  },
+  {
+    "distance": 16,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service"
+    },
+    "coordinateString": "41.266226, -72.732141"
+  },
+  {
+    "distance": 61,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service"
+    },
+    "coordinateString": "41.266197, -72.732864"
+  },
+  {
+    "distance": 315,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.264729, -72.750950"
+  },
+  {
+    "distance": 34,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "footway"
+    },
+    "coordinateString": "41.270017, -72.767505"
+  },
+  {
+    "distance": 874,
     "tags": {
       "highway": "footway"
     },
-    "coordinateString": "41.274214, -72.779716"
+    "coordinateString": "41.274686, -72.773246"
   },
   {
-    "distance": 21,
-    "tags": {
-      "highway": "footway"
-    },
-    "coordinateString": "41.274315, -72.779912"
-  },
-  {
-    "distance": 687,
+    "distance": 662,
     "tags": {
       "highway": "footway"
     },
     "coordinateString": "41.273885, -72.786644"
   },
   {
-    "distance": 764,
+    "distance": 21,
+    "tags": {
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated",
+      "oneway": "no"
+    },
+    "coordinateString": "41.272705, -72.798023"
+  },
+  {
+    "distance": 45,
+    "tags": {
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated"
+    },
+    "coordinateString": "41.272539, -72.798504"
+  },
+  {
+    "distance": 79,
+    "tags": {
+      "highway": "cycleway",
+      "foot": "designated",
+      "bicycle": "designated"
+    },
+    "coordinateString": "41.272943, -72.799178"
+  },
+  {
+    "distance": 11,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "service"
+    },
+    "coordinateString": "41.272887, -72.799292"
+  },
+  {
+    "distance": 618,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
@@ -1227,394 +1124,132 @@
     "coordinateString": "41.273857, -72.805093"
   },
   {
-    "distance": 1075,
+    "distance": 39,
     "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
+      "highway": "service",
+      "foot": "designated",
+      "bicycle": "designated"
     },
-    "coordinateString": "41.275190, -72.812908"
-  },
-  {
-    "distance": 418,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.273363, -72.816907"
-  },
-  {
-    "distance": 1094,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.267938, -72.831442"
-  },
-  {
-    "distance": 373,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.257611, -72.855973"
-  },
-  {
-    "distance": 295,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.255561, -72.862798"
-  },
-  {
-    "distance": 71,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service"
-    },
-    "coordinateString": "41.254655, -72.867036"
-  },
-  {
-    "distance": 251,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.253855, -72.869604"
-  },
-  {
-    "distance": 370,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential"
-    },
-    "coordinateString": "41.250542, -72.869320"
-  },
-  {
-    "distance": 153,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.250451, -72.871133"
-  },
-  {
-    "distance": 185,
-    "tags": {
-      "highway": "residential",
-      "oneway": "yes"
-    },
-    "coordinateString": "41.248880, -72.872692"
-  },
-  {
-    "distance": 468,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.249042, -72.877625"
-  },
-  {
-    "distance": 6,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "maxspeed": "40"
-    },
-    "coordinateString": "41.253312, -72.890970"
-  },
-  {
-    "distance": 5,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "maxspeed": "40"
-    },
-    "coordinateString": "41.253286, -72.891014"
-  },
-  {
-    "distance": 572,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "residential",
-      "maxspeed": "40"
-    },
-    "coordinateString": "41.251444, -72.896122"
-  },
-  {
-    "distance": 362,
-    "tags": {
-      "highway": "residential",
-      "maxspeed": "40"
-    },
-    "coordinateString": "41.254639, -72.896451"
+    "coordinateString": "41.257389, -72.856137"
   },
   {
     "distance": 16,
     "tags": {
-      "highway": "residential",
-      "maxspeed": "40"
+      "highway": "service",
+      "foot": "designated",
+      "bicycle": "designated"
     },
-    "coordinateString": "41.254765, -72.896476"
-  },
-  {
-    "distance": 58,
-    "tags": {
-      "highway": "residential",
-      "maxspeed": "40"
-    },
-    "coordinateString": "41.255275, -72.896586"
-  },
-  {
-    "distance": 3,
-    "tags": {
-      "highway": "residential",
-      "maxspeed": "40"
-    },
-    "coordinateString": "41.255294, -72.896591"
+    "coordinateString": "41.257265, -72.856232"
   },
   {
     "distance": 7,
     "tags": {
-      "highway": "residential",
-      "maxspeed": "40"
-    },
-    "coordinateString": "41.255350, -72.896604"
-  },
-  {
-    "distance": 5,
-    "tags": {
-      "highway": "residential",
-      "maxspeed": "40",
-      "oneway": "yes"
-    },
-    "coordinateString": "41.255330, -72.896655"
-  },
-  {
-    "distance": 407,
-    "tags": {
-      "highway": "residential",
-      "maxspeed": "40",
-      "oneway": "yes"
-    },
-    "coordinateString": "41.253222, -72.899523"
-  },
-  {
-    "distance": 4,
-    "tags": {
-      "highway": "residential",
-      "maxspeed": "40",
-      "oneway": "yes"
-    },
-    "coordinateString": "41.253193, -72.899503"
-  },
-  {
-    "distance": 7,
-    "tags": {
-      "highway": "residential",
-      "maxspeed": "40",
-      "oneway": "yes"
-    },
-    "coordinateString": "41.253141, -72.899467"
-  },
-  {
-    "distance": 238,
-    "tags": {
-      "highway": "footway"
-    },
-    "coordinateString": "41.251173, -72.903566"
-  },
-  {
-    "distance": 4,
-    "tags": {
       "reversedirection": "yes",
-      "highway": "service",
-      "foot": "yes",
-      "bicycle": "yes",
-      "cycleway": "track"
-    },
-    "coordinateString": "41.274587, -72.900093"
-  },
-  {
-    "distance": 360,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "service",
-      "foot": "yes",
-      "bicycle": "yes",
-      "cycleway": "track"
-    },
-    "coordinateString": "41.276454, -72.901264"
-  },
-  {
-    "distance": 242,
-    "tags": {
-      "highway": "footway"
-    },
-    "coordinateString": "41.278083, -72.902399"
-  },
-  {
-    "distance": 688,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway"
-    },
-    "coordinateString": "41.281507, -72.901714"
-  },
-  {
-    "distance": 11,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway"
-    },
-    "coordinateString": "41.281521, -72.901587"
-  },
-  {
-    "distance": 131,
-    "tags": {
       "highway": "service"
     },
-    "coordinateString": "41.281721, -72.900066"
+    "coordinateString": "41.254135, -72.867720"
   },
   {
-    "distance": 21,
+    "distance": 162,
+    "tags": {
+      "highway": "residential",
+      "bicycle": "designated"
+    },
+    "coordinateString": "41.253855, -72.869608"
+  },
+  {
+    "distance": 7,
     "tags": {
       "reversedirection": "yes",
-      "highway": "service",
-      "foot": "yes",
-      "bicycle": "yes",
-      "cycleway": "track"
+      "highway": "residential",
+      "bicycle": "designated"
     },
-    "coordinateString": "41.281904, -72.900114"
+    "coordinateString": "41.253793, -72.869596"
   },
   {
-    "distance": 24,
+    "distance": 75,
     "tags": {
       "reversedirection": "yes",
-      "highway": "service",
-      "foot": "yes",
-      "bicycle": "yes",
-      "cycleway": "track"
+      "highway": "residential",
+      "bicycle": "designated"
     },
-    "coordinateString": "41.282112, -72.900155"
+    "coordinateString": "41.253117, -72.869510"
   },
   {
-    "distance": 981,
+    "distance": 657,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential"
     },
-    "coordinateString": "41.290613, -72.900386"
-  },
-  {
-    "distance": 105,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.291395, -72.899689"
-  },
-  {
-    "distance": 9,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.303484, -72.894013"
-  },
-  {
-    "distance": 5,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.303480, -72.894063"
+    "coordinateString": "41.247241, -72.868693"
   },
   {
     "distance": 152,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.303337, -72.895863"
+    "coordinateString": "41.246954, -72.870481"
   },
   {
-    "distance": 25,
+    "distance": 186,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.303311, -72.896158"
-  },
-  {
-    "distance": 14,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.303298, -72.896315"
-  },
-  {
-    "distance": 60,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.303244, -72.897025"
-  },
-  {
-    "distance": 175,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.303077, -72.899092"
-  },
-  {
-    "distance": 83,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.302997, -72.900072"
+    "coordinateString": "41.249042, -72.877625"
   },
   {
     "distance": 17,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.302982, -72.900253"
+    "coordinateString": "41.291052, -72.891895"
   },
   {
-    "distance": 92,
+    "distance": 667,
     "tags": {
       "highway": "residential"
     },
-    "coordinateString": "41.302897, -72.901327"
+    "coordinateString": "41.295601, -72.886755"
   },
   {
-    "distance": 78,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.302821, -72.902253"
-  },
-  {
-    "distance": 4,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.302818, -72.902289"
-  },
-  {
-    "distance": 9,
-    "tags": {
-      "highway": "residential"
-    },
-    "coordinateString": "41.302810, -72.902386"
-  },
-  {
-    "distance": 8,
+    "distance": 192,
     "tags": {
       "reversedirection": "yes",
-      "highway": "residential",
-      "route_bicycle_ncn": "yes"
+      "highway": "residential"
     },
-    "coordinateString": "41.305190, -72.919970"
+    "coordinateString": "41.296984, -72.888032"
   },
   {
-    "distance": 175,
+    "distance": 22,
     "tags": {
       "reversedirection": "yes",
-      "highway": "residential",
-      "route_bicycle_ncn": "yes"
+      "highway": "residential"
     },
-    "coordinateString": "41.305791, -72.921847"
+    "coordinateString": "41.297142, -72.888187"
+  },
+  {
+    "distance": 208,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.298562, -72.889790"
+  },
+  {
+    "distance": 3,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.298574, -72.889821"
+  },
+  {
+    "distance": 6,
+    "tags": {
+      "reversedirection": "yes",
+      "highway": "residential"
+    },
+    "coordinateString": "41.298601, -72.889887"
   },
   {
     "distance": 7,
@@ -1623,49 +1258,25 @@
       "highway": "residential",
       "route_bicycle_ncn": "yes"
     },
-    "coordinateString": "41.305819, -72.921911"
+    "coordinateString": "41.305189, -72.919970"
   },
   {
-    "distance": 12,
+    "distance": 170,
     "tags": {
       "reversedirection": "yes",
       "highway": "residential",
       "route_bicycle_ncn": "yes"
     },
-    "coordinateString": "41.305872, -72.922033"
+    "coordinateString": "41.305786, -72.921851"
   },
   {
-    "distance": 9,
+    "distance": 6,
     "tags": {
       "reversedirection": "yes",
-      "highway": "unclassified",
-      "oneway": "yes",
-      "cycleway:left": "opposite_lane",
+      "highway": "residential",
       "route_bicycle_ncn": "yes"
     },
-    "coordinateString": "41.305909, -72.922128"
-  },
-  {
-    "distance": 128,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "unclassified",
-      "oneway": "yes",
-      "cycleway:left": "opposite_lane",
-      "route_bicycle_ncn": "yes"
-    },
-    "coordinateString": "41.306423, -72.923451"
-  },
-  {
-    "distance": 8,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "unclassified",
-      "oneway": "yes",
-      "cycleway:left": "opposite_lane",
-      "route_bicycle_ncn": "yes"
-    },
-    "coordinateString": "41.306455, -72.923535"
+    "coordinateString": "41.305813, -72.921917"
   },
   {
     "distance": 25,
@@ -1676,19 +1287,10 @@
     "coordinateString": "41.306532, -72.923891"
   },
   {
-    "distance": 103,
+    "distance": 102,
     "tags": {
       "highway": "pedestrian"
     },
     "coordinateString": "41.306987, -72.924952"
-  },
-  {
-    "distance": 41,
-    "tags": {
-      "reversedirection": "yes",
-      "highway": "footway",
-      "foot": "yes"
-    },
-    "coordinateString": "41.307243, -72.925586"
   }
 ]

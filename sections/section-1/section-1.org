@@ -4,13 +4,65 @@ New Haven to Macedonia Brook State Park
 
 * Waypoints
 
--72.925817,41.30733;-72.928662,41.307286;-72.929491,41.307622;-72.932568,41.308664;-72.933581,41.308894;-72.934542,41.309116;-72.936752,41.309598;-72.938715,41.310042;-72.940872,41.310549;-72.943041,41.311017;-72.958821,41.314507;-72.98411,41.327117;-72.984678,41.330356;-72.984865,41.330412;-72.986158,41.33125;-72.985364,41.332039;-72.986813,41.335544;-72.990997,41.339753;-72.992392,41.34146;-72.993529,41.342657;-73.008378,41.349447;-73.011338,41.350574;-73.010523,41.353264;-73.01313,41.354392;-73.013748,41.355422;-73.018334,41.36048;-73.021612,41.366874;-73.003378,41.368918;-72.992326,41.373813;-72.991447,41.376438;-72.989453,41.380577;-72.984176,41.388337;-72.989946,41.404239;-72.987499,41.426511;-73.054361,41.436485;-73.059543,41.437623;-73.059694,41.437649;-73.064103,41.45741;-73.080347,41.461817;-73.103285,41.493101;-73.238597,41.465627;-73.281496,41.497718;-73.282714,41.504142;-73.283186,41.510144;-73.317132,41.536451;-73.35082,41.595871;-73.407684,41.581167;-73.418369,41.592113;-73.452606,41.615835;-73.475406,41.649956;-73.494458,41.74719;-73.49493,41.766232
+-72.925817,41.30733;-72.928627,41.307274;-72.929491,41.307622;-72.929955,41.307818;-72.930969,41.308217;-72.932568,41.308664;-72.933581,41.308894;-72.934542,41.309116;-72.935097,41.309232;-72.935486,41.309363;-72.9354,41.309464;-72.954979,41.316344;-72.98411,41.327117;-72.984678,41.330356;-72.98486,41.330412;-72.985676,41.330694;-72.986764,41.331073;-72.98971,41.331468;-72.9925,41.331162;-72.993638,41.332434;-72.988594,41.337258;-72.990997,41.339753;-72.992392,41.34146;-72.993529,41.342657;-73.005577,41.348069;-73.008378,41.349447;-73.011338,41.350574;-73.010523,41.353264;-73.008872,41.363943;-73.003378,41.368918;-72.992326,41.373813;-72.991447,41.376438;-72.989453,41.380577;-72.984176,41.388337;-72.98252,41.39352;-72.980782,41.398526;-72.978914,41.405671;-72.982661,41.412254;-72.98089,41.417468;-72.977778,41.426124;-72.980353,41.426365;-72.987896,41.426663;-73.033114,41.437803;-73.044061,41.438608;-73.052998,41.436879;-73.054361,41.436485;-73.056357,41.436493;-73.059543,41.437623;-73.059694,41.437649;-73.064103,41.45741;-73.080347,41.461817;-73.089595,41.487878;-73.096373,41.481257;-73.113155,41.482195;-73.212472,41.477902;-73.213239,41.479219;-73.238597,41.465627;-73.281496,41.497718;-73.282714,41.504142;-73.283186,41.510144;-73.320436,41.515939;-73.312562,41.526106;-73.314943,41.530524;-73.325479,41.541493;-73.332796,41.547227;-73.331208,41.549122;-73.328766,41.552688;-73.334577,41.560254;-73.350778,41.580718;-73.351915,41.584465;-73.338976,41.596574;-73.336916,41.600666;-73.335424,41.60422;-73.329352,41.604974;-73.330575,41.611063;-73.339512,41.625259;-73.450899,41.651588;-73.465662,41.663937;-73.473815,41.678392;-73.47623,41.674891;-73.478376,41.673761;-73.483339,41.67541;-73.496904,41.679449;-73.489652,41.729994;-73.495582,41.738082;-73.494458,41.74719;-73.49493,41.766232
 
 * BRouter Profile
 
 nutmeg-brouter-profile-4
 
-* TODO TODO
+* Notes
 
-- Ground truth
-  - In Roxbury, consider Mine Hill / Carter Preserves (trails?) instead of long section of compacted road
+Going over to Trumbull and doing the Stepney Rail Trail north would have been nice, but it's too hard to get there on dirt (or at least low traffic).
+
+West Rock / Baldwin Drive would be nice, but it seems bicycles technically aren't allowed on the Sanford Feeder Trail, which means we would have to go the long way around the top of West Rock.
+
+* Decisions
+
+In order:
+
+- Best way out of New Haven from the Green?
+  - Chapel St, Edgewood Ave (cycleway)
+  - There isn't any good way into Woodbridge. Options are CT 63, CT 69, Fountain St.
+  - Fountain St is probably the best option, despite it being a bit sketchy for a minute under the Wilbur Cross Parkway overpass
+- Naugatuck Trail (Woodbridge)?
+  - Probably skip the first bit off of Fountain St. It would be nice, but it's a bit too technical for those on gravel bikes, at least at the beginning of the route.
+  - Turn on Park Lane, then join the Naugatuck Trail there (still kinda technical, but better than CT 113 or CT 114).
+- Best way to Beacon Falls
+  - Peck Hill Rd / Bethmour Rd through Bethany is a safe option, but it's all paved
+  - Lake Chamberlain would be nice, but bicycles aren't allowed
+  - Go over to Sperry Rd for a taste of gravel
+  - Then down Blackberry Rd
+- Naugatuck State Forest?
+  - Yes. At the very least, Spruce Brook Rd (paved).
+  - TODO ground truth other trails
+- Andrew Mountain Park?
+  - TODO Is the trail connecting from Naugatuck State Forest rideable?
+- Larkin State Park Trail?
+  - Yes, no-brainer. ~6mi unpaved.
+- Best way out of Southbury?
+  - Flood Bridge Rd (gravel) is a no-brainer
+  - East Flat Hill Rd climb
+- Best way to Roxbury Station?
+  - Options:
+    - McMahan Preserve (looks more wild, not much info)
+    - River Rd (a bit of gravel)
+    - Erbacher Preserve
+      - Lots of photos https://www.alltrails.com/trail/us/connecticut/shepaug-river-trail/photos
+      - Trails look pretty gentle, could be good
+      - Kress Family Trail
+      - TODO ground truth various ways through
+- Best way to Bull's Bridge (South Kent)?
+  - Go through Mine Hill Preserve and the Carter Preserve.
+    - TODO ground truth, but I think it should be fairly smooth
+      - Through Mine Hill: Hodge Road (straight/flat) or Donkey Trail (more interesting -- mine stuff, tunnels, bat cages, and hillier)?
+    - TODO ground truth, pretty sure the other long track (north of Mine Hill, bypassing the Carter Preserve along the Shepaug River) is private
+  - River Rd north of New Milford along the Housatonic is a classic, but going through New Milford is always a bit sketchy,
+    and at the end of River Rd the only option really is US 7 (Kent Rd)
+  - Then, there's a choice of Walker Brook Rd (long gravel), or Shinar Mountain Rd (more decent gravel), or Steep Rock Preserve
+    - Steep Rock Preserve is slightly out of the way, but it's scenic and has the cool tunnel
+      - TODO there are a couple of connector trails marked bicycle=no (like immediately after the tunnel), have to ground truth
+  - Right before South Kent, Indian Trail Rd + Mud Pond Rd (gravel, +300ft Long Mountain climb) or West Meetinghouse Rd (paved, flat)?
+    - Go for the Long Mountain Climb
+- Schaghticoke Rd
+  - no-brainer
+  
